@@ -27,7 +27,7 @@
         >
           {{ $t('nav_about') }}
         </nuxt-link>
-        <select
+        <!-- <select
           v-model="selectedValue"
           class="custom-select"
           @change="onChange(selectedValue)"
@@ -40,7 +40,7 @@
           >
             {{ locale.name }}
           </option>
-        </select>
+        </select> -->
         <a
           href="https://code4.ro/ro/doneaza"
           class="btn btn-success text-white font-weight-bold ml-2 ml-sm-4"
@@ -56,26 +56,27 @@
 export default {
   data() {
     return {
-      selectedValue: this.$i18n.locale,
+      // selectedValue: this.$i18n.locale,
     }
   },
   computed: {
-    availableLocales() {
-      return this.$i18n.locales.filter((i) => i.code !== this.$i18n.locale)
-    },
+    // availableLocales() {
+    //   return this.$i18n.locales.filter((i) => i.code !== this.$i18n.locale)
+    // },
   },
   methods: {
-    onChange(event) {
-      this.$router.replace(this.switchLocalePath(event))
-    },
+    // onChange(event) {
+    //   this.$router.replace(this.switchLocalePath(event))
+    // },
   },
 }
 </script>
 
 <style lang="scss" scoped>
-.dropdown-menu {
-  &.small {
-    min-width: 0;
-  }
-}
+// .dropdown-menu {
+//   &.small {
+//     min-width: 0;
+//   }
+// }
+//
 </style>

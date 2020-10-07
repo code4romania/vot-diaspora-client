@@ -21,7 +21,7 @@ export default {
         hid: 'description',
         name: 'description',
         content:
-          'Vot România este o platformă dezvoltată de Code for Romania care  simplifică pe înțelesul cetățenilor ghidul electoral al alegerilor locale, care vor avea loc la finalul lunii septembrie 2020.',
+          'Vot Diaspora este o platformă dezvoltată de Code for Romania care oferă rapid românilor din Diaspora informații despre cum pot vota la alegerile generale din decembrie 2020.',
       },
       { property: 'og:title', content: 'Vot România' },
       {
