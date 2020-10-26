@@ -169,7 +169,7 @@ export default {
     async searchAddress(query) {
       try {
         const result = await fetch(
-          `https://autocomplete.geocoder.ls.hereapi.com/6.2/suggest.json?apiKey=${this.apikey}&query=${this.address}&maxresults=5`
+          `https://autocomplete.geocoder.ls.hereapi.com/6.2/suggest.json?apiKey=${this.apikey}&query=${this.address}&maxresults=5&language=ro`
         )
         return await result.json()
       } catch (error) {
