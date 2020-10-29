@@ -4,10 +4,7 @@
       {{ $t('guide_title') }}
     </h2>
     <p>
-      La alegerile parlamentare își exercită dreptul de vot în afara țării doar
-      cetățenii români cu domiciliul sau reședința în străinătate. Află ce ai de
-      făcut pentru a putea vota în țara în care ai domiciliu sau reședința la
-      alegerile parlamentare din 6 decembrie 2020.
+      {{ $t('guide_text') }}
     </p>
     <div
       class="d-flex flex-column flex-sm-row justify-content-center align-items-center align-items-sm-stretch mt-3"

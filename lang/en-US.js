@@ -2,6 +2,8 @@ export default {
   donate: 'Donate',
   nav_about: 'About',
   guide_title: 'Please select the option below most suited',
+  guide_text:
+    'La alegerile parlamentare își exercită dreptul de vot în afara țării doar cetățenii români cu domiciliul sau reședința în străinătate. Află ce ai de făcut pentru a putea vota în țara în care ai domiciliu sau reședința la alegerile parlamentare din 6 decembrie 2020.',
   votersGuide: {
     callToAction: 'Start by selecting one of the options below',
     label0: 'I want to vote in a precinct',

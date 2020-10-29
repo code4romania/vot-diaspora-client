@@ -3,6 +3,8 @@ export default {
   nav_about: 'Rólunk',
   guide_title:
     'Válaszd ki azt a választ, amelyik a legjobban illik a helyzetedhez',
+  guide_text:
+    'La alegerile parlamentare își exercită dreptul de vot în afara țării doar cetățenii români cu domiciliul sau reședința în străinătate. Află ce ai de făcut pentru a putea vota în țara în care ai domiciliu sau reședința la alegerile parlamentare din 6 decembrie 2020.',
   votersGuide: {
     callToAction: 'Válassz egyet az alábbi opciókból',
     label0: 'Szavazóirodában szeretnék szavazni',
