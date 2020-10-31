@@ -12,9 +12,6 @@
           }}</span>
           {{ address }}
         </p>
-        <button class="btn btn-sm btn-dark" @click="showStreet = !showStreet">
-          {{ $t('pollingStationCard.seeStreets') }}
-        </button>
       </div>
       <div v-show="showStreet">
         <p class="font-weight-bold mt-4 mb-0">
