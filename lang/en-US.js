@@ -3,7 +3,7 @@ export default {
   nav_about: 'About',
   guide_title: 'Please select the option below most suited',
   guide_text:
-    'La alegerile parlamentare își exercită dreptul de vot în afara țării doar cetățenii români cu domiciliul sau reședința în străinătate. Află ce ai de făcut pentru a putea vota în țara în care ai domiciliu sau reședința la alegerile parlamentare din 6 decembrie 2020.',
+    'For the parliamentary elections only Romanian citizens living abroad can vote. Find out what you have to do to be able vote for the December 6th Elections in the country where you are currently residing.',
   votersGuide: {
     callToAction: 'Start by selecting one of the options below',
     label0: 'I want to vote in a precinct',
@@ -57,13 +57,13 @@ export default {
     p3: 'in partnership with:',
   },
   info_text:
-    'Pe 6 decembrie au loc alegeri parlamentare în România. Cetățenii care locuiesc în diaspora sau se află în diaspora în tranzit în momentul alegerilor nu pot să își exprime votul, acest lucru fiind posibil doar pentru cetățenii care se află pe teritoriul României în aria circumscripției la care este arondată adresa lor de domiciliu. Dacă ai rude în țară, atunci încurajează-i să folosească Vot România pentru a afla în ce condiții pot să voteze, de ce documente au nevoie și unde se află secția la care sunt arondați.',
-  map_text: `<p class="font-weight-bold m-0">În curând aici vei găsi o hartă și un buton de căutare care te vor ajuta să găsești secția de votare de care aparții.<br/> If this website was helpful please <a
-  href="https://code4.ro/ro/doneaza/"
-  target="_blank"
-  rel="noopener noreferrer">donate as little or as much as you can</a> to Code for Romania, the NGO that developed this website pro bono.</p>`,
+    'On the 6th of December 2020 there will be parliamentary elections in Romania. Romanian citizens living abroad can vote at polling stations or through mail-in ballots. To find out what the required steps are so tat you can cast a ballot in the elections use the guide below',
+  map_text: `<p class=“font-weight-bold m-0”>There will soon be a map and a search bari right here, helping you identify your polling station.<br/> If this website was helpful please <a
+    href=“https://code4.ro/ro/doneaza/”
+    target=“_blank”
+    rel=“noopener noreferrer”>donate as little or as much as you can</a> to Code for Romania, the NGO that developed this website pro bono.</p>`,
   temp_text:
-    'Harta secțiilor de votare disponibilă la acest moment este harta secțiilor organizate pentru alegerile prezidențiale din 2019. Vom actualiza lista secțiilor imediat ce aceasta devine disponibilă. Data până la care Autoritatea Electorală Permanentă trebuie să transmită către Ministerul Afacerilor externe lista localităților din străinătate unde trebuie să fie înființate secții de votare este 25 septembrie 2020.',
+    'The current polling station map is the one used for the 2019 presidential elections. The map will be updated as the new list of polling stations becomes abvailable .The Permanent Electoral Authority has to submit the final list of foreign municipalities where polling places will be organized to the Foreign Ministry by September 25th 2020 at the latest.',
   social_share: {
     title: 'Send this to your friends',
     text:
@@ -105,7 +105,7 @@ export default {
     <h2>Registration cookies</h2>
     <p>When registering to this website, we generate a cookie with your registration data. The cookie helps us in the next steps for communicating with the server. It is possible for this cookie to remain on your device if you do not follow through with all the registration steps. However, this cookie will be overwritten the next time you attempt to register on this website.</p>
     <h2>Other third party cookies</h2>
-    <p> On some pages third parties can set up their own anonymous cookies for purposes of tracking an app’s success rate, or for customizing that app. Due to the way it is used, this website cannot access these cookies, just as third parties cannot access the cookies that belong to this website. For example when you share a page using a “share to social network” button on this website, that social network can track your activity. </p>
+    <p> On some pages third parties can SET "ResolvedAddressStatus" = 2,up their own anonymous cookies for purposes of tracking an app’s success rate, or for customizing that app. Due to the way it is used, this website cannot access these cookies, just as third parties cannot access the cookies that belong to this website. For example when you share a page using a “share to social network” button on this website, that social network can track your activity. </p>
     <h2>What kind of information is stored and accessed through cookies?</h2>
     <p>Cookies save information in a small text file allowing a website to recognize a browser. The web server will recognize the browser up until the cookie expires or is deleted. The cookie stores important information that improve the browsing experience (e.g. a serial number for your donation)</p>
     <h2>Why are cookies important to the Internet?</h2>
@@ -121,14 +121,14 @@ export default {
     <h2>Advice for safe and responsible cookie-based browsing</h2>
     <p>To the flexibility and the fact that the majority of the largest and most visited websites use cookies, they are inevitable. Deactivating cookies will no longer allow user access to some of the most important websites such as Youtube, Gmail, Yahoo and others. Here's some advice that can help you browse safely while retaining cookies:</p>
     <ul>
-      <li>Customize your browser cookie settings to allow for a comfortable security level. If cookies are not a problem for you and you are the only person using that device you can set long cookie retention intervals in order to store your browsing history and your personal access data. If you share the device or computer you may want to set up the browser to delete your individual browsing data every time it is closed. This is one way to access websites that place cookies on your shared computer while deleting all your browsing data when closing the session.</li>
+      <li>Customize your browser cookie settings to allow for a comfortable security level. If cookies are not a problem for you and you are the only person using that device you can SET "ResolvedAddressStatus" = 2,long cookie retention intervals in order to store your browsing history and your personal access data. If you share the device or computer you may want to SET "ResolvedAddressStatus" = 2,up the browser to delete your individual browsing data every time it is closed. This is one way to access websites that place cookies on your shared computer while deleting all your browsing data when closing the session.</li>
       <li>Install an anti-spyware app and keep it up-to-date</li>
       <li>Many anti-spyware apps include website attack detection. These apps prevent the browser from accessing websites that might exploit the browser’s vulnerabilities or download dangerous software. Ensure your browser is up-to-date. Many cookie-based attacks exploit the weak points of old browser versions.</li>
       <li>Cookies are everywhere and cannot be avoided if you wish to access some of the largest and best websites on the internet, either local or international. The clear understanding of the way cookies work and the benefits they bring you can take the necessary security measures so that you always have a safe and satisfactory browsing experience.</li>
     </ul>
     <h2>How can I turn cookies off?</h2>
     <p>Refusing to accept cookies or deactivating them can make some websites difficult or impossible to navigate or use. Refusing to accept cookies also does not mean that you will no longer receive online ads. </p>
-    <p>You can set up your browser to reject cookies automatically or you can select only some websites where cookies are enabled. But, for example, if you turn off cookies on this website you can not follow through with the next steps in filling out the form.</p>
+    <p>You can SET "ResolvedAddressStatus" = 2,up your browser to reject cookies automatically or you can select only some websites where cookies are enabled. But, for example, if you turn off cookies on this website you can not follow through with the next steps in filling out the form.</p>
     <p>Modern browsers offer the ability to change cookie settings. You can usually find cookie settings under the “options” tab or the “preferences” menu of your browser.</p>
     <p>For third-party cookies settings and for more information about online ad confidentiality, IAB Romania offers the following website: <a href="http://www.youronlinechoices.com/en/">http://www.youronlinechoices.com/en/</a></p>
     `,
