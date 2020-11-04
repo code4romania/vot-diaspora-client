@@ -147,14 +147,48 @@ export default {
           lng: c.longitude,
         })
       })
-      this.hereMap.setZoom(16)
       if (stations.length > 1) {
         this.hereMap.setCenter({
           lat: latitude,
           lng: longitude,
         })
-        this.hereMap.setZoom(15)
+        // We should check which station is closest and it's latitude
+        let minDistance = 0
+        let closestLatitude = 0
+        let closestLongitude = 0
+        stations.forEach((station) => {
+          const distanceLatitude = station.latitude - latitude
+          const distanceLongitude = station.longitude - longitude
+          const distance = Math.sqrt(
+            Math.pow(distanceLatitude, 2) + Math.pow(distanceLongitude, 2)
+          )
+          if (minDistance === 0 || distance < minDistance) {
+            minDistance = distance
+            closestLatitude = station.latitude
+            closestLongitude = station.longitude
+          }
+        })
+        const H = window.H
+        // We'll add an extra distance(otherwise, if a station is too close, we'll have the marker hidden)
+        const extraDistance = 0.005
+        // We're computing the distance on both axis.
+        const distLatitude =
+          Math.abs(latitude - closestLatitude) + extraDistance
+        const distLongitude =
+          Math.abs(longitude - closestLongitude) + extraDistance
+
+        // We're centering the map to include this distance and still keep the home in the center.
+        this.hereMap.getViewModel().setLookAtData({
+          bounds: new H.geo.Rect(
+            latitude - distLatitude,
+            longitude - distLongitude,
+            latitude + distLatitude,
+            longitude + distLongitude
+          ),
+        })
+        return
       }
+      this.hereMap.setZoom(16)
     },
     async getGeocode(locationId) {
       try {
