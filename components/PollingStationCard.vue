@@ -56,7 +56,7 @@ export default {
       const distanceInKm = this.distance / 1000
       if (distanceInKm >= 1) return distanceInKm.toFixed(0)
       // If distance is lower than 100 meters show 0 km instead of 0.0 km
-      if (distanceInKm <= 0.1) return 0
+      if (distanceInKm < 0.1) return 0
       return distanceInKm.toFixed(1)
     },
   },
