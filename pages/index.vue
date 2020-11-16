@@ -7,7 +7,7 @@
         </div>
       </div>
     </div>
-    <div class="container-fluid py-4 mt-4 mb-5 bg-warning">
+    <!--<div class="container-fluid py-4 mt-4 mb-5 bg-warning">
       <div class="row">
         <p class="col-10">
           {{ $t('info_text') }}
@@ -22,7 +22,7 @@
           >
         </div>
       </div>
-    </div>
+    </div>-->
     <div class="container mt-4 mb-5">
       <div class="row">
         <div class="col-12">
