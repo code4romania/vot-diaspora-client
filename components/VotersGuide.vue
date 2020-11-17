@@ -20,7 +20,7 @@
         @click="goToNextChoice(option)"
       >
         <div class="card-body d-flex align-items-center justify-content-center">
-          <p class="my-0" v-html="$t(decisionTree[option].text)"></p>
+          <div v-html="$t(decisionTree[option].text)"></div>
         </div>
       </div>
     </div>
@@ -47,12 +47,12 @@ export default {
       0: {
         id: '0',
         text: 'votersGuide.label0',
-        options: ['10'],
+        options: ['11', '12'],
       },
       1: {
         id: '1',
         text: 'votersGuide.label1',
-        options: ['11'],
+        options: ['10'],
       },
       10: {
         id: '10',
@@ -61,6 +61,48 @@ export default {
       11: {
         id: '11',
         text: 'votersGuide.label11',
+        options: ['111', '112'],
+      },
+      111: {
+        id: '111',
+        text: 'votersGuide.label111',
+        options: ['1110'],
+      },
+      1110: {
+        id: '1110',
+        text: 'votersGuide.label1110',
+      },
+      112: {
+        id: '112',
+        text: 'votersGuide.label112',
+        options: ['1120'],
+      },
+      1120: {
+        id: '1120',
+        text: 'votersGuide.label1120',
+      },
+      12: {
+        id: '12',
+        text: 'votersGuide.label12',
+        options: ['121', '122'],
+      },
+      121: {
+        id: '121',
+        text: 'votersGuide.label121',
+        options: ['1210'],
+      },
+      1210: {
+        id: '1210',
+        text: 'votersGuide.label1210',
+      },
+      122: {
+        id: '122',
+        text: 'votersGuide.label122',
+        options: ['1220'],
+      },
+      1220: {
+        id: '1220',
+        text: 'votersGuide.label1220',
       },
     },
   }),
