@@ -7,7 +7,25 @@
         </div>
       </div>
     </div>
-    <!--<div class="container-fluid py-4 mt-4 mb-5 bg-warning">
+    <div class="bg-light">
+      <div class="container mt-4 mb-5 py-4">
+        <div class="row">
+          <div class="col-lg-4">
+            <h4>{{ $t('exceptional_cases.case1_title') }}</h4>
+            <div v-html="$t('exceptional_cases.case1_text')"></div>
+          </div>
+          <div class="col-lg-4">
+            <h4>{{ $t('exceptional_cases.case2_title') }}</h4>
+            <div v-html="$t('exceptional_cases.case2_text')"></div>
+          </div>
+          <div class="col-lg-4">
+            <h4>{{ $t('exceptional_cases.case3_title') }}</h4>
+            <div v-html="$t('exceptional_cases.case3_text')"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- <div class="container-fluid py-4 mt-4 mb-5 bg-warning">
       <div class="row">
         <p class="col-10">
           {{ $t('info_text') }}
@@ -22,7 +40,7 @@
           >
         </div>
       </div>
-    </div>-->
+    </div> -->
     <div class="container mt-4 mb-5">
       <div class="row">
         <div class="col-12">
