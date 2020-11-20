@@ -28,7 +28,7 @@ export default {
       <li>Un al doilea plic, ”plicul interior” care conține un plic suport care are la interior două autocolante pe care scrie ”VOTAT” și o etichetă pe care o vei folosi pentru a sigila acest plic interior</li>
     </ul>
     <h4>Important!</h4>
-    <p>Dacă îți lipsesc buletinele de vot sau dacă au fost deteriorate, le poți printa tu însuți (nu este necesar să printezi tot buletinul de vot, este suficientă pagina pe care este opţiunea ta de vot - dacă are autocolantul cu “VOTAT” se consideră un vot valabil). Poți să descarci cele două buletine de pe site-ul <a href="www.votstrăinătate.ro">votstrăinătate.ro</a>.</p>
+    <p>Dacă îți lipsesc buletinele de vot sau dacă au fost deteriorate, le poți printa tu însuți (nu este necesar să printezi tot buletinul de vot, este suficientă pagina pe care este opţiunea ta de vot - dacă are autocolantul cu “VOTAT” se consideră un vot valabil). Poți să descarci cele două buletine de pe site-ul <a href="https://votstrăinătate.ro">votstrăinătate.ro</a>.</p>
     <p>Pentru orice problemă poți contacta Autoritatea Electorală Permanentă la adresa <a href="mailto:contact@votstrăinătate.ro">contact@votstrăinătate.ro</a>.</p>
     
     <h4>Pasul 2: Votarea</h4>
