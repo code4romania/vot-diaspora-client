@@ -33,7 +33,7 @@
             class="text-center"
             v-html="$t('pollingStationSearch.callToAction')"
           ></div>
-          <PollingStationSearch />
+          <PollingStationSearchHereMaps />
           <p class="text-center mt-4">
             {{ $t('temp_text') }}
           </p>
