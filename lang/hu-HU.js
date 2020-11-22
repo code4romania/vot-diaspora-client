@@ -9,10 +9,125 @@ export default {
     callToAction: 'Válassz egyet az alábbi opciókból',
     label0: 'Szavazóirodában szeretnék szavazni',
     label1: 'Levélben (postai úton) szeretnék szavazni',
-    label10:
-      'Ahhoz, hogy az állandó választási listákon tudj szavazni, a következő lépéseken kell átmenned <b><u> 2020. szeptember 21-éig</u></b>:<br><ul><li> belépsz az Állandó Választási Hatóság (Autoritatea Electorală Permanentă) által biztosított honlapra, <a href="https://www.votstrainatate.ro/" target="_blank" rel="noopener noreferrer">votstrainatate.ro</a></li><li> kiválasztod a <b>Szavazóirodában szeretnék szavazni</b></li><li> opciót. Kitöltöd a kért mezőket a kérdőívből, és megnyomod a Küld (Trimite) gombot.</li></ul> Ha külföldön élő állampolgárként iratkozol fel a honlapon, akkor kérvényedet az Állandó Választási Hatóság (Autoritatea Electorala Permanenta) arra is fogja használni, hogy az általad kért országban, szavazókörzetet létesítsen. Az Állandó Választási Hatóság (Autoritatea Electorala Permanenta) kérheti a Külügyminisztériumtól, hogy az állandó jellegű szavazóirodák mellett, melyek általában a nagykövetségek vagy konzulátusok épületeiben vannak kialakítva, létesítsen pótszavazóirodákat a külföldön élő román állampolgárok számára. Az ÁVH ezt azon lakosok részére kérheti az országos intézmények beleegyezésével, ahol legkevesebb 100 választó iratkozott fel, hogy szavazna.<b><u><br><br> Figyelem:</u></b><br>Még ha az előző választásokon be is iratkoztál a választói névjegyzékbe (registru electoral), ha a mostani választásokon az állandó választási listákon szeretnél szavazni, meg kell ismételned az eljárást.<br> Ha levélben történő választásra iratkozol fel, törölve leszel az országos állandó listákról.<br> Ha nem iratkozol fel a választói regiszterbe, pótlistákon szavazhatsz, de a szavazóirodában bizonyító iratokat kell majd bemutatnod, melyek igazolják a külföldi lakcímedet vagy tartózkodási helyedet. A dokumentumok listáját itt fogjuk frissíteni, amint a hatóságok nyilvánosságra hozzák ezeket.',
-    label11:
-      'Ha külföldön élsz és a levélben történő szavazás mellett döntessz, két feltételt kell teljesítened:<br><ul><li> legyen érvényes tartózkodási engedélyed annak az államnak a területén, ahol élsz</li><li> jelentkezz be a választási regiszterbe és kérvényezd a levélben való szavazást.<b><u> 2020. október 20-áig</u></b></li></ul> A feliratkozáshoz a következő lépéseken kell átmenned:<ul><li> belépsz az ÁVH által biztosított honlapra <a href="https://www.votstrainatate.ro/" target="_blank" rel="noopener noreferrer">votstrainatate.ro</a></li><li>kiválasztod a <b>Levélben szeretnék szavazni (Vreau să votez prin corespondență)</b></li><li> Kitöltöd a kért mezőket a kérdőívből és megnyomod a Küld (Trimite) gombot.</li></ul>Nagyon fontos tudni, hogy ugyanazzal az e-mail címmel nem tud több személy beiratkozni. Tehát, ha a családod összes tagja szavazati joggal rendelkező román állampolgár, aki külföldön él vagy tartózkodik, mindegyik családtag a személyes e-mail címével kell regisztráljon ahhoz, hogy megkapja a szavazólapot tartalmazó borítékot.<br>Miután sikeresen regisztráltál a honlapon:<ul><li>Ellenőrizd az e-mail fiókodat mihamarabb (ne feledd megnézni a Spam mappát is, hogy nem-e oda került véletlenül a regisztrációs/visszaigazoló link).</li><li> Miután megkaptad a linket, 24 óra alatt rá kell kattintanod </li><li> az ÁVH regisztrálja visszaigazolásodat, és küld számodra egy új e-mailt a kapott iktatószámmal (numar de înregistrare).</li><li>5 napon belül ugyanarra az e-mail címre fogsz kapni egy újabb e-mailt, amely véglegesíti a beiratkozást a levélben történő szavazásra.</li></ul> A szavazólapos borítékokat legkésőbb 2020. november 11-éig kell kiküldjék számodra.<b><u><br><br>Figyelem:</u></b><br> Még ha az előző választásokon be is iratkoztál a választói névjegyzékbe (registru electoral), amennyiben a mostani választásokon az állandó választási listákon szeretnél szavazni, meg kell ismételned az eljárást.<br>Ha levélben történő választásra iratkozol fel, törölve leszel az országos állandó listákról.<br>Ha levélben történő választásra iratkoztál fel, de a szavazólapot tartalmazó boríték nem ér el a választási körzethez, akkor a szavazóirodában tudsz majd szavazni.',
+    label10: `<p>Ha levélben történő szavazás mellet döntöttél akkor meg kell bizonyosodni arról hogy megkaptad a borítékot a szavazáshoz szükséges dokumentumokkal. Ha nem kaptad meg a dokumentumokat vedd fel a kapcsolatot az Állandó Választási Hatósággal (Autoritatea Electorală Permanentă) a lejjebb megtalálható elérhetőségen.</p>
+	<h4>Fontos:</h4>
+	<p>A szavazatokkal ellátott borítéknak vissza kell érkeznie Romániába a Választási Irodához, hogy postai úton szavazhasson, vagy annak az országnak a diplomáciai vagy konzuli képviseletéhez, ahol tartózkodol<b>2020. december 3-ig</b> Tekintettel a COVID-19 világjárvány által generált nemzetközi összefüggésekre, konzultálj vagy annak az országnak a postai szolgálataival, ahol tartózkodol (online vagy telefonon), vagy ellenőrizzd a szállítási korlátozásokat a <a href="https://www.posta-romana.ro/a1309/stiri/lista-tarilor-cu-trafic-postal-restrictionat.html">a Román Posta honlapján </a>.</p>
+	<h4>Pasul 1: Dokumentumok igazolása</h4>
+    <p>A beérkezett borítéknak (amelyet a hivatalos eljárásokban "külső borítéknak" neveznek) a következőket kell tartalmaznia:</p>
+    <ul>
+      <li>Választói bizonyítvány</li>
+      <li>Címke, amellyel lezárja a külső borítékot</li>
+      <li>Matrica a szavazóhelyiség címével, ahová el kell érnie a szavazatnak</li>
+      <li>Egy második matrica a "Priority / Prioritaire ..." felirattal</li>
+      <li>Vonalkód, amely biztosítja a választóként való azonosulást</li>
+      <li>Utasítássorozat a szavazat kifejezéséről</li>
+      <li>Postai úton történő szavazó levél a szenátus megválasztására</li>
+      <li>Postai úton történő szavazó levél a képviselőház megválasztására </li>
+      <li>A második boríték, a „belső boríték”, amely tartalmaz egy tartó borítékot, amelynek két matricája van, benne a „VOTAT” felirat, és egy címke, amelyet a belső boríték lezárásához használ.</li>
+    </ul>
+	<h4>Fontos!</h4>
+    <p>Ha hiányzik a szavazólap, vagy ha megsérült, akkor te is kinyomtathatod (nem szükséges a teljes szavazólapot kinyomtatni, csak az az oldal, amelyen látszik a szavazatod - a "VOTAT" feliratú matrica az ami  érvénzesnek minösitti a szavazatot. A két szavazólapot letöltheted a <a href="https://votstrăinătate.ro">votstrăinătate.ro</a> linkről</p>
+    <p>Bármilyen probléma esetén fordulj az Állandó Választási Hatósághoz a következő címen: <a href="mailto:contact@votstrăinătate.ro">contact@votstrăinătate.ro</a>.</p>
+	
+	<h4>2. lépés: Szavazás</h4>
+    <p>A szavazáshoz:</p>
+    <ol>
+      <li>Kinyitod a két szavazólapot: a szenátus megválasztására és a képviselőház megválasztására</li>
+      <li>Kiválasztod a szeretett jelöltet, és melléjük ragasytod a "VOTAT" matricákat</li>
+      <li>Helyezd be a két szavazólapot a belső borítékba, és zárd le a megfelelő címkével.(Vizuális képmutatás <a href="https://votstrainatate.ro/Uploads/MACHETA_INSTRUCTIUNI_VC.pdf">itt</a>)</li>
+    </ol>
+	
+	<h4>3. lépés: A szavazás elküldése</h4>
+    <p>Miután lezártad a belső borítékot, töltsd ki a választói bizonyítvány a dátummal és az aláírással. Utánna:</p>
+    <ol>
+      <li>Helyezd be a választói bizonyítványt és zárd le a belső borítékot a külső borítékba. Nagyon fontos, hogy ne felejtsük el a választói bizonyítványt, mert különben a szavazat érvénytelen</li>
+      <li>Le zárod a külső borítékot a hátoldalán található biztonsági címke felhelyezésével (Vizuális képmutatás <a href="https://votstrainatate.ro/Uploads/MACHETA_INSTRUCTIUNI_VC.pdf">itt</a>)</li>
+      <li>A postai uton történő szavazáshoz a boritték hátuljánra ragasztja a választási iroda címével ellátott matricát is</li>
+      <li>Tedd fel a borítékot bármely postahivatalba vagy postaládába ingyen. Vagy opcionálisan a borítékot gyorsfutárral is elküldheted saját költségedre.</li>
+    </ol>
+	
+	<h4>Jegyzet:</h4>
+    <p>Ha nem szeretnéd a borítékot az országban, közvetlenül a választási irodához postai úton küldeni, küld el egy gyorsfutárral, vagy vidd el személzesen a Románia diplomáciai vagy konzuli képviselethey abban az országban, ahol tartózkodol. Fontos, hogy elérje úti célját<b>2020. december 3-ig</b>.</p>`,
+    label11: `2020-ban iratkoztam be a Választói Registerbe`,
+    label111: `Külföldön élek`,
+    label1110: `<p>Ha bejelentkeztél a Választási Regiszterbe, és külföldi lakóhellyel rendelkezel, akkor a nyilvántartásba vételi kérelemben bejelentett helységhez rendelt szavaszóirodában az állandó jellegü listákon szavazhatsz.</p>
+	<h4>Szükséges dokumentumok:</h4>
+	<p>A szavazáshoz a következő személyazonosító okmányok egyikére lesz szükséged:</p>
+	<ul>
+		<li>egyszerű útlevél, a lakóhely szerinti ország megadasaval</li>
+		<li>ideiglenes egyszerű útlevél a lakóhely szerinti ország megadasaval</li>
+		<li>egyszerű elektronikus útlevél a lakóhely szerinti ország megadasaval</li>
+	</ul>
+	
+	<h4>A program a következő:</h4>
+	<p>A külföldön történő szavazás két napon keresztül zajlik.</p>
+  <ul>
+    <li> December 5., szombat, helyi idő szerint 7.00 és 21.00 között</li>
+    <li> December 6., vasárnap, helyi idő szerint 7.00 és 21.00 óra között, azzal a lehetőséggel, hogy a szavazást meghosszabbíthatják helyi idő szerint 23.59-ig, ha a szavazóhelyiségben vagy a szavazóhelyiségen kívül még sorban vannak szavazók </li>
+  </ul>
+	
+	<h4>Fontos</h4>
+    <ul>
+		  <li> Ha hiba miatt nem szerepelsz az állandó listákon, vagy nem erősítetted meg regisztrációdat, akkor a kiegészitő listákon tudsz majd szavazni.</li>
+		  <li>Ha már nem jelenhetsz meg a választóhelyiségben a Választási Regiszterbe bejegyzéskor bejelentett helyen, akkor kiegészitő listákon szavazhatsz, ha bebizonyítod, hogy lakóhelyed vagy tartózkodási helyed külföldön van.</li>
+	  </ul>
+	`,
+    label112: 'Külföldön élek',
+    label1120: `<p>Ha regisztráltál a Választási Regiszterben, és külföldön laksz, akkor a külhoni állampolgárok állandó listáin szavazhatsz a nyilvántartásba vételi kérelemben bejelentett helységen.</p>
+	<h4>Szükséges dokumentumok:</h4>
+    <p>A szavazáshoz a következő két dokumentumra van szükség:</p>
+    <ul>
+      <li>Egy <b>személyi igazolvány</b>: személyi igazolvány, elektronikus személyi igazolvány, ideiglenes személyi igazolvány, személyi igazolvány, diplomáciai útlevél, elektronikus diplomáciai útlevél, szolgálati útlevél, elektronikus szolgálati útlevél, egyszerű útlevél, egyszerű elektronikus útlevél vagy egyszerű ideiglenes útlevél.</li>
+      <li>Egy <b>dokumentum</b> amit a külföldi állam hivatalosan kiadot <b>a lakóhely létesítéséről</b>. Megnézheted a <a href="https://www.mae.ro/sites/default/files/file/anexa_omae_1627_20191_cu_anexe.pdf">a külföldi tartózkodást igazoló dokumentumok listája erre a linkre kattintva</a>. Az elfogadott dokumentumok országonként eltérnek.</li>
+    </ul>
+	
+	<h4>A program a következő:</h4>
+	<p>A külföldön történő szavazás két napon keresztül zajlik.</p>
+    <ul>
+  		<li> December 5., szombat, helyi idő szerint 7.00 és 21.00 között</li>
+	  	<li> December 6., vasárnap, helyi idő szerint 7.00 és 21.00 óra között, azzal a lehetőséggel, hogy a szavazást meghosszabbíthatják helyi idő szerint 23.59-ig, ha a szavazóhelyiségben vagy a szavazóhelyiségen kívül még sorban vannak szavazók</li>
+    </ul>
+	<h4>Fontos</h4>
+    <ul>
+		  <li> Ha hiba miatt nem szerepelsz az állandó listákon, vagy nem erősítetted meg regisztrációdat, akkor a kiegészitő listákon tudsz majd szavazni.</li>
+		  <li>Ha már nem jelenhetsz meg a választóhelyiségben a Választási Regiszterbe bejegyzéskor bejelentett helyen, akkor kiegészitő listákon szavazhatsz, ha bebizonyítod, hogy lakóhelyed vagy tartózkodási helyed külföldön van.</li>
+	</ul>`,
+    label12: `Nem 2020-ban iratkoztam be a Választói Registerbe`,
+    label121: `Külföldön élek`,
+    label1210: `<p> Ha nem regisztráltál a Választási Regiszterbe, és külföldi lakóhellyel rendelkezel, akkor a kiegészitő listákon fogsz szavazni.</p>
+	
+	<h4>Szükséges dokumentumok:</h4>
+	<p>A szavazáshoz a következő személyazonosító okmányok egyikével kell rendelkezned:</p>
+	<ul>
+		<li>egyszerű útlevél, a lakóhely szerinti ország megadasaval</li>
+		<li>ideiglenes egyszerű útlevél a lakóhely szerinti ország megadasaval</li>
+		<li>egyszerű elektronikus útlevél a lakóhely szerinti ország megadasaval</li>
+	</ul>
+	
+	<h4>A program a következő:</h4>
+	<p>A külföldön történő szavazás két napon keresztül zajlik.</p>
+    <ul>
+		  <li> December 5., szombat, helyi idő szerint 7.00 és 21.00 között</li>
+		  <li> December 6., vasárnap, helyi idő szerint 7.00 és 21.00 óra között, azzal a lehetőséggel, hogy a szavazást meghosszabbíthatják helyi idő szerint 23.59-ig, ha a szavazóhelyiségben vagy a szavazóhelyiségen kívül még sorban vannak szavazók</li>
+    </ul>	
+	`,
+    label122: 'Külföldön lakom',
+    label1220: `<p>Ha regisztráltál a Választási Regiszterben, és külföldön laksz, akkor a kiegésztő listákon fogsz szavazni</p>
+	
+	<h4>Szükséges dokumentumok:</h4>
+    <p>A szavazáshoz a következő két dokumentumra van szükség:</p>
+    <ul>
+      <li>Egy <b>személyi igazolvány</b>: személyi igazolvány, elektronikus személyi igazolvány, ideiglenes személyi igazolvány, személyi igazolvány, diplomáciai útlevél, elektronikus diplomáciai útlevél, szolgálati útlevél, elektronikus szolgálati útlevél, egyszerű útlevél, egyszerű elektronikus útlevél vagy egyszerű ideiglenes útlevél.</li>
+      <li>Egy <b>document</b> amit a külföldi állam hivatalosan kiadot <b>a lakóhely létesítéséről</b>. Megnézheted a <a href="https://www.mae.ro/sites/default/files/file/anexa_omae_1627_20191_cu_anexe.pdf">a külföldi tartózkodást igazoló dokumentumok listája erre a linkre kattintva</a>. Az elfogadott dokumentumok országonként eltérnek.</li>
+    </ul>
+	
+	<h4>A program a következő:</h4>
+	<p>A külföldön történő szavazás két napon keresztül zajlik.</p>
+    <ul>
+		  <li> December 5., szombat, helyi idő szerint 7.00 és 21.00 között</li>
+		  <li> December 6., vasárnap, helyi idő szerint 7.00 és 21.00 óra között, azzal a lehetőséggel, hogy a szavazást meghosszabbíthatják helyi idő szerint 23.59-ig, ha a szavazóhelyiségben vagy a szavazóhelyiségen kívül még sorban vannak szavazók </li>
+    </ul>
+	`,
   },
   pollingStationSearch: {
     question: 'Hól laksz?',
@@ -33,23 +148,10 @@ export default {
     assignedStreetsLabel:
       'Ebben a szavazókörzetben azok a személyek tudnak szavazni, akik a következő utcákon laknak:',
   },
-  exceptional_cases: {
-    case1_title:
-      'Ágyhoz kötött beteg, mozgásképtelen vagy, speciális ellátó intézetben ápolnak (pl: kórház)',
-    case1_text: `Ha nem tudsz elmenni szavazni, mivel beteg vagy mozgásképtelen vagy, kérheted a mobil urnát. Ehhez kéréssel kell fordulnod a szavazókörzet elnökéhez, melyhez csatolod az egészségi állapotodat igazoló dokumentumokat.`,
-    case2_title:
-      'COVID 19-el diagnosztizáltak, karanténba helyeztek vagy kórházban ápolnak?',
-    case2_text:
-      "Az ÁVH-elnök kijelentése alapján a koronavírussal fertőzött személyek, akik otthoni elkülönítőben, karanténban vannak vagy kórházban ápolják őket, szavazhatnak a helyhatósági választásokon a mobil urna igénylésével. Csak az intenzív osztályokon áp'Olt' betegek nem élhetnek szavazati jogukkal. A mobil urna igényléséhez továbbítani kell egy kérést a szavazókörzet elnökéhez, melyhez csatolod az egészségi állapotodat igazoló dokumentumokat.",
-    case3_title:
-      'El tudsz jutni a szavazóhelyiségbe, de segítségre van szükséged a pecsét használatához',
-    case3_text:
-      'Ha mozgássérült vagy fogyatékkal élő személy vagy, és ezen okból a szavazókörzetben nem tudod aláírni a választási listát és lepecsételni a szavazólapot, elkísérhet a szavazófülkébe egy általad kiválasztott kísérő. Ez nem lehet a szavazókörzet akkreditált beosztottja, a választási iroda tagja vagy versenyben lévő jelölt.',
-  },
   back_button: 'Vissza',
   back_to_start_button: 'Vissza az elejére',
   introduction:
-    'P2020. december 6-án parlamenti választások vannak Romániában. Azok a román állampolgárok, akiknek lakcímük vagy tartózkodási helyük van külföldön, szavazóirodában vagy levélben szavazhatnak. Hogy megtudd, milyen feltételek között tudsz majd szavazni, olvasd el az alábbi útmutatót.',
+    '2020. december 6-án parlamenti választások vannak Romániában. Azok a román állampolgárok, akiknek lakcímük vagy tartózkodási helyük van külföldön, szavazóirodában vagy levélben szavazhatnak. Hogy megtudd, milyen feltételek között tudsz majd szavazni, olvasd el az alábbi útmutatót.',
   about: {
     title: 'A projektről',
     text: `<p>A Vot Diaspora applikáció a Cod For Romania önkéntesei által fejlesztett választási ökoszisztéma része, a második olyan alkalmazás, amit a hazánkban rendezendő választási folyamat megkönnyítésére hoztunk létre. A Monitorizare Vot mobil- és webapplikáció a választásokon felügyelő független megfigyelők számára lett fejlesztve, ez az első választás-megfigyelésre fejlesztett applikáció Romániában, és globális szinten a leginkább használt ilyen típusú alkalmazás. 2016-ban jelent meg, és az elmúlt négy évben az összes romániai választás alkalmával használták, de Lengyelország is átvette az első függetlenek által megfigyelt választásokon. A választási ökoszisztéma második applikációja a Vot Romania webapplikáció, amely az országban élő állampolgárok számára lett fejlesztve annak érdekében, hogy segítséget nyújtson nekik a választási folyamatban: megmutassa, hol tudnak szavazni, milyen iratokra lesz szükségük és milyen procedúrán kell átesniük. A harmadik megoldás a Rezultate Vot – a 2019-ben, az európai parlamenti választások alkalmával létrehozott weboldal valós időben mutatja a választási részvételt és a választások eredményeit. 2020-tól romániai premierként ezen a platformon megtalálható lesz az 1989 decembere óta megtartott összes romániai választás eredménye és egyéb kimutatások. Így az oldalról nem csak a választások eredményeit lehet gyorsan és könnyen megtudni, az adatok összehasonlítására is ez a legalkalmasabb eszköz.</p><p>Az ökoszisztéma összes applikációját a Code For Romania önkéntesei fejlesztették pro bono tevékenységként a <a href="https://civiclabs.ro/ro" rel="noreferrer" target="_blank">Civic Labs</a> program keretében. Ez egy azon programok közül, mely keretében az egyesület civil technológiát (angolul: civic tehnology) alkalmaz a romániai társadalom fejlesztésére hat kulcsfontosságú területen: tanügy, egészségügy, környezetvédelem, hátrányos helyzetű csoportok, átláthatóság és civil részvétel. </p><p > "A Code For Romania non profit szervezet, mely önkéntes alapon fejleszt digitális megoldásokat annak érdekében, hogy elősegítse a romániai társadalmi problémák megoldását. A 2016-ban alakult Code For Romania jelenleg több mint 1700, az IT-szektorból jövő önkéntest számlál, akik több tucat web- és mobilapplikációt fejlesztettek Romániának. Ilyenek például a Covid-19 ökoszisztéma, a: <a href="https://stirioficiale.ro">știrioficiale.ro</a>, <a href="https://rohelp.ro">rohelp.ro</a>, <a href="https://redirectioneaza.ro">redirectioneaza.ro</a> és másokat..</p>`,
