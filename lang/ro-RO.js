@@ -154,19 +154,6 @@ export default {
     assignedStreetsLabel:
       'La această secție pot vota persoanele care locuiesc pe următoarele străzi:',
   },
-  exceptional_cases: {
-    case1_title:
-      'Ești imobilizat la domiciliu sau în unități speciale (ex: spital)',
-    case1_text: `<p>Dacă nu te poți deplasa la secția de votare pentru că ești bolnav sau invalid, poți solicita urna mobilă. Pentru acest lucru trebuie să faci o cerere, împreună cu actele din care rezultă starea de sănătate și să o transmiți președintelui biroului electoral al secției de votare.</p><p>Dacă ești reținut, pe baza unui mandat de arestare, sub măsura preventivă a arestului la domiciliu, sau execuți o pedeapsă privativă de libertate și nu ți-ai pierdut drepturile electorale poți solicita urna mobilă conform cu procedurile stabilite pentru acest caz de către Biroul Electoral Central.</p>`,
-    case2_title:
-      'Ești diagnosticat cu Covid și te afli în carantină sau internat?',
-    case2_text:
-      'Conform declarațiilor președintelui AEP, persoanele infectate cu noul coronavirus, care se află în carantină, izolare sau internate în spital vor putea vota la alegerile locale solicitând urna mobilă. Doar pacienții internați la terapie intensivă vor avea condiții speciale. Pentru a solicita urna mobilă trebuie să faci o cerere, împreună cu actele din care rezultă starea de sănătate și să o transmiți președintelui biroului electoral al secției de votare.',
-    case3_title:
-      'Poți ajunge în secția de votare dar ai nevoie de ajutor pentru a aplica ștampila',
-    case3_text:
-      'Dacă ești un cetățean cu dizabilități și te prezinți în secție și nu poți semna pe lista electorală din motive de invaliditate sau nu poți aplica ștampila pe buletin și președintele secției de votare constată acest lucru, poți fi însoțit în cabină de un însoțitor pe care îl alegi tu și care nu este din rândul persoanelor acreditate, al membrilor biroului electoral al secţiei de votare sau al candidaţilor.',
-  },
   back_button: 'Înapoi',
   back_to_start_button: 'Înapoi la început',
   introduction: `Pe data de 6 decembrie 2020 au loc alegerile parlamentare din România. Cetățenii din diaspora vor putea vota atât pe 5 cât și pe 6 decembrie, în oricare din secțiile de votare înființate în afara României. Cetățenii români cu drept de vot care au domiciliul sau reședința în străinătate pot vota la secție sau prin corespondență. Pentru a afla care sunt pașii pe care trebuie să îi parcurgeți pentru a putea alege în cadrul acestui tur electoral, consultați ghidul de mai jos. Dacă locuiești în România, află ce ai de făcut pe <a href="https://votromania.ro">Vot România</a>.`,

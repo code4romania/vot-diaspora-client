@@ -173,25 +173,6 @@ station or in a row outside the polling station waiting to enter the polling sta
     assignedStreetsLabel:
       'People who reside on the following streets can vote at this polling station:',
   },
-  exceptional_cases: {
-    case1_title:
-      'You are stuck at home or in other locations (e.g. the hospital)',
-    case1_text: `<p>If you cannot physically go to the polling station due to illness or invalidity,
-you can request a mobile ballot box. For this to happen you have to make a written request for
-one and submit it, along with documents certifying your health status to the president of the
-polling station where you would normally cast your ballot.</p><p>If you are detained through an
-arrest warrant, are under house arrest or are serving a prison sentence that still allows you full
-voting rights you can request a mobile ballot box, in concordance with the procedures
-established by the Central Electoral Bureau.</p>`,
-    case2_title:
-      'You have been diagnosed with COVID-19 and are in quarantine or under isolation',
-    case2_text:
-      'According to a statement by the AEP (Permanent Electoral Authority) president, persons infected with the novel coronavirus who are in quarantine, isolation or hospitalized will be able to vote in local elections by requesting a mobile ballot box. Only patients in intensive care will have special voting conditions. To request a mobile ballot box you have to make a written request for one and submit it, along with documents certifying your health status to the president of the polling station where you would normally cast your ballot.',
-    case3_title:
-      'You are unable to sign or apply the rubber stamp at the polling station due to disability',
-    case3_text:
-      'Citizens with disability who arrive at the polling place and cannot sign the electoral list from reasons of impairment or cannot correctly apply the rubber voting stamp on the ballot may, upon confirmation of the impairment from the polling station president, be accompanied by a person of their own choosing as long as that person is not one of the polling station committee members, observers or one of the candidates.',
-  },
   back_button: 'Back',
   back_to_start_button: 'Back to start',
   introduction:

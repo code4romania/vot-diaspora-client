@@ -148,19 +148,6 @@ export default {
     assignedStreetsLabel:
       'Ebben a szavazókörzetben azok a személyek tudnak szavazni, akik a következő utcákon laknak:',
   },
-  exceptional_cases: {
-    case1_title:
-      'Ágyhoz kötött beteg, mozgásképtelen vagy, speciális ellátó intézetben ápolnak (pl: kórház)',
-    case1_text: `Ha nem tudsz elmenni szavazni, mivel beteg vagy mozgásképtelen vagy, kérheted a mobil urnát. Ehhez kéréssel kell fordulnod a szavazókörzet elnökéhez, melyhez csatolod az egészségi állapotodat igazoló dokumentumokat.`,
-    case2_title:
-      'COVID 19-el diagnosztizáltak, karanténba helyeztek vagy kórházban ápolnak?',
-    case2_text:
-      "Az ÁVH-elnök kijelentése alapján a koronavírussal fertőzött személyek, akik otthoni elkülönítőben, karanténban vannak vagy kórházban ápolják őket, szavazhatnak a helyhatósági választásokon a mobil urna igénylésével. Csak az intenzív osztályokon áp'Olt' betegek nem élhetnek szavazati jogukkal. A mobil urna igényléséhez továbbítani kell egy kérést a szavazókörzet elnökéhez, melyhez csatolod az egészségi állapotodat igazoló dokumentumokat.",
-    case3_title:
-      'El tudsz jutni a szavazóhelyiségbe, de segítségre van szükséged a pecsét használatához',
-    case3_text:
-      'Ha mozgássérült vagy fogyatékkal élő személy vagy, és ezen okból a szavazókörzetben nem tudod aláírni a választási listát és lepecsételni a szavazólapot, elkísérhet a szavazófülkébe egy általad kiválasztott kísérő. Ez nem lehet a szavazókörzet akkreditált beosztottja, a választási iroda tagja vagy versenyben lévő jelölt.',
-  },
   back_button: 'Vissza',
   back_to_start_button: 'Vissza az elejére',
   introduction:
