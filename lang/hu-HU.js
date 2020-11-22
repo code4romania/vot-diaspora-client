@@ -26,9 +26,9 @@ export default {
       <li>A második boríték, a „belső boríték”, amely tartalmaz egy tartó borítékot, amelynek két matricája van, benne a „VOTAT” felirat, és egy címke, amelyet a belső boríték lezárásához használ.</li>
     </ul>
 	<h4>Fontos!</h4>
-    <p>Ha hiányzik a szavazólap, vagy ha megsérült, akkor te is kinyomtathatod (nem szükséges a teljes szavazólapot kinyomtatni, csak az az oldal, amelyen látszik a szavazatod - a "VOTAT" feliratú matrica az ami  érvénzesnek minösitti a szavazatot. A két szavazólapot letöltheted a <a href="https://votstrăinătate.ro">votstrăinătate.ro</a> linkről</p>
-    <p>Bármilyen probléma esetén fordulj az Állandó Választási Hatósághoz a következő címen: <a href="mailto:contact@votstrăinătate.ro">contact@votstrăinătate.ro</a>.</p>
-	
+    <p>Ha hiányzik a szavazólap, vagy ha megsérült, akkor te is kinyomtathatod (nem szükséges a teljes szavazólapot kinyomtatni, csak az az oldal, amelyen látszik a szavazatod - a "VOTAT" feliratú matrica az ami  érvénzesnek minösitti a szavazatot. A két szavazólapot letöltheted a <a href="https://votstrainatate.ro">votstrainatate.ro</a> linkről</p>
+    <p>Bármilyen probléma esetén fordulj az Állandó Választási Hatósághoz a következő címen: <a href="mailto:contact@votstrainatate.ro">contact@votstrainatate.ro</a>.</p>
+
 	<h4>2. lépés: Szavazás</h4>
     <p>A szavazáshoz:</p>
     <ol>
@@ -36,7 +36,7 @@ export default {
       <li>Kiválasztod a szeretett jelöltet, és melléjük ragasytod a "VOTAT" matricákat</li>
       <li>Helyezd be a két szavazólapot a belső borítékba, és zárd le a megfelelő címkével.(Vizuális képmutatás <a href="https://votstrainatate.ro/Uploads/MACHETA_INSTRUCTIUNI_VC.pdf">itt</a>)</li>
     </ol>
-	
+
 	<h4>3. lépés: A szavazás elküldése</h4>
     <p>Miután lezártad a belső borítékot, töltsd ki a választói bizonyítvány a dátummal és az aláírással. Utánna:</p>
     <ol>
@@ -45,7 +45,7 @@ export default {
       <li>A postai uton történő szavazáshoz a boritték hátuljánra ragasztja a választási iroda címével ellátott matricát is</li>
       <li>Tedd fel a borítékot bármely postahivatalba vagy postaládába ingyen. Vagy opcionálisan a borítékot gyorsfutárral is elküldheted saját költségedre.</li>
     </ol>
-	
+
 	<h4>Jegyzet:</h4>
     <p>Ha nem szeretnéd a borítékot az országban, közvetlenül a választási irodához postai úton küldeni, küld el egy gyorsfutárral, vagy vidd el személzesen a Románia diplomáciai vagy konzuli képviselethey abban az országban, ahol tartózkodol. Fontos, hogy elérje úti célját<b>2020. december 3-ig</b>.</p>`,
     label11: `2020-ban iratkoztam be a Választói Registerbe`,
@@ -58,21 +58,21 @@ export default {
 		<li>ideiglenes egyszerű útlevél a lakóhely szerinti ország megadasaval</li>
 		<li>egyszerű elektronikus útlevél a lakóhely szerinti ország megadasaval</li>
 	</ul>
-	
+
 	<h4>A program a következő:</h4>
 	<p>A külföldön történő szavazás két napon keresztül zajlik.</p>
   <ul>
     <li> December 5., szombat, helyi idő szerint 7.00 és 21.00 között</li>
     <li> December 6., vasárnap, helyi idő szerint 7.00 és 21.00 óra között, azzal a lehetőséggel, hogy a szavazást meghosszabbíthatják helyi idő szerint 23.59-ig, ha a szavazóhelyiségben vagy a szavazóhelyiségen kívül még sorban vannak szavazók </li>
   </ul>
-	
+
 	<h4>Fontos</h4>
     <ul>
 		  <li> Ha hiba miatt nem szerepelsz az állandó listákon, vagy nem erősítetted meg regisztrációdat, akkor a kiegészitő listákon tudsz majd szavazni.</li>
 		  <li>Ha már nem jelenhetsz meg a választóhelyiségben a Választási Regiszterbe bejegyzéskor bejelentett helyen, akkor kiegészitő listákon szavazhatsz, ha bebizonyítod, hogy lakóhelyed vagy tartózkodási helyed külföldön van.</li>
 	  </ul>
 	`,
-    label112: 'Külföldön élek',
+    label112: 'Külföldi tartózkodási engedélyem van',
     label1120: `<p>Ha regisztráltál a Választási Regiszterben, és külföldön laksz, akkor a külhoni állampolgárok állandó listáin szavazhatsz a nyilvántartásba vételi kérelemben bejelentett helységen.</p>
 	<h4>Szükséges dokumentumok:</h4>
     <p>A szavazáshoz a következő két dokumentumra van szükség:</p>
@@ -80,7 +80,7 @@ export default {
       <li>Egy <b>személyi igazolvány</b>: személyi igazolvány, elektronikus személyi igazolvány, ideiglenes személyi igazolvány, személyi igazolvány, diplomáciai útlevél, elektronikus diplomáciai útlevél, szolgálati útlevél, elektronikus szolgálati útlevél, egyszerű útlevél, egyszerű elektronikus útlevél vagy egyszerű ideiglenes útlevél.</li>
       <li>Egy <b>dokumentum</b> amit a külföldi állam hivatalosan kiadot <b>a lakóhely létesítéséről</b>. Megnézheted a <a href="https://www.mae.ro/sites/default/files/file/anexa_omae_1627_20191_cu_anexe.pdf">a külföldi tartózkodást igazoló dokumentumok listája erre a linkre kattintva</a>. Az elfogadott dokumentumok országonként eltérnek.</li>
     </ul>
-	
+
 	<h4>A program a következő:</h4>
 	<p>A külföldön történő szavazás két napon keresztül zajlik.</p>
     <ul>
@@ -93,9 +93,9 @@ export default {
 		  <li>Ha már nem jelenhetsz meg a választóhelyiségben a Választási Regiszterbe bejegyzéskor bejelentett helyen, akkor kiegészitő listákon szavazhatsz, ha bebizonyítod, hogy lakóhelyed vagy tartózkodási helyed külföldön van.</li>
 	</ul>`,
     label12: `Nem 2020-ban iratkoztam be a Választói Registerbe`,
-    label121: `Külföldön élek`,
+    label121: `Külföldi lakcímem van`,
     label1210: `<p> Ha nem regisztráltál a Választási Regiszterbe, és külföldi lakóhellyel rendelkezel, akkor a kiegészitő listákon fogsz szavazni.</p>
-	
+
 	<h4>Szükséges dokumentumok:</h4>
 	<p>A szavazáshoz a következő személyazonosító okmányok egyikével kell rendelkezned:</p>
 	<ul>
@@ -103,24 +103,24 @@ export default {
 		<li>ideiglenes egyszerű útlevél a lakóhely szerinti ország megadasaval</li>
 		<li>egyszerű elektronikus útlevél a lakóhely szerinti ország megadasaval</li>
 	</ul>
-	
+
 	<h4>A program a következő:</h4>
 	<p>A külföldön történő szavazás két napon keresztül zajlik.</p>
     <ul>
 		  <li> December 5., szombat, helyi idő szerint 7.00 és 21.00 között</li>
 		  <li> December 6., vasárnap, helyi idő szerint 7.00 és 21.00 óra között, azzal a lehetőséggel, hogy a szavazást meghosszabbíthatják helyi idő szerint 23.59-ig, ha a szavazóhelyiségben vagy a szavazóhelyiségen kívül még sorban vannak szavazók</li>
-    </ul>	
+    </ul>
 	`,
-    label122: 'Külföldön lakom',
+    label122: 'Külföldi tartózkodási engedélyem van',
     label1220: `<p>Ha regisztráltál a Választási Regiszterben, és külföldön laksz, akkor a kiegésztő listákon fogsz szavazni</p>
-	
+
 	<h4>Szükséges dokumentumok:</h4>
     <p>A szavazáshoz a következő két dokumentumra van szükség:</p>
     <ul>
       <li>Egy <b>személyi igazolvány</b>: személyi igazolvány, elektronikus személyi igazolvány, ideiglenes személyi igazolvány, személyi igazolvány, diplomáciai útlevél, elektronikus diplomáciai útlevél, szolgálati útlevél, elektronikus szolgálati útlevél, egyszerű útlevél, egyszerű elektronikus útlevél vagy egyszerű ideiglenes útlevél.</li>
       <li>Egy <b>document</b> amit a külföldi állam hivatalosan kiadot <b>a lakóhely létesítéséről</b>. Megnézheted a <a href="https://www.mae.ro/sites/default/files/file/anexa_omae_1627_20191_cu_anexe.pdf">a külföldi tartózkodást igazoló dokumentumok listája erre a linkre kattintva</a>. Az elfogadott dokumentumok országonként eltérnek.</li>
     </ul>
-	
+
 	<h4>A program a következő:</h4>
 	<p>A külföldön történő szavazás két napon keresztül zajlik.</p>
     <ul>
