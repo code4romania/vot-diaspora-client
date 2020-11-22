@@ -91,6 +91,7 @@ export default {
       pollingStationsWithAddress: [],
       platform: null,
       hereMap: null,
+      hereUI: null,
       apikey: 'Um0LhLV4phI2QpCYrBCwmWgvdjmH6NFvd709PhMqsQg',
       pollingStationService: new PollingStationMatcherService(),
     }
@@ -141,7 +142,17 @@ export default {
         ? this.pollingStationsWithAddress
         : this.pollingStations
       stations.forEach((c) => {
-        this.addMarker(c.latitude, c.longitude, pollingStationMarker)
+        const sectionsOnThisAddress = this.pollingStations
+          .filter((poolStation) => poolStation.address === c.address)
+          .map((filtereStation) => filtereStation.pollingStationNumber)
+        this.addMarker(
+          c.latitude,
+          c.longitude,
+          pollingStationMarker,
+          sectionsOnThisAddress,
+          c.address,
+          c.county
+        )
         this.hereMap.setCenter({
           lat: c.latitude,
           lng: c.longitude,
@@ -220,18 +231,40 @@ export default {
         this.showErrorMessage = true
       }
     },
-    addMarker(lat, lng, iconPath) {
+    addMarker(lat, lng, iconPath, pollingStationNumber, address, county) {
       const H = window.H
-      const icon = new H.map.Icon(iconPath)
-      this.hereMap.addObject(
-        new H.map.Marker(
-          {
-            lat,
-            lng,
-          },
-          { icon }
-        )
+
+      const group = new H.map.Group()
+
+      group.addEventListener(
+        'tap',
+        (evt) => {
+          const bubble = new H.ui.InfoBubble(evt.target.getGeometry(), {
+            content: evt.target.getData(),
+          })
+          this.hereUI.addBubble(bubble)
+        },
+        false
       )
+      const icon = new H.map.Icon(iconPath)
+      const marker = new H.map.Marker(
+        {
+          lat,
+          lng,
+        },
+        { icon }
+      )
+      marker.setData(
+        `<div class="card border-0"><h6 class="card-header bg-white">${
+          pollingStationNumber ? pollingStationNumber.join() : ''
+        } ${county}</h6><div class="card-body">
+      <div class="d-flex justify-content-between align-items-center">
+        <p class="m-0"><span class="bg-warning px-1 mr-1">Adresa:</span>${address}</p>
+      </div>
+    </div></div>`
+      )
+      group.addObject(marker)
+      this.hereMap.addObject(group)
     },
     clearMarkers() {
       this.hereMap.removeObjects(this.hereMap.getObjects())
@@ -260,8 +293,7 @@ export default {
       )
       behavior.disable(H.mapevents.Behavior.WHEELZOOM)
       // add UI
-      H.ui.UI.createDefault(this.hereMap, maptypes)
-      // End rendering the initial map
+      this.hereUI = H.ui.UI.createDefault(this.hereMap, maptypes)
     },
   },
 }
