@@ -30,7 +30,7 @@ restrictions on <a href="https://www.posta-romana.ro/a1309/stiri/lista-tarilor-c
        <li>A second envelope, the "inner envelope" that contains a support envelope that has two "VOTE" stickers on the inside and a label that you will use to seal this inner envelope</li>
     </ul>
     <h4>Important!</h4>
-    <p>If you are  missing the ballots or if they have been damaged, you can print them yourself (it is not necessary to print the entire ballot, just the page with your voting preference is enough - if it has the "VOTED" sticker it will be considered a valid vote). You can download the two newsletters from the <a href="www.votstrainatate.ro"> votstrăinatate.ro </a> website.</p>
+    <p>If you are  missing the ballots or if they have been damaged, you can print them yourself (it is not necessary to print the entire ballot, just the page with your voting preference is enough - if it has the "VOTED" sticker it will be considered a valid vote). You can download the two newsletters from the <a href="https://www.votstrainatate.ro">votstrăinatate.ro</a> website.</p>
      <p>For any problems you can contact the Permanent Electoral Authority at <a href="mailto:contact@votstrăinatate.ro">contact@votstrainatate.ro</a>.</p>
     <h4>Step 2: Voting</h4>
     <p>To vote you must:</p>
@@ -50,10 +50,8 @@ restrictions on <a href="https://www.posta-romana.ro/a1309/stiri/lista-tarilor-c
     <h4>Note:</h4>
     <p>If for any reason you do not want to mail the envelope to Romania, directly to the electoral office for mail-in voting, you can send it by courier or deposit it at the nearest Romanian diplomatic mission or consular office in your country of residence. It is important for the envelope to reach itsdestination <b>by December 3, 2020</b>.</p>`,
     label11: 'I was registered in the Electoral Register in 2020',
-    label111: 'I live abroad',
-    label1110: `<p>If you have registered in the Electoral Register and you are domiciled abroad
-then you will vote on the permanent list at the polling station where your municipality is allotted.
-</p>
+    label111: ' (domicile)',
+    label1110: `<p>If you have registered in the Electoral Register and you are domiciled abroad then you will vote on the permanent list at the polling station where your municipality is allotted.</p>
     <h4>Documents required:</h4>
     <p>In order to be able to vote, you must have one of the following identity documents:</p>
     <ul>
@@ -71,17 +69,12 @@ station or in a row outside the polling station waiting to enter the polling sta
     </ul>
     <h4>Important</h4>
     <ul>
-      <li>If you are not on the permanent list due to an error or because you have not confirmed
-your registration, you will be still able to vote on additional lists.</li>
-      <li>If you can no longer go to the polling station in the locality stated as where you live
-when you registered, you will still be able to vote on additional lists if you prove that you have
-your domicile or residence abroad.</li>
+      <li>If you are not on the permanent list due to an error or because you have not confirmed your registration, you will be still able to vote on additional lists.</li>
+      <li>If you can no longer go to the polling station in the municipality stated as the place where you live when you registered, you will still be able to vote on additional lists if you prove that you have your domicile or residence abroad.</li>
     </ul>
     `,
-    label112: 'I reside abroad',
-    label1120: `<p>If you have registered in the Electoral Register and you reside abroad then
-you will vote on the permanent list dedicated to the diaspora, at the station then you will vote on
-the permanent list at the polling station where your municipality is allotted.</p>
+    label112: 'I reside abroad (residence)',
+    label1120: `<p>If you have registered in the Electoral Register and you reside abroad then you will vote on the permanent lists at the polling station where your municipality is allotted.</p>
 <h4>Required Documents:</h4>
     <p>In order to vote you need the following two documents:</p>
     <ul>
@@ -112,7 +105,7 @@ your domicile or residence abroad.</li>
     </ul>
     `,
     label12: 'I did not register in the Electoral Register in 2020',
-    label121: 'I live abroad',
+    label121: 'I live abroad (domicile)',
     label1210: `<p>If you have not registered in the Electoral Register and are domiciled abroad
 then you will vote on additional lists.</p>
     <h4>Documents required:</h4>
@@ -130,7 +123,7 @@ then you will vote on additional lists.</p>
 possibility of extending the voting until 23.59 local time if there are still voters in the polling
 station or in a row outside the polling station to enter the polling station of vote</li>
     </ul>`,
-    label122: 'I reside abroad',
+    label122: 'I reside abroad (residence)',
     label1220: `<p>If you have not registered in the Electoral Register and reside abroad then
 you will vote on additional lists.
     <h4>Documents required:</h4>
@@ -157,7 +150,7 @@ station or in a row outside the polling station waiting to enter the polling sta
   pollingStationSearch: {
     question: 'Where do you live?',
     callToAction:
-      '<p>Look for the town or city where you live to find your closest polling station. Any map search on this platform incurs extra costs for us. If Vot Diaspora is of help to you consider <a target="_blank" rel="noopener" href="https://code4.ro/ro/doneaza/">donating</a> if you can to Code for Romania, the NGo who developed this site completely pro bono.</p>',
+      '<p>Look for the town or city where you live to find your closest polling station. Any map search on this platform incurs extra costs for us. If Vot Diaspora is of help to you consider <a target="_blank" rel="noopener" href="https://code4.ro/ro/doneaza/">donating</a> if you can to Code for Romania, the NGo that developed this site completely pro bono.</p>',
     searchPlaceholder:
       'Search for your address to find the polling station where you are registered to vote',
     addressNotFound:
@@ -176,7 +169,7 @@ station or in a row outside the polling station waiting to enter the polling sta
   back_button: 'Back',
   back_to_start_button: 'Back to start',
   introduction:
-    'On the 6th of December 2020 there will be parliamentary elections in Romania. Romanian citizens living abroad can vote at polling stations or through mail-in ballots. To find out what the required steps are so tat you can cast a ballot in the elections use the guide below.',
+    'On the 6th of December 2020  parliamentary elections will be held  in Romania. Romanian citizens living abroad can vote at polling stations or through mail-in ballots. To find out what the required steps are so that you can cast a ballot in the elections use the guide below.',
   about: {
     title: 'About the Project',
     text: `<p>Vot Diaspora is a platform that simplifies the electoral guide for the 6th of December elections for citizens. Vot Diaspora is Code for Romania's first ever project, starting with 2016, in order to facilitate access to electoral information for Romanians abroad and foster a more transparent process. 25% of all voters abroad used the app for the 2019 European Parliament elections and over 185.000 voters used it at the 2019 presidential elections.</p>  <p>By accessing votdiaspora.ro, all citizens can check the required documents for voting, the correct procedures for voting either at polling stations or via mail-in ballot and their alotted polling station and the closest route. The Website will be available and updated for each new round of elections. All content available on the Vot Diaspora platform is done in collaboration with Observatorul Electoral electoral experts. </p><p>Vot Diaspora is part of Code for Romania's electoral ecosystem, and is the fourth app dedicated to the electoral process in our country. Monitorizare Vot is the web and mobile app dedicated to independent electoral observers, the first such app in Romania and the most used app at a global level. Launched in 2016, this has been used for every election or referendum since 2016 and has been used in Poland in 2018 for the first monitored elections in the country. The second app in the ecosystem is Vot Romania, a web app designed for Romanians living in the country, showing them where they can vote and what the correct documents and procedures for voting are. The third app is Rezultate Vot, website launched in 2019 to show real time participation and vote count data that has, since 2020 become a repository of all post-1990 electoral data as well as other features, turning it into a good comparative data tool as well. </p><p> All election related apps are developed by Code for Romania volunteers as part of our <a href="https://civiclabs.ro/en” rel="noreferrer" target="_blank">Civic Labs</a>, program, one of the programs through which we develop civic tech solutions for issues in 6 key areas - education,  health, environment, vulnerable groups, transparency and civic engagement. </p><p > Code for Romania is a non-profit organization developing digital solutions for social problems on a pro-bono basis. Founded in 2016 Code for Romania has over 1700 volunteers from IT fields who have developed dozens of web and mobile apps, including ROmania's Covid-19 information ecosystem, <a href="https://stirioficiale.ro">știrioficiale.ro</a>, <a href="https://rohelp.ro">rohelp.ro</a>, <a href="https://redirectioneaza.ro">redirectioneaza.ro</a> și altele..</p>`,
@@ -185,7 +178,7 @@ station or in a row outside the polling station waiting to enter the polling sta
     p3: 'in partnership with:',
   },
   info_text:
-    'On the 6th of December 2020 there will be parliamentary elections in Romania. Romanian citizens living abroad can vote at polling stations or through mail-in ballots. To find out what the required steps are so tat you can cast a ballot in the elections use the guide below',
+    'On the 6th of December 2020  parliamentary elections will be held  in Romania. Romanian citizens living abroad can vote at polling stations or through mail-in ballots. To find out what the required steps are so that you can cast a ballot in the elections use the guide below',
   map_text: `<p class=“font-weight-bold m-0”>There will soon be a map and a search bari right here, helping you identify your polling station.<br/> If this website was helpful please <a
     href=“https://code4.ro/ro/doneaza/”
     target=“_blank”
@@ -195,7 +188,7 @@ station or in a row outside the polling station waiting to enter the polling sta
   social_share: {
     title: 'Send this to your friends',
     text:
-      'Share this on social media to help as many romanians as possible know where they can vote at the 2020 parliamentary elections, what documents they need and other useful advice.',
+      'Share this on social media to help as many Romanians as possible know where they can vote at the 2020 parliamentary elections, what documents they need and other useful advice.',
   },
   donate_card: {
     title: 'Support Us',
