@@ -135,8 +135,6 @@ export default {
       'Keresd ki a települést, ahol élsz, hogy megtudd, melyek a legközelebbi szavazóirodák. Bármely keresés a platformon található térképen extra költséget jelent számunkra. Ha segít a Vot Diaspora, ajánlj fel egy bármilyen kis <a target="_blank" rel="noopener" href="https://code4.ro/ro/doneaza/">adományt</a> a Code for Romaniának, mely pro bono fejlesztette a felületet. </p>',
     searchPlaceholder:
       'Keresd ki a lakcímedet, hogy megtudd, melyik szavazókörzetbe vagy beosztva',
-    addressNotFound:
-      'Nem talàltuk meg a megadott utcához tartozó szavazókörzetet. Lejjebb láthatod a megadott címhez tartozó legközelebbi szavazókörzeteket és a hozzá tartozó utcákat, így azonosíthatod, hogy hol tudsz szavazni.',
     hasPermanentResidence:
       'A keresett cím a következő szavazókörzethez van beosztva:',
   },
