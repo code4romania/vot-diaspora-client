@@ -13,34 +13,9 @@
     <div v-show="showErrorMessage" class="bg-danger p-2 text-center text-white">
       Ne pare rau, a aparut o eroare.
     </div>
-    <div v-if="pollingStationsWithAddress.length">
+    <div v-if="hasFetchedPollingStations && pollingStations.length">
       <p class="font-weight-bold my-4">
         {{ $t('pollingStationSearch.hasPermanentResidence') }}
-      </p>
-      <div
-        class="row row-cols-1"
-        :class="pollingStationsWithAddress.length > 1 ? 'row-cols-md-2' : ''"
-      >
-        <div
-          v-for="pollingStation of pollingStationsWithAddress"
-          :key="pollingStation.id"
-          class="col mb-4"
-        >
-          <PollingStationCard
-            :polling-station-number="pollingStation.pollingStationNumber"
-            :county="pollingStation.county"
-            :address="pollingStation.address"
-            :distance="pollingStation.distance"
-            :assigned-addresses="pollingStation.assignedAddresses"
-          />
-        </div>
-      </div>
-    </div>
-    <div
-      v-if="pollingStationsWithAddress.length === 0 && pollingStations.length"
-    >
-      <p class="font-weight-bold my-4">
-        {{ $t('pollingStationSearch.addressNotFound') }}
       </p>
       <div
         class="row row-cols-1"
@@ -88,7 +63,7 @@ export default {
       address: '',
       addressList: [],
       pollingStations: [],
-      pollingStationsWithAddress: [],
+      hasFetchedPollingStations: false,
       platform: null,
       hereMap: null,
       hereUI: null,
@@ -122,8 +97,6 @@ export default {
         latitude,
         longitude,
       } = addressDetail.response.view[0].result[0].location.displayPosition
-      const selectedGeocodeAddress =
-        addressDetail.response.view[0].result[0].location.address
       this.addMarker(latitude, longitude, houseMarker)
 
       const poolingResults = await this.findPoolingStation(latitude, longitude)
@@ -134,14 +107,8 @@ export default {
           })
         )
       )
-      this.pollingStationsWithAddress = this.pollingStationService.findPollingStation(
-        this.pollingStations,
-        selectedGeocodeAddress
-      )
-      const stations = this.pollingStationsWithAddress.length
-        ? this.pollingStationsWithAddress
-        : this.pollingStations
-      stations.forEach((c) => {
+
+      this.pollingStations.forEach((c) => {
         const sectionsOnThisAddress = this.pollingStations
           .filter((poolStation) => poolStation.address === c.address)
           .map((filtereStation) => filtereStation.pollingStationNumber)
@@ -158,7 +125,7 @@ export default {
           lng: c.longitude,
         })
       })
-      if (stations.length > 1) {
+      if (this.pollingStations.length > 1) {
         this.hereMap.setCenter({
           lat: latitude,
           lng: longitude,
@@ -167,7 +134,7 @@ export default {
         let minDistance = 0
         let closestLatitude = 0
         let closestLongitude = 0
-        stations.forEach((station) => {
+        this.pollingStations.forEach((station) => {
           const distanceLatitude = station.latitude - latitude
           const distanceLongitude = station.longitude - longitude
           const distance = Math.sqrt(
@@ -226,6 +193,7 @@ export default {
         const result = await fetch(
           `${process.env.NUXT_ENV_API_URL}/polling-station/near-me?latitude=${latitude}&longitude=${longitude}`
         )
+        this.hasFetchedPollingStations = true
         return await result.json()
       } catch (error) {
         this.showErrorMessage = true

@@ -153,8 +153,6 @@ station or in a row outside the polling station waiting to enter the polling sta
       '<p>Look for the town or city where you live to find your closest polling station. Any map search on this platform incurs extra costs for us. If Vot Diaspora is of help to you consider <a target="_blank" rel="noopener" href="https://code4.ro/ro/doneaza/">donating</a> if you can to Code for Romania, the NGo that developed this site completely pro bono.</p>',
     searchPlaceholder:
       'Search for your address to find the polling station where you are registered to vote',
-    addressNotFound:
-      'We could not find the polling station where voters on your street are registered to vote. Here are the closest polling stations and their allotted streets, so you more easily identify the correct polling station.',
     hasPermanentResidence:
       'The address  you are looking for is registered at the following polling station:',
   },
