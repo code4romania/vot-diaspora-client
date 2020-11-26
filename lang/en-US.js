@@ -3,7 +3,7 @@ export default {
   nav_about: 'About',
   guide_title: 'Please select the option below most suited',
   guide_text:
-    'For the parliamentary elections only Romanian citizens living abroad can vote. Find out what you have to do to be able vote for the December 6th 2020 Elections in the country where you are currently residing.',
+    'For the parliamentary elections only Romanian citizens living abroad can vote. Find out what you have to do to be able vote for the December 5th and 6th 2020 Elections in the country where you are currently residing.',
   votersGuide: {
     callToAction: 'Start by selecting one of the options below',
     label0: 'I want to vote in a precinct',

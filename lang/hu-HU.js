@@ -4,7 +4,7 @@ export default {
   guide_title:
     'Válaszd ki azt a választ, amelyik a legjobban illik a helyzetedhez',
   guide_text:
-    'A parlamenti választásokkor csak azok az állampolgárok szavazhatnak külföldről akiken lakcímük vagy tartozódási címük van ott. Tudd meg melyek a tennivalók hogy abban az országban szavazhass melyben a lakcímed vagy tartózkodási címed szól a 2020 december 6-i parlamenti választásokkor.',
+    'A parlamenti választásokkor csak azok az állampolgárok szavazhatnak külföldről akiken lakcímük vagy tartozódási címük van ott. Tudd meg melyek a tennivalók hogy abban az országban szavazhass melyben a lakcímed vagy tartózkodási címed szól a 2020 december 5. és 6. között szervezett parlamenti választásokkor.',
   votersGuide: {
     callToAction: 'Válassz egyet az alábbi opciókból',
     label0: 'Szavazóirodában szeretnék szavazni',

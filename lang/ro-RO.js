@@ -3,7 +3,7 @@ export default {
   nav_about: 'Despre',
   guide_title: 'Selectează din opțiunile de mai jos ce ți se potrivește',
   guide_text:
-    'La alegerile parlamentare își exercită dreptul de vot în afara țării doar cetățenii români cu domiciliul sau reședința în străinătate. Află ce ai de făcut pentru a putea vota în țara în care ai domiciliu sau reședința la alegerile parlamentare din 6 decembrie 2020.',
+    'La alegerile parlamentare își exercită dreptul de vot în afara țării doar cetățenii români cu domiciliul sau reședința în străinătate. Află ce ai de făcut pentru a putea vota în țara în care ai domiciliu sau reședința la alegerile parlamentare din 5 si 6 decembrie 2020.',
   votersGuide: {
     callToAction: 'Începe prin a alege una din opțiunile de mai jos',
     label0: 'Voi vota la secție',
@@ -12,9 +12,9 @@ export default {
 
     <h4>Important:</h4>
     <p>Plicul cu voturile tale trebuie să ajungă înapoi în România la Biroul Electoral pentru vot prin corespondență sau la misiunea diplomatică sau oficiul consular din țara în care te afli <b>până la data de 3 decembrie 2020</b>. Având în vedere contextul internațional generat de pandemia COVID-19 consultă fie serviciile poștale din țara în care te afli (online sau telefonic) fie verifică restricțiile de transport pe <a href="https://www.posta-romana.ro/a1309/stiri/lista-tarilor-cu-trafic-postal-restrictionat.html">site-ul Poștei Române</a>.</p>
-    
+
     <h4>Pasul 1: Verificarea documentelor</h4>
-    
+
     <p>Plicul primit (denumit în procedurile oficiale ca ”plic exterior”) trebuie să conțină:</p>
     <ul>
       <li>Un certificat de alegător</li>
@@ -30,7 +30,7 @@ export default {
     <h4>Important!</h4>
     <p>Dacă îți lipsesc buletinele de vot sau dacă au fost deteriorate, le poți printa tu însuți (nu este necesar să printezi tot buletinul de vot, este suficientă pagina pe care este opţiunea ta de vot - dacă are autocolantul cu “VOTAT” se consideră un vot valabil). Poți să descarci cele două buletine de pe site-ul <a href="https://votstrainatate.ro">votstrăinătate.ro</a>.</p>
     <p>Pentru orice problemă poți contacta Autoritatea Electorală Permanentă la adresa <a href="mailto:contact@votstrăinătate.ro">contact@votstrăinătate.ro</a>.</p>
-    
+
     <h4>Pasul 2: Votarea</h4>
     <p>Pentru a vota trebuie să:</p>
     <ol>
@@ -38,7 +38,7 @@ export default {
       <li>Identifici opțiunile de vot pe fiecare dintre cele două documente și lipești autocolantele cu ”VOTAT” în dreptul acestora</li>
       <li>Introduci cele două buletine de vot în plicul interior și îl sigilezi cu eticheta corespunzătoare. (Instrucțiuni detaliate vizual <a href="https://votstrainatate.ro/Uploads/MACHETA_INSTRUCTIUNI_VC.pdf">găsești aici</a>)</li>
     </ol>
-    
+
     <h4>Pasul 3: Transmiterea votului</h4>
     <p>După ce ai sigilat plicul interior completezi certificatul de alegător cu data și semnătura. Apoi:</p>
     <ol>
@@ -62,7 +62,7 @@ export default {
       <li>pașaportul simplu temporar, cu menționarea țării de domiciliu</li>
       <li>pașaportul simplu electronic, cu menționarea țării de domiciliu</li>
     </ul>
-    
+
     <h4>Programul este următorul:</h4>
     <p>Votul în străinătate se va desfășura pe parcursul a două zile.</p>
     <ul>
@@ -85,14 +85,14 @@ export default {
       <li>Un <b>act de identitate</b>: cartea de identitate, cartea electronică de identitate, cartea de identitate provizorie, buletinul de identitate, pașaportul diplomatic, pașaportul diplomatic electronic, pașaportul de serviciu, pașaportul de serviciu electronic, pașaportul simplu, pașaportul simplu electronic sau pașaportul simplu temporar.</li>
       <li>Un <b>document</b> oficial emis de statul străin <b>privind stabilirea reședinței</b>. Poți consulta <a href="https://www.mae.ro/sites/default/files/file/anexa_omae_1627_20191_cu_anexe.pdf">lista documentelor care atestă reședința în străinătate accesând acest link</a>. Documentele acceptate diferă de la țară la țară.</li>
     </ul>
-    
+
     <h4>Programul este următorul:</h4>
     <p>Votul în străinătate se va desfășura pe parcursul a două zile.</p>
     <ul>
       <li>Sâmbătă, 5 decembrie, între ora 7.00 (ora locală) și 21.00 (ora locală).</li>
       <li>Duminică, 6 decembrie, între ora 7.00 (ora locală) și 21.00 (ora locală) cu posibilitatea prelungirii votării până la ora locală 23.59 dacă mai sunt alegători în secție sau la rând în afara sediului secției de votare pentru a intra în localul de vot.</li>
     </ul>
-    
+
     <h4>Important</h4>
     <ul>
       <li>Dacă nu figurezi pe listă permanentă dintr-o eroare sau pentru că nu ai confirmat înscrierea vei putea vota pe liste suplimentare.</li>
@@ -127,7 +127,7 @@ export default {
       <li>Un <b>act de identitate</b>: cartea de identitate, cartea electronică de identitate, cartea de identitate provizorie, buletinul de identitate, pașaportul diplomatic, pașaportul diplomatic electronic, pașaportul de serviciu, pașaportul de serviciu electronic, pașaportul simplu, pașaportul simplu electronic sau pașaportul simplu temporar.</li>
       <li>Un <b>document</b> oficial emis de statul străin <b>privind stabilirea reședinței</b>. Poți consulta <a href="https://www.mae.ro/sites/default/files/file/anexa_omae_1627_20191_cu_anexe.pdf">lista documentelor care atestă reședința în străinătate accesând acest link</a>. Documentele acceptate diferă de la țară la țară.</li>
     </ul>
-    
+
     <h4>Programul este următorul:</h4>
     <p>Votul în străinătate se va desfășura pe parcursul a două zile.</p>
     <ul>
@@ -156,7 +156,7 @@ export default {
   },
   back_button: 'Înapoi',
   back_to_start_button: 'Înapoi la început',
-  introduction: `Pe data de 6 decembrie 2020 au loc alegerile parlamentare din România. Cetățenii din diaspora vor putea vota atât pe 5 cât și pe 6 decembrie, în oricare din secțiile de votare înființate în afara României. Cetățenii români cu drept de vot care au domiciliul sau reședința în străinătate pot vota la secție sau prin corespondență. Pentru a afla care sunt pașii pe care trebuie să îi parcurgeți pentru a putea alege în cadrul acestui tur electoral, consultați ghidul de mai jos. Dacă locuiești în România, află ce ai de făcut pe <a href="https://votromania.ro">Vot România</a>.`,
+  introduction: `Pe data de 6 decembrie 2020 au loc alegerile parlamentare din România. Cetățenii din diaspora vor putea vota atât pe 5, cât și pe 6 decembrie, în oricare din secțiile de votare înființate în afara României. Cetățenii români cu drept de vot care au domiciliul sau reședința în străinătate pot vota la secție sau prin corespondență. Pentru a afla care sunt pașii pe care trebuie să îi parcurgeți pentru a putea alege în cadrul acestui tur electoral, consultați ghidul de mai jos. Dacă locuiești în România, află ce ai de făcut pe <a href="https://votromania.ro">Vot România</a>.`,
   about: {
     title: 'Despre proiect',
     text: `<p>Vot Diaspora este o platformă care simplifică pe înțelesul cetățenilor ghidul electoral al alegerilor parlamentare, care vor avea loc la pe 6 decembrie 2020. Vot Diaspora este primul proiect pe care Code for Romania l-a construit, începând cu anul 2016,  pentru a facilita accesul cetățenilor români de peste hotare la informație și a ajuta la o mai mare transparență a procesului electoral. La alegerile europarlamentare din 2019, aplicația a fost utilizată de 25% din totalul alegătorilor din diaspora, iar la ultima rundă a alegerilor prezidențiale, 185.000 alegători s-au informat prin votdiaspora.ro </p><p>Accesând votdiaspora.ro, toți cetățenii vor putea să verifice, alături de documentele și procedurile necesare pentru a vota la secție sau prin corespondență dacă se află în afara țării și care este secția la care sunt arondați în funcție de statutul fiecăruia. Website-ul va fi disponibil cu informații actualizate la fiecare nouă rundă electorală. Conținutul prezent pe platforma Vot Diaspora este realizat în parteneriat cu experții electorali ai Observatorului Electoral.</p><p>Vot Diaspora face parte din ecosistemul electoral dezvoltat de voluntarii Code for Romania, fiind cea de-a patra aplicație dedicată procesului electoral din țara noastră. Monitorizare Vot este aplicația web și mobilă dedicată observatorilor electorali independenți - prima aplicație de monitorizare electorală din România, fiind și cea mai utilizată de acest tip la nivel global. Lansată în 2016 aceasta a fost folosită la toate rundele electorale din ultimii patru ani și a fost preluată inclusiv în Polonia, în 2018, în cadrul primelor alegeri monitorizate independent în statul polonez. A doua aplicație din ecosistem este Vot România, o aplicație web destinată românilor din țară pentru a le oferi sprijin pe durata alegerilor pentru a descoperi unde pot vota, de ce documente au nevoie sau ce proceduri trebuie să parcurgă pentru a vota. A treia soluție este Rezultate Vot, website lansat în 2019 cu ocazia alegerilor europarlamentare - o platformă care arată în timp real prezența la vot și rezultatele alegerilor. Din anul 2020 platforma va cuprinde și întregul istoric electoral post-decembrist și alte funcționalități în premieră pentru România, fiind nu doar locul unde vor putea fi aflate cel mai rapid și ușor rezultatele alegerilor, ci și un bun instrument de analiză comparativă a datelor.</p><p> Toate aplicațiile din ecosistemul dedicat alegerilor sunt dezvoltate pro bono de către voluntarii Code for Romania în cadrul <a href="https://civiclabs.ro/ro" rel="noreferrer" target="_blank">Civic Labs</a>, unul dintre programele prin care asociația proiectează soluții de tehnologie civică pentru probleme din șase domenii-cheie pentru societatea românească - educație, sănătate, mediu, grupuri vulnerabile, transparență și implicare civică. </p><p > Code for Romania este o organizație non-profit care dezvoltă pro bono soluții digitale pentru a rezolva probleme sociale. Înființată în anul 2016, Code for Romania a ajuns în prezent la o comunitate de peste 1700 de voluntari din sectorul IT care au dezvoltat zeci de aplicații web și mobile pentru România, precum cele din ecosistemul Covid-19, <a href="https://stirioficiale.ro">știrioficiale.ro</a>, <a href="https://rohelp.ro">rohelp.ro</a>, <a href="https://redirectioneaza.ro">redirectioneaza.ro</a> și altele..</p>`,
