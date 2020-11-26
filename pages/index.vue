@@ -34,9 +34,9 @@
             v-html="$t('pollingStationSearch.callToAction')"
           ></div>
           <PollingStationSearchHereMaps />
-          <p class="text-center mt-4">
+          <!-- <p class="text-center mt-4">
             {{ $t('temp_text') }}
-          </p>
+          </p> -->
         </div>
       </div>
     </div>
