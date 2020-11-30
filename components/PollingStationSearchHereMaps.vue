@@ -207,10 +207,12 @@ export default {
       group.addEventListener(
         'tap',
         (evt) => {
-          const bubble = new H.ui.InfoBubble(evt.target.getGeometry(), {
-            content: evt.target.getData(),
-          })
-          this.hereUI.addBubble(bubble)
+          if (evt.target.getData()) {
+            const bubble = new H.ui.InfoBubble(evt.target.getGeometry(), {
+              content: evt.target.getData(),
+            })
+            this.hereUI.addBubble(bubble)
+          }
         },
         false
       )
@@ -222,15 +224,17 @@ export default {
         },
         { icon }
       )
-      marker.setData(
-        `<div class="card border-0"><h6 class="card-header bg-white">${
-          pollingStationNumber ? pollingStationNumber.join() : ''
-        } ${county}</h6><div class="card-body">
-      <div class="d-flex justify-content-between align-items-center">
-        <p class="m-0"><span class="bg-warning px-1 mr-1">Adresa:</span>${address}</p>
-      </div>
-    </div></div>`
-      )
+      if (pollingStationNumber && address) {
+        marker.setData(
+          `<div class="card border-0"><h6 class="card-header bg-white">${
+            pollingStationNumber ? pollingStationNumber.join() : ''
+          } ${county}</h6><div class="card-body">
+            <div class="d-flex justify-content-between align-items-center">
+              <p class="m-0"><span class="bg-warning px-1 mr-1">Adresa:</span>${address}</p>
+            </div>
+          </div></div>`
+        )
+      }
       group.addObject(marker)
       this.hereMap.addObject(group)
     },
