@@ -1,5 +1,6 @@
 export default {
   donate: 'Adományozz',
+  helpMessage: `A Vot Diaspora csak egyike a sok digitális megoldásnak amit a Code for Roamania önkéntesei pro-bono terveztek és építettek. <b>Küld a "PUTEM" szót SMS-ben a <a href="sms://8864?body=PUTEM">8864-re</a></b> hogy havi 4 euróval támogasd Románia digitalizációját, és több száz hasonlóan hasznos digitális megoldás építését. Részletek a <a class="text-primary" href="https://code4.ro/putem"><b>code4.ro/putem</b></a> - on`,
   nav_about: 'Rólunk',
   guide_title:
     'Válaszd ki azt a választ, amelyik a legjobban illik a helyzetedhez',

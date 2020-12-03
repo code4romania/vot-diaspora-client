@@ -1,7 +1,7 @@
 <template>
-  <header class="container px-0">
+  <header>
     <nav
-      class="navbar navbar-expand-sm justify-content-center justify-content-sm-end"
+      class="container navbar navbar-expand-sm justify-content-center justify-content-sm-end"
     >
       <nuxt-link
         :to="localePath('index')"
@@ -49,6 +49,11 @@
         </a>
       </div>
     </nav>
+    <div class="bg-warning text-center py-3 mt-2">
+      <div class="container">
+        <p class="mb-0" v-html="$t('helpMessage')" />
+      </div>
+    </div>
   </header>
 </template>
 
