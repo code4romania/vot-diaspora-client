@@ -32,7 +32,7 @@ restrictions on <a href="https://www.posta-romana.ro/a1309/stiri/lista-tarilor-c
     </ul>
     <h4>Important!</h4>
     <p>If you are  missing the ballots or if they have been damaged, you can print them yourself (it is not necessary to print the entire ballot, just the page with your voting preference is enough - if it has the "VOTED" sticker it will be considered a valid vote). You can download the two newsletters from the <a href="https://www.votstrainatate.ro">votstrăinatate.ro</a> website.</p>
-     <p>For any problems you can contact the Permanent Electoral Authority at <a href="mailto:contact@votstrăinatate.ro">contact@votstrainatate.ro</a>.</p>
+     <p>For any problems you can contact the Permanent Electoral Authority at <a href="mailto:contact@votstrainatate.ro">contact@votstrainatate.ro</a>.</p>
     <h4>Step 2: Voting</h4>
     <p>To vote you must:</p>
     <ol>
