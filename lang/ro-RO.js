@@ -30,7 +30,7 @@ export default {
     </ul>
     <h4>Important!</h4>
     <p>Dacă îți lipsesc buletinele de vot sau dacă au fost deteriorate, le poți printa tu însuți (nu este necesar să printezi tot buletinul de vot, este suficientă pagina pe care este opţiunea ta de vot - dacă are autocolantul cu “VOTAT” se consideră un vot valabil). Poți să descarci cele două buletine de pe site-ul <a href="https://votstrainatate.ro">votstrăinătate.ro</a>.</p>
-    <p>Pentru orice problemă poți contacta Autoritatea Electorală Permanentă la adresa <a href="mailto:contact@votstrăinătate.ro">contact@votstrăinătate.ro</a>.</p>
+    <p>Pentru orice problemă poți contacta Autoritatea Electorală Permanentă la adresa <a href="mailto:contact@votstrainatate.ro">contact@votstrainatate.ro</a>.</p>
 
     <h4>Pasul 2: Votarea</h4>
     <p>Pentru a vota trebuie să:</p>
