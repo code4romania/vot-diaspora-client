@@ -23,7 +23,7 @@
         </div>
       </div>
     </div> -->
-    <div class="container mt-4 mb-5">
+    <!-- <div class="container mt-4 mb-5">
       <div class="row">
         <div class="col-12">
           <h2 class="h4 text-center">
@@ -34,11 +34,11 @@
             v-html="$t('pollingStationSearch.callToAction')"
           ></div>
           <PollingStationSearchHereMaps />
-          <!-- <p class="text-center mt-4">
+          <p class="text-center mt-4">
             {{ $t('temp_text') }}
-          </p> -->
+          </p>
         </div>
       </div>
-    </div>
+    </div> -->
   </div>
 </template>
