@@ -67,7 +67,7 @@ export default {
       platform: null,
       hereMap: null,
       hereUI: null,
-      apikey: 'Um0LhLV4phI2QpCYrBCwmWgvdjmH6NFvd709PhMqsQg',
+      apikey: '0uY0qcXvUU0YcBhv_-U_NyCKVC7d-MTGRUbBJ92_DNU',
       pollingStationService: new PollingStationMatcherService(),
     }
   },
