@@ -50,7 +50,6 @@ import { debounce } from 'debounce'
 import VueTypeaheadBootstrap from 'vue-typeahead-bootstrap'
 import houseMarker from '../assets/house_marker.svg'
 import pollingStationMarker from '../assets/polling_station_marker.svg'
-import { PollingStationMatcherService } from '../service/polling-station-matcher.service'
 
 export default {
   components: {
@@ -67,8 +66,6 @@ export default {
       platform: null,
       hereMap: null,
       hereUI: null,
-      apikey: '0uY0qcXvUU0YcBhv_-U_NyCKVC7d-MTGRUbBJ92_DNU',
-      pollingStationService: new PollingStationMatcherService(),
     }
   },
   watch: {
@@ -83,7 +80,7 @@ export default {
   mounted() {
     // Initialize the platform object:
     const platform = new window.H.service.Platform({
-      apikey: this.apikey,
+      apikey: process.env.NUXT_ENV_API_URL,
     })
     this.platform = platform
     this.initializeHereMap()
@@ -96,7 +93,7 @@ export default {
       const { lat, lng } = addressDetail.position
       this.addMarker(lat, lng, houseMarker)
 
-      const poolingResults = await this.findPoolingStation(lat, lng)
+      const poolingResults = await this.findPollingStation(lat, lng)
       this.pollingStations = [].concat(
         ...poolingResults.map((g) =>
           g.pollingStations.map((ps) => {
@@ -166,7 +163,7 @@ export default {
     async getGeocode(id) {
       try {
         const result = await fetch(
-          `https://lookup.search.hereapi.com/v1/lookup?apiKey=${this.apikey}&id=${id}`
+          `https://lookup.search.hereapi.com/v1/lookup?apiKey=${process.env.HERE_MAPS_API_KEY}&id=${id}`
         )
         return await result.json()
       } catch (error) {
@@ -176,14 +173,14 @@ export default {
     async searchAddress() {
       try {
         const result = await fetch(
-          `https://autocomplete.search.hereapi.com/v1/autocomplete?apiKey=${this.apikey}&q=${this.address}&maxresults=5`
+          `https://autocomplete.search.hereapi.com/v1/autocomplete?apiKey=${process.env.HERE_MAPS_API_KEY}&q=${this.address}&maxresults=5`
         )
         return await result.json()
       } catch (error) {
         this.showErrorMessage = true
       }
     },
-    async findPoolingStation(latitude, longitude) {
+    async findPollingStation(latitude, longitude) {
       try {
         const result = await fetch(
           `${process.env.NUXT_ENV_API_URL}/polling-station/near-me?latitude=${latitude}&longitude=${longitude}`
