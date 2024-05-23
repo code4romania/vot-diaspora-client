@@ -27,11 +27,10 @@
           class="col mb-4"
         >
           <PollingStationCard
-            :polling-station-number="pollingStation.pollingStationNumber"
-            :county="pollingStation.county"
+            :polling-station-number="pollingStation.number"
+            :county="pollingStation.country"
             :address="pollingStation.address"
             :distance="pollingStation.distance"
-            :assigned-addresses="pollingStation.assignedAddresses"
           />
         </div>
       </div>
@@ -50,6 +49,7 @@ import { debounce } from 'debounce'
 import VueTypeaheadBootstrap from 'vue-typeahead-bootstrap'
 import houseMarker from '../assets/house_marker.svg'
 import pollingStationMarker from '../assets/polling_station_marker.svg'
+import locations from '../locations.json'
 
 export default {
   components: {
@@ -80,39 +80,33 @@ export default {
   mounted() {
     // Initialize the platform object:
     const platform = new window.H.service.Platform({
-      apikey: process.env.NUXT_ENV_API_URL,
+      apikey: process.env.HERE_MAPS_API_KEY,
     })
     this.platform = platform
     this.initializeHereMap()
   },
   methods: {
     async selectAddress(event) {
+      this.hasFetchedPollingStations = false
       const { id } = event
       this.clearMarkers()
       const addressDetail = await this.getGeocode(id)
       const { lat, lng } = addressDetail.position
       this.addMarker(lat, lng, houseMarker)
 
-      const poolingResults = await this.findPollingStation(lat, lng)
-      this.pollingStations = [].concat(
-        ...poolingResults.map((g) =>
-          g.pollingStations.map((ps) => {
-            return { ...ps, distance: g.distance }
-          })
-        )
-      )
+      this.pollingStations = this.findPollingStation(lat, lng)
 
       this.pollingStations.forEach((c) => {
         const sectionsOnThisAddress = this.pollingStations
           .filter((poolStation) => poolStation.address === c.address)
-          .map((filtereStation) => filtereStation.pollingStationNumber)
+          .map((filtereStation) => filtereStation.number)
         this.addMarker(
           c.latitude,
           c.longitude,
           pollingStationMarker,
           sectionsOnThisAddress,
           c.address,
-          c.county
+          c.country
         )
         this.hereMap.setCenter({
           lat: c.latitude,
@@ -120,6 +114,7 @@ export default {
         })
       })
       if (this.pollingStations.length > 1) {
+        this.hasFetchedPollingStations = true
         this.hereMap.setCenter({
           lat,
           lng,
@@ -180,13 +175,25 @@ export default {
         this.showErrorMessage = true
       }
     },
-    async findPollingStation(latitude, longitude) {
+    findPollingStation(latitude, longitude) {
       try {
-        const result = await fetch(
-          `${process.env.NUXT_ENV_API_URL}/polling-station/near-me?latitude=${latitude}&longitude=${longitude}`
-        )
-        this.hasFetchedPollingStations = true
-        return await result.json()
+        return locations
+          .map((location) => {
+            const d1 = latitude * (Math.PI / 180.0)
+            const num1 = longitude * (Math.PI / 180.0)
+            const d2 = location.latitude * (Math.PI / 180.0)
+            const num2 = location.longitude * (Math.PI / 180.0) - num1
+            const d3 =
+              Math.pow(Math.sin((d2 - d1) / 2.0), 2.0) +
+              Math.cos(d1) * Math.cos(d2) * Math.pow(Math.sin(num2 / 2.0), 2.0)
+
+            location.distance =
+              6376500.0 * (2.0 * Math.atan2(Math.sqrt(d3), Math.sqrt(1.0 - d3)))
+
+            return location
+          })
+          .sort((a, b) => a.distance - b.distance)
+          .slice(0, 10)
       } catch (error) {
         this.showErrorMessage = true
       }
