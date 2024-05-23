@@ -6,7 +6,7 @@
       :placeholder="$t('pollingStationSearch.searchPlaceholder')"
       :data="addressList"
       :show-all-results="true"
-      :serializer="(suggestion) => suggestion.label"
+      :serializer="(suggestion) => suggestion.title"
       @hit="selectAddress"
     >
     </vue-typeahead-bootstrap>
@@ -77,7 +77,7 @@ export default {
         return
       }
 
-      this.addressList = (await this.searchAddress()).suggestions
+      this.addressList = (await this.searchAddress()).items
     }, 300),
   },
   mounted() {
@@ -90,16 +90,13 @@ export default {
   },
   methods: {
     async selectAddress(event) {
-      const { locationId } = event
+      const { id } = event
       this.clearMarkers()
-      const addressDetail = await this.getGeocode(locationId)
-      const {
-        latitude,
-        longitude,
-      } = addressDetail.response.view[0].result[0].location.displayPosition
-      this.addMarker(latitude, longitude, houseMarker)
+      const addressDetail = await this.getGeocode(id)
+      const { lat, lng } = addressDetail.position
+      this.addMarker(lat, lng, houseMarker)
 
-      const poolingResults = await this.findPoolingStation(latitude, longitude)
+      const poolingResults = await this.findPoolingStation(lat, lng)
       this.pollingStations = [].concat(
         ...poolingResults.map((g) =>
           g.pollingStations.map((ps) => {
@@ -127,16 +124,16 @@ export default {
       })
       if (this.pollingStations.length > 1) {
         this.hereMap.setCenter({
-          lat: latitude,
-          lng: longitude,
+          lat,
+          lng,
         })
         // We should check which station is closest and it's latitude
         let minDistance = 0
         let closestLatitude = 0
         let closestLongitude = 0
         this.pollingStations.forEach((station) => {
-          const distanceLatitude = station.latitude - latitude
-          const distanceLongitude = station.longitude - longitude
+          const distanceLatitude = station.latitude - lat
+          const distanceLongitude = station.longitude - lng
           const distance = Math.sqrt(
             Math.pow(distanceLatitude, 2) + Math.pow(distanceLongitude, 2)
           )
@@ -150,38 +147,36 @@ export default {
         // We'll add an extra distance(otherwise, if a station is too close, we'll have the marker hidden)
         const extraDistance = 0.005
         // We're computing the distance on both axis.
-        const distLatitude =
-          Math.abs(latitude - closestLatitude) + extraDistance
-        const distLongitude =
-          Math.abs(longitude - closestLongitude) + extraDistance
+        const distLatitude = Math.abs(lat - closestLatitude) + extraDistance
+        const distLongitude = Math.abs(lng - closestLongitude) + extraDistance
 
         // We're centering the map to include this distance and still keep the home in the center.
         this.hereMap.getViewModel().setLookAtData({
           bounds: new H.geo.Rect(
-            latitude - distLatitude,
-            longitude - distLongitude,
-            latitude + distLatitude,
-            longitude + distLongitude
+            lat - distLatitude,
+            lng - distLongitude,
+            lat + distLatitude,
+            lng + distLongitude
           ),
         })
         return
       }
       this.hereMap.setZoom(16)
     },
-    async getGeocode(locationId) {
+    async getGeocode(id) {
       try {
         const result = await fetch(
-          `https://geocoder.ls.hereapi.com/6.2/geocode.json?locationid=${locationId}&jsonattributes=1&gen=1&jsonattributes=1&apiKey=${this.apikey}`
+          `https://lookup.search.hereapi.com/v1/lookup?apiKey=${this.apikey}&id=${id}`
         )
         return await result.json()
       } catch (error) {
         this.showErrorMessage = true
       }
     },
-    async searchAddress(query) {
+    async searchAddress() {
       try {
         const result = await fetch(
-          `https://autocomplete.geocoder.ls.hereapi.com/6.2/suggest.json?apiKey=${this.apikey}&query=${this.address}&maxresults=5`
+          `https://autocomplete.search.hereapi.com/v1/autocomplete?apiKey=${this.apikey}&q=${this.address}&maxresults=5`
         )
         return await result.json()
       } catch (error) {

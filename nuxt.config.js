@@ -101,11 +101,11 @@ export default {
         name: 'EN',
         file: 'en-US.js',
       },
-      {
-        code: 'hu',
-        name: 'HU',
-        file: 'hu-HU.js',
-      },
+      // {
+      //   code: 'hu',
+      //   name: 'HU',
+      //   file: 'hu-HU.js',
+      // },
       {
         code: 'ro',
         name: 'RO',
