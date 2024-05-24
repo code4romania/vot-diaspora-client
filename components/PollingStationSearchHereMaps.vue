@@ -22,7 +22,7 @@
         :class="pollingStations.length > 1 ? 'row-cols-md-2' : ''"
       >
         <div
-          v-for="pollingStation of pollingStations"
+          v-for="pollingStation of pollingStations.slice(0, 10)"
           :key="pollingStation.id"
           class="col mb-4"
         >
@@ -92,68 +92,86 @@ export default {
       this.clearMarkers()
       const addressDetail = await this.getGeocode(id)
       const { lat, lng } = addressDetail.position
-      this.addMarker(lat, lng, houseMarker)
+      const H = window.H
 
-      this.pollingStations = this.findPollingStation(lat, lng)
+      const currentLocationGroup = new H.map.Group()
+      const closestCountryGroup = new H.map.Group()
+      const otherCountriesGroup = new H.map.Group()
 
-      this.pollingStations.forEach((c) => {
-        const sectionsOnThisAddress = this.pollingStations
+      this.addMarker(
+        lat,
+        lng,
+        houseMarker,
+        null,
+        null,
+        null,
+        currentLocationGroup
+      )
+      const stations = this.findPollingStation(lat, lng)
+
+      stations[0].pollingStations.forEach((station) => {
+        const sectionsOnThisAddress = stations[0].pollingStations
+          .filter((poolStation) => poolStation.address === station.address)
+          .map((filtereStation) => filtereStation.number)
+
+        this.addMarker(
+          station.latitude,
+          station.longitude,
+          pollingStationMarker,
+          sectionsOnThisAddress,
+          station.address,
+          station.country,
+          closestCountryGroup
+        )
+      })
+
+      this.pollingStations = stations.flatMap(
+        ({ pollingStations }) => pollingStations
+      )
+
+      const otherPollingStations = stations
+        .slice(1, 4)
+        .flatMap(({ pollingStations }) => pollingStations)
+
+      otherPollingStations.forEach((c) => {
+        const sectionsOnThisAddress = otherPollingStations
           .filter((poolStation) => poolStation.address === c.address)
           .map((filtereStation) => filtereStation.number)
+
         this.addMarker(
           c.latitude,
           c.longitude,
           pollingStationMarker,
           sectionsOnThisAddress,
           c.address,
-          c.country
+          c.country,
+          otherCountriesGroup
         )
         this.hereMap.setCenter({
           lat: c.latitude,
           lng: c.longitude,
         })
       })
-      if (this.pollingStations.length > 1) {
+
+      this.listenTapGroup(currentLocationGroup)
+      this.listenTapGroup(otherCountriesGroup)
+      this.listenTapGroup(closestCountryGroup)
+
+      this.hereMap.addObject(otherCountriesGroup)
+      this.hereMap.addObject(closestCountryGroup)
+      this.hereMap.addObject(currentLocationGroup)
+
+      if (this.pollingStations.length) {
         this.hasFetchedPollingStations = true
         this.hereMap.setCenter({
           lat,
           lng,
         })
-        // We should check which station is closest and it's latitude
-        let minDistance = 0
-        let closestLatitude = 0
-        let closestLongitude = 0
-        this.pollingStations.forEach((station) => {
-          const distanceLatitude = station.latitude - lat
-          const distanceLongitude = station.longitude - lng
-          const distance = Math.sqrt(
-            Math.pow(distanceLatitude, 2) + Math.pow(distanceLongitude, 2)
-          )
-          if (minDistance === 0 || distance < minDistance) {
-            minDistance = distance
-            closestLatitude = station.latitude
-            closestLongitude = station.longitude
-          }
-        })
-        const H = window.H
-        // We'll add an extra distance(otherwise, if a station is too close, we'll have the marker hidden)
-        const extraDistance = 0.005
-        // We're computing the distance on both axis.
-        const distLatitude = Math.abs(lat - closestLatitude) + extraDistance
-        const distLongitude = Math.abs(lng - closestLongitude) + extraDistance
 
-        // We're centering the map to include this distance and still keep the home in the center.
         this.hereMap.getViewModel().setLookAtData({
-          bounds: new H.geo.Rect(
-            lat - distLatitude,
-            lng - distLongitude,
-            lat + distLatitude,
-            lng + distLongitude
-          ),
+          bounds: closestCountryGroup.getBoundingBox(),
         })
-        return
       }
-      this.hereMap.setZoom(16)
     },
     async getGeocode(id) {
       try {
@@ -176,45 +194,59 @@ export default {
       }
     },
     findPollingStation(latitude, longitude) {
-      try {
-        return locations
-          .map((location) => {
-            const d1 = latitude * (Math.PI / 180.0)
-            const num1 = longitude * (Math.PI / 180.0)
-            const d2 = location.latitude * (Math.PI / 180.0)
-            const num2 = location.longitude * (Math.PI / 180.0) - num1
-            const d3 =
-              Math.pow(Math.sin((d2 - d1) / 2.0), 2.0) +
-              Math.cos(d1) * Math.cos(d2) * Math.pow(Math.sin(num2 / 2.0), 2.0)
+      const loc = locations
+        .map((location) => {
+          const d1 = latitude * (Math.PI / 180.0)
+          const num1 = longitude * (Math.PI / 180.0)
+          const d2 = location.latitude * (Math.PI / 180.0)
+          const num2 = location.longitude * (Math.PI / 180.0) - num1
+          const d3 =
+            Math.pow(Math.sin((d2 - d1) / 2.0), 2.0) +
+            Math.cos(d1) * Math.cos(d2) * Math.pow(Math.sin(num2 / 2.0), 2.0)
 
-            location.distance =
-              6376500.0 * (2.0 * Math.atan2(Math.sqrt(d3), Math.sqrt(1.0 - d3)))
+          location.distance =
+            6376500.0 * (2.0 * Math.atan2(Math.sqrt(d3), Math.sqrt(1.0 - d3)))
 
-            return location
-          })
-          .sort((a, b) => a.distance - b.distance)
-          .slice(0, 10)
-      } catch (error) {
-        this.showErrorMessage = true
-      }
+          return location
+        })
+        .sort((a, b) => a.distance - b.distance)
+        .reduce((acc, item) => {
+          // Check if the country already exists in the accumulator
+          if (!acc[item.country]) {
+            // If not, initialize it with an empty array
+            acc[item.country] = []
+          }
+
+          // Push the current item's name into the corresponding country's array
+          acc[item.country].push(item)
+
+          // Return the accumulator for the next iteration
+          return acc
+        }, {})
+
+      return Object.entries(loc)
+        .map(([country, pollingStations]) => ({
+          country,
+          pollingStations,
+          min: Math.min(...pollingStations.map((station) => station.distance)),
+        }))
+        .slice(0, 5)
     },
-    addMarker(lat, lng, iconPath, pollingStationNumber, address, county) {
+    addMarker(
+      lat,
+      lng,
+      iconPath,
+      pollingStationNumber,
+      address,
+      county,
+      group
+    ) {
       const H = window.H
 
-      const group = new H.map.Group()
+      if (!group) {
+        group = new H.map.Group()
+      }
 
-      group.addEventListener(
-        'tap',
-        (evt) => {
-          if (evt.target.getData()) {
-            const bubble = new H.ui.InfoBubble(evt.target.getGeometry(), {
-              content: evt.target.getData(),
-            })
-            this.hereUI.addBubble(bubble)
-          }
-        },
-        false
-      )
       const icon = new H.map.Icon(iconPath)
       const marker = new H.map.Marker(
         {
@@ -235,7 +267,25 @@ export default {
         )
       }
       group.addObject(marker)
-      this.hereMap.addObject(group)
+      // this.hereMap.addObject(group)
+    },
+    listenTapGroup(group) {
+      const H = window.H
+
+      group.addEventListener(
+        'tap',
+        (evt) => {
+          console.log(evt.target.getData())
+
+          if (evt.target.getData()) {
+            const bubble = new H.ui.InfoBubble(evt.target.getGeometry(), {
+              content: evt.target.getData(),
+            })
+            this.hereUI.addBubble(bubble)
+          }
+        },
+        false
+      )
     },
     clearMarkers() {
       this.hereMap.removeObjects(this.hereMap.getObjects())
