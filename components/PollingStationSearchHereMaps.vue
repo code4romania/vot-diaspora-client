@@ -257,17 +257,23 @@ export default {
       )
       if (pollingStationNumber && address) {
         marker.setData(
-          `<div class="card border-0"><h6 class="card-header bg-white">${
-            pollingStationNumber ? pollingStationNumber.join() : ''
-          } ${county}</h6><div class="card-body">
-            <div class="d-flex justify-content-between align-items-center">
-              <p class="m-0"><span class="bg-warning px-1 mr-1">Adresa:</span>${address}</p>
+          `<div class="card border-0" style="width: 240px">
+            <div class="card-body p-0">
+              <p class="m-0">
+                <span class="bg-warning px-1 mr-1">${this.$t(
+                  'pollingStationCard.pollingStationNumber'
+                )}</span><br/>${
+            pollingStationNumber ? pollingStationNumber.join(', ') : ''
+          }</p>
+              <p class="m-0"><span class="bg-warning px-1 mr-1">${this.$t(
+                'pollingStationCard.address'
+              )}</span><br/>
+                ${address}, ${county}</p>
             </div>
-          </div></div>`
+          </div>`
         )
       }
       group.addObject(marker)
-      // this.hereMap.addObject(group)
     },
     listenTapGroup(group) {
       const H = window.H
@@ -275,9 +281,8 @@ export default {
       group.addEventListener(
         'tap',
         (evt) => {
-          console.log(evt.target.getData())
-
           if (evt.target.getData()) {
+            this.clearInfoBubbles()
             const bubble = new H.ui.InfoBubble(evt.target.getGeometry(), {
               content: evt.target.getData(),
             })
@@ -289,6 +294,9 @@ export default {
     },
     clearMarkers() {
       this.hereMap.removeObjects(this.hereMap.getObjects())
+    },
+    clearInfoBubbles() {
+      this.hereUI.getBubbles().forEach((bub) => this.hereUI.removeBubble(bub))
     },
     initializeHereMap() {
       // rendering map
