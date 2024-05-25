@@ -135,7 +135,7 @@ export default {
 
       A2B2: {
         id: 'A2B2',
-        text: 'labe_a2b2',
+        text: 'votersGuide.label_a2b2',
         options: ['A2B2R'],
       },
       A2B2R: {
