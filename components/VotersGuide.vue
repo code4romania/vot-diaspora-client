@@ -3,14 +3,14 @@
     <h2 class="text-center h4">
       {{ $t('guide_title') }}
     </h2>
-    <p>
-      {{ $t('guide_text') }}
-    </p>
+    <div v-if="decisionTree[currentNode].details">
+      <p v-html="$t(decisionTree[currentNode].details)"></p>
+    </div>
     <div
       class="d-flex flex-column flex-sm-row justify-content-center align-items-center align-items-sm-stretch mt-3"
     >
       <div
-        v-for="option in initial.options"
+        v-for="option in decisionTree[currentNode].options"
         :key="option"
         class="card"
         :class="{
@@ -25,7 +25,7 @@
       </div>
     </div>
     <div
-      v-if="previousChoice.length"
+      v-if="previousChoices.length > 1"
       class="d-flex justify-content-between my-4"
     >
       <button class="btn btn-light" @click="resetTest()">
@@ -41,86 +41,131 @@
 <script>
 export default {
   data: () => ({
-    previousChoice: [],
-    initial: { options: [0, 1] },
+    currentNode: 'START',
+    previousChoices: ['START'],
     decisionTree: {
-      0: {
-        id: '0',
-        text: 'votersGuide.label0',
-        options: ['11', '12'],
+      START: {
+        id: 'START',
+        text: '',
+        options: ['A1', 'A2', 'A3'],
       },
-      1: {
-        id: '1',
-        text: 'votersGuide.label1',
-        options: ['10'],
+      A1: {
+        id: 'A1',
+        text: 'votersGuide.label_a1',
+        details: 'votersGuide.label_a1_details',
+        options: ['A1B1', 'A1B2'],
       },
-      10: {
-        id: '10',
-        text: 'votersGuide.label10',
+      A1B1: {
+        id: 'A1B1',
+        text: 'votersGuide.label_a1b1',
+        details: 'votersGuide.label_a1b1_details',
+        options: ['A1B1C1', 'A1B1C2'],
       },
-      11: {
-        id: '11',
-        text: 'votersGuide.label11',
-        options: ['111', '112'],
+      A1B1C1: {
+        id: 'A1B1C1',
+        text: 'votersGuide.label_a1b1c1',
+        details: 'votersGuide.label_a1b1c1_details',
+        options: ['A1B1C1D1', 'A1B1C1D2'],
       },
-      111: {
-        id: '111',
-        text: 'votersGuide.label111',
-        options: ['1110'],
+      A1B1C1D1: {
+        id: 'A1B1C1D1',
+        text: 'votersGuide.label_a1b1c1d1',
+        options: ['A1B1C1D1R'],
       },
-      1110: {
-        id: '1110',
-        text: 'votersGuide.label1110',
+      A1B1C1D1R: {
+        id: 'A1B1C1D1R',
+        text: 'votersGuide.label_a1b1c1d1r',
       },
-      112: {
-        id: '112',
-        text: 'votersGuide.label112',
-        options: ['1120'],
+      A1B1C1D2: {
+        id: 'A1B1C1D2',
+        text: 'votersGuide.label_a1b1c1d2',
+        options: ['A1B1C1D2R'],
       },
-      1120: {
-        id: '1120',
-        text: 'votersGuide.label1120',
+      A1B1C1D2R: {
+        id: 'A1B1C1D2R',
+        text: 'votersGuide.label_a1b1c1d2r',
       },
-      12: {
-        id: '12',
-        text: 'votersGuide.label12',
-        options: ['121', '122'],
+      A1B1C2: {
+        id: 'A1B1C2',
+        text: 'votersGuide.label_a1b1c2',
+        options: ['A1B1C2R'],
       },
-      121: {
-        id: '121',
-        text: 'votersGuide.label121',
-        options: ['1210'],
+      A1B1C2R: {
+        id: 'A1B1C2R',
+        text: 'votersGuide.label_a1b1c2r',
       },
-      1210: {
-        id: '1210',
-        text: 'votersGuide.label1210',
+      A1B2: {
+        id: 'A1B2',
+        text: 'votersGuide.label_a1b2',
+        details: 'votersGuide.label_a1b2_details',
+        options: ['A1B1C1', 'A1B1C2'],
       },
-      122: {
-        id: '122',
-        text: 'votersGuide.label122',
-        options: ['1220'],
+      A2: {
+        id: 'A2',
+        text: 'votersGuide.label_a2',
+        details: 'votersGuide.label_a2_details',
+        options: ['A2B1', 'A2B2'],
       },
-      1220: {
-        id: '1220',
-        text: 'votersGuide.label1220',
+      A2B1: {
+        id: 'A2B1',
+        text: 'votersGuide.label_a2b1',
+        details: 'votersGuide.label_a2b1_details',
+        options: ['A2B1C1', 'A2B1C2'],
+      },
+      A2B1C1: {
+        id: 'A2B1C1',
+        text: 'votersGuide.label_a2b1c1',
+        options: ['A2B1C1R'],
+      },
+      A2B1C2: {
+        id: 'A2B1C2',
+        text: 'votersGuide.label_a2b1c2',
+        options: ['A2B1C2R'],
+      },
+
+      A2B1C1R: {
+        id: 'A2B1C1R',
+        text: 'votersGuide.label_a2b1c1r',
+      },
+
+      A2B1C2R: {
+        id: 'A2B1C2R',
+        text: 'votersGuide.label_a2b1c2r',
+      },
+
+      A2B2: {
+        id: 'A2B2',
+        text: 'labe_a2b2',
+        options: ['A2B2R'],
+      },
+      A2B2R: {
+        id: 'A2B2R',
+        text: 'votersGuide.label_a2b2r',
+      },
+      A3: {
+        id: 'A3',
+        text: 'votersGuide.label_a3',
+        options: ['A3R'],
+      },
+      A3R: {
+        id: 'A3R',
+        text: 'votersGuide.label_a3r',
       },
     },
   }),
   methods: {
     goToPreviousChoice() {
-      const previousOption = this.previousChoice.pop()
-      this.initial.options = previousOption
+      // remove current option
+      this.previousChoices.pop()
+      this.currentNode = this.previousChoices[this.previousChoices.length - 1]
     },
     goToNextChoice(option) {
-      if (!this.decisionTree[option].options) {
-        return
-      }
-      this.previousChoice.push(this.initial.options)
-      this.initial.options = this.decisionTree[option].options
+      this.currentNode = option
+      this.previousChoices.push(option)
     },
     resetTest() {
-      this.previousChoice = []
-      this.initial.options = ['0', '1']
+      this.previousChoices = ['START']
+      this.currentNode = 'START'
     },
   },
 }
