@@ -1,6 +1,7 @@
 export default {
   donate: 'Donate',
   helpMessage: `Vot Diaspora is just one of the solutions designed and built by Code for Romania volunteers completely for free. <b>Send "PUTEM" via SMS to <a href="sms://8864?body=PUTEM">8864</a></b> to donate 4 euros per month and you too can help us in our quest to digitalize Romania by building hundreds of other equally useful solutions. For more details go to <a class="text-primary" href="https://code4.ro/putem"><b>code4.ro/putem</b></a>`,
+  banner: 'A Commit Global solution.',
   nav_about: 'About',
   guide_title: 'Please select the option below most suited',
   guide_text:
