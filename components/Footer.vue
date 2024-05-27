@@ -73,7 +73,7 @@
           <h3 class="link-title h5">Ecosistem Alegeri</h3>
           <nav>
             <ul class="list-unstyled">
-              <li>
+              <!-- <li>
                 <a
                   target="_blank"
                   rel="noopener noreferrer"
@@ -81,8 +81,8 @@
                 >
                   Vot Romania
                 </a>
-              </li>
-              <li>
+              </li> -->
+              <!-- <li>
                 <a
                   target="_blank"
                   rel="noopener noreferrer"
@@ -90,7 +90,7 @@
                 >
                   Monitorizare Vot
                 </a>
-              </li>
+              </li> -->
               <li>
                 <a
                   target="_blank"
@@ -109,7 +109,7 @@
                   Code for Romania
                 </a>
               </li>
-              <li>
+              <!-- <li>
                 <a
                   target="_blank"
                   rel="noopener noreferrer"
@@ -117,7 +117,7 @@
                 >
                   Civic Labs
                 </a>
-              </li>
+              </li> -->
             </ul>
           </nav>
         </div>
@@ -143,7 +143,7 @@
               src="../assets/code4RoGrey.svg"
               class="mt-3 mb-2" /></nuxt-link
           ><br />
-          <span>&copy; 2020 Code for Romania.</span>
+          <span>&copy; 2024 Code for Romania.</span>
           <p>
             Organizație neguvernamentală independentă, neafiliată politic și
             apolitică.

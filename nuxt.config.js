@@ -2,6 +2,8 @@ export default {
   env: {
     NUXT_ENV_API_URL:
       process.env.NUXT_ENV_API_URL || 'https://api.votdiaspora.ro/api',
+
+    HERE_MAPS_API_KEY: process.env.HERE_MAPS_API_KEY,
   },
   /*
    ** Nuxt target
@@ -101,11 +103,11 @@ export default {
         name: 'EN',
         file: 'en-US.js',
       },
-      {
-        code: 'hu',
-        name: 'HU',
-        file: 'hu-HU.js',
-      },
+      // {
+      //   code: 'hu',
+      //   name: 'HU',
+      //   file: 'hu-HU.js',
+      // },
       {
         code: 'ro',
         name: 'RO',
