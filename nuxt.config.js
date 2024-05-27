@@ -23,7 +23,7 @@ export default {
         hid: 'description',
         name: 'description',
         content:
-          'Vot Diaspora este o platformă dezvoltată de Code for Romania care oferă rapid românilor din Diaspora informații despre cum pot vota la alegerile generale din decembrie 2020.',
+          'Vot Diaspora este o platformă dezvoltată de Code for Romania care oferă rapid românilor din Diaspora informații despre cum pot vota la alegerile din anul 2024.',
       },
       { property: 'og:title', content: 'Vot Diaspora' },
       {
@@ -37,7 +37,7 @@ export default {
       {
         property: 'og:description',
         content:
-          'Vot Diaspora este o platformă dezvoltată de Code for Romania care oferă rapid românilor din Diaspora informații despre cum pot vota la alegerile generale din decembrie 2020.',
+          'Vot Diaspora este o platformă dezvoltată de Code for Romania care oferă rapid românilor din Diaspora informații despre cum pot vota la alegerile din anul 2024.',
       },
       { property: 'og:url', content: 'https://votdiaspora.ro' },
       { property: 'og:type', content: 'website' },
