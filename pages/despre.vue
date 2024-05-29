@@ -5,17 +5,43 @@
 
     <hr />
     <div class="row text-center my-5">
-      <div class="col">
+      <div class="col-md">
         <p>{{ $t('about.p1') }}</p>
-        <img src="../assets/civic_labs.svg" alt="Civic Labs" />
+        <a
+          href="https://www.code4.ro/ro/civic-labs"
+          target="_blank"
+          rel="noopener"
+        >
+          <img
+            src="../assets/civic_labs.png"
+            alt="Civic Labs"
+            class="img-fluid"
+          />
+        </a>
       </div>
-      <div class="col">
+      <div class="col-md">
         <p>{{ $t('about.p2') }}</p>
-        <img src="../assets/code4Romania.svg" alt="Code4Romania" />
+        <a href="https://www.code4.ro/ro" target="_blank" rel="noopener">
+          <img
+            src="../assets/code4Romania.png"
+            alt="Code4Romania"
+            class="img-fluid"
+          />
+        </a>
       </div>
-      <div class="col">
+      <div class="col-md">
         <p>{{ $t('about.p3') }}</p>
-        <img src="../assets/observator.png" alt="Observator" />
+        <a
+          href="https://www.facebook.com/people/Observatorul-Electoral/100066976369342/"
+          target="_blank"
+          rel="noopener"
+        >
+          <img
+            src="../assets/observator.png"
+            alt="Observator"
+            class="img-fluid"
+          />
+        </a>
       </div>
     </div>
     <hr />
