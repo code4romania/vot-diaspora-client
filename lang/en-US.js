@@ -86,7 +86,7 @@ export default {
   social_share: {
     title: 'Send this to your friends',
     text:
-      'Share this on social media to help as many Romanians as possible know where they can vote at the 2020 parliamentary elections, what documents they need and other useful advice.',
+      'Share this on social media to help as many Romanians as possible know where they can vote at the 2024 parliamentary elections, what documents they need and other useful advice.',
   },
   donate_card: {
     title: 'Support Us',
