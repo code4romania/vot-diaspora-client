@@ -309,7 +309,7 @@ export default {
       // Instantiate (and display) a map object:
       this.hereMap = new H.Map(mapContainer, maptypes.vector.normal.map, {
         center: { lat: 45.658, lng: 25.6012 },
-        zoom: 7,
+        zoom: 3,
         pixelRatio,
       })
 
