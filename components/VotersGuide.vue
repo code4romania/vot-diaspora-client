@@ -160,6 +160,10 @@ export default {
       this.currentNode = this.previousChoices[this.previousChoices.length - 1]
     },
     goToNextChoice(option) {
+      if (!this.decisionTree[option].options) {
+        return
+      }
+
       this.currentNode = option
       this.previousChoices.push(option)
     },
