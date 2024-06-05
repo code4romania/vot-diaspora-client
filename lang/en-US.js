@@ -1,6 +1,6 @@
 export default {
   donate: 'Donate',
-  helpMessage: `Vot Diaspora is one of dozens of solutions in the Infrastructure for Good built by Code for Romania. Help us keep them alive and grow them. <b>Send "PUTEM" via SMS to <a href="sms://8864?body=PUTEM">8864</a></b> to donate 4 euros per month and you too can help us in our quest to digitalize Romania by building hundreds of other equally useful solutions.`,
+  helpMessage: `Vot Diaspora is one of the dozens of solutions in the Infrastructure for Good built by Code for Romania. Help us keep them alive and grow them. <b>Send "PUTEM" via SMS to <a href="sms://8864?body=PUTEM">8864</a></b> to donate 4 euros per month and you can help us to digitalize Romania by building hundreds of other equally useful solutions.`,
 
   banner: 'A Commit Global solution.',
   nav_about: 'About',
@@ -91,7 +91,7 @@ export default {
   },
   donate_card: {
     title: 'Support Us',
-    text:'Vot Diaspora is one of dozens of solutions in the Infrastructure for Good built by Code for Romania. Help us keep them alive and grow them.',
+    text:'Vot Diaspora is one of the dozens of solutions in the Infrastructure for Good built by Code for Romania. Help us keep them alive and grow them.',
     
   },
   cookie: {
