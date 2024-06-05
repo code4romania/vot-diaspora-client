@@ -2568,10 +2568,10 @@
     "number": "287",
     "country": "Republica Elenă",
     "city": "Preveza",
-    "address": "str. Kosti Palama 2-6, vila Athanasiadis, 48100, Preveza",
+    "address": "str. Virona nr. 6, 48100, Preveza",
     "location": "Altele",
-    "latitude": 38.95762,
-    "longitude": 20.7514186
+    "latitude": 38.9601565,
+    "longitude": 20.7508562
   },
   {
     "number": "288",
@@ -3261,10 +3261,10 @@
     "number": "364",
     "country": "Italia",
     "city": "Ferrara",
-    "address": "Ferrara, Via Darsena, n.57",
+    "address": "Ferrara, Viale Cavour n.187. 44122",
     "location": "Altele",
-    "latitude": 44.8347527,
-    "longitude": 11.6066448
+    "latitude": 44.8445206,
+    "longitude": 11.6061748
   },
   {
     "number": "365",
@@ -4242,10 +4242,10 @@
     "number": "473",
     "country": "Lituania",
     "city": "Vilnius",
-    "address": "Gaono Nr. 6, Lt- 01131, Vilnius Lithuania",
+    "address": "str. Gaono, nr.6, LT-01131, Vilnius",
     "location": "Ambasadă",
-    "latitude": 54.6806046,
-    "longitude": 25.2865389
+    "latitude": 54.6805301,
+    "longitude": 25.2864637
   },
   {
     "number": "474",
@@ -4782,10 +4782,10 @@
     "number": "533",
     "country": "Regatul Unit al Marii Britanii și Irlandei de Nord",
     "city": "Hereford",
-    "address": "B9 Pearson Studio. Venns Lane. Hereford HR1 IDT",
-    "location": "Altele\u00A0Tire Royal National College for the Blind (RNC)",
-    "latitude": 52.0663411,
-    "longitude": -2.7033478
+    "address": "The Point 4, The Royal National College for the Blind (RNC) — B9 Pearson Studio, Venns Lane, Hereford HR1 1DT",
+    "location": "Altele",
+    "latitude": 52.068307,
+    "longitude": -2.7052194
   },
   {
     "number": "534",
@@ -5106,10 +5106,10 @@
     "number": "569",
     "country": "Regatul Unit al Marii Britanii și Irlandei de Nord",
     "city": "Walsall",
-    "address": "Romanian\u002B Community Centre, Sneyd Hall Road, Bloxwich,\nWalsall, WS3 2NN",
-    "location": "Altele\u00A0Romanians Community Centre, ",
-    "latitude": 52.616722,
-    "longitude": -2.0145366
+    "address": "Romanian+ Community Centre, Sneyd Hall Road, Bloxwich, Walsall, WS3 2NN",
+    "location": "Allele",
+    "latitude": 52.616806,
+    "longitude": -2.0146331
   },
   {
     "number": "570",
@@ -5412,10 +5412,10 @@
     "number": "603",
     "country": "Republica Moldova",
     "city": "Orhei",
-    "address": "Palatul Culturii. Str. Mihai Eminescu nr. 12. Orhei. MD - 3503",
+    "address": "Școala de Muzică, str. Chișinăului nr. 9, Orhei, MD-3505",
     "location": "Altele",
-    "latitude": 47.37870770000001,
-    "longitude": 28.8210589
+    "latitude": 47.3703836, 
+    "longitude": 28.8191718
   },
   {
     "number": "604",
@@ -5736,7 +5736,7 @@
     "number": "639",
     "country": "Muntenegru",
     "city": "Podgorița",
-    "address": "Prve Proleterske br. 5, Podgorica, 81000",
+    "address": "Prve Proleterske nr. 5, Podgorica, 81000",
     "location": "Ambasadă",
     "latitude": 42.4239395,
     "longitude": 19.294956
@@ -6249,7 +6249,7 @@
     "number": "696",
     "country": "Spania",
     "city": "Madrid 1",
-    "address": "Avenida de Alfonso XIII. nr. 157. 28016 Madrid",
+    "address": "Avenida de Alfonso XIII, nr. 157, 28016 Madrid",
     "location": "Ambasadă",
     "latitude": 40.460104,
     "longitude": -3.6783701
@@ -6258,7 +6258,7 @@
     "number": "697",
     "country": "Spania",
     "city": "Madrid 2",
-    "address": "Avenida de Alfonso XIII. nr. 157. 28016 Madrid",
+    "address": "Avenida de Alfonso XIII, nr. 157, 28016 Madrid",
     "location": "Ambasadă",
     "latitude": 40.460104,
     "longitude": -3.6783701
@@ -6699,10 +6699,10 @@
     "number": "746",
     "country": "Spania",
     "city": "Lloret de Mar",
-    "address": "Centre Civic Can Carbo, Carrer de Barcelona, 18, 17310, Lloret de Mar",
+    "address": "Hotel Meliá Lloret de Mar, Av. Vila de Tossa, 27, 17310, Lloret de Mar",
     "location": "Altele",
-    "latitude": 41.70570379999999,
-    "longitude": 2.8446242
+    "latitude": 41.704928,
+    "longitude": 2.8490134
   },
   {
     "number": "747",
@@ -6780,10 +6780,10 @@
     "number": "755",
     "country": "Spania",
     "city": "Palma de Mallorca 1",
-    "address": "Ca N\u0027Oleo Carrer de I\u0027Almudaina 4. Centre. 07001. Palma",
+    "address": "Hotel Melia Palma Marina, Avinguda de Gabriel Roca, 29, 07014 Palma",
     "location": "Altele",
-    "latitude": 39.5688504,
-    "longitude": 2.649643
+    "latitude": 39.5648669,
+    "longitude": 2.6274542
   },
   {
     "number": "756",
@@ -6969,10 +6969,10 @@
     "number": "776",
     "country": "Spania",
     "city": "Sevilla",
-    "address": "Centro Civico Hogar Virgen de los Reyes - sala Polivalente, Calle Fray Isidoro de Sevilla, 1, 41009, Sevilla",
+    "address": "Calle el Jovo, numărul 2, Casco Antiguo, 41001, Sevilla",
     "location": "Altele",
-    "latitude": 37.40453,
-    "longitude": -5.9851479
+    "latitude": 37.3832686,
+    "longitude": -5.9948256
   },
   {
     "number": "777",
@@ -6987,10 +6987,10 @@
     "number": "778",
     "country": "Spania",
     "city": "Rociana del Condado",
-    "address": "calle San Bartolome, no.3, 21720, Rociana del Condado",
+    "address": "Plaza del Llano, nr.2, 21720 Rociana del Condado",
     "location": "Altele",
-    "latitude": 37.3079482,
-    "longitude": -6.598089999999999
+    "latitude": 37.310666,
+    "longitude": -6.598966
   },
   {
     "number": "779",
