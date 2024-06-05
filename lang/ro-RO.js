@@ -1,6 +1,6 @@
 export default {
   donate: 'Donează',
-  helpMessage: `Vot Diaspora este doar una dintre soluțiile proiectate și construite pro bono de voluntarii Code for Romania. <b>Trimite „PUTEM” prin SMS la <a href="sms://8864?body=PUTEM">8864</a></b> pentru a dona 4 euro lunar și ne poți ajuta să digitalizăm România construind sute de alte soluții la fel de utile. Detalii pe <a class="text-primary" href="https://code4.ro/putem"><b>code4.ro/putem</b></a>`,
+  helpMessage: `Vot Diaspora este una dintre zecile de soluții din Infrastructura Binelui construită de Code for Romania. Ajută-ne să le ținem în viață și să le creștem. <b>Trimite „PUTEM” prin SMS la <a href="sms://8864?body=PUTEM">8864</a></b> pentru a dona 4 euro lunar și ne poți ajuta să digitalizăm România construind sute de alte soluții la fel de utile.`,
   banner: 'O soluție Commit Global.',
   nav_about: 'Despre',
   guide_title: 'Selectează din opțiunile de mai jos ce ți se potrivește',
@@ -89,8 +89,7 @@ export default {
   },
   donate_card: {
     title: 'Susține-ne',
-    text:
-      'Vot Diaspora este un proiect dezvoltat pro-bono de o echipă de voluntari Code for Romania. În fiecare zi, sute dintre prietenii si colegii tăi lucrează pentru a construi instrumente digitale utile pentru a ne face viața mai ușoară și pentru a aduce România mai aproape de progresul tehnologic. Ajută-ne să continuăm.',
+    text:'Vot Diaspora este una dintre zecile de soluții din Infrastructura Binelui construită de Code for Romania. Ajută-ne să le ținem în viață și să le creștem.'
   },
   cookie: {
     title: 'Politica de cookies',
