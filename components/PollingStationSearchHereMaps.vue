@@ -80,7 +80,7 @@ export default {
   mounted() {
     // Initialize the platform object:
     const platform = new window.H.service.Platform({
-      apikey: process.env.HERE_MAPS_API_KEY,
+      apikey: '3KJdochthLBAZtJD-iqFyAHU6QOqzwAC8l7grsqWDWU',
     })
     this.platform = platform
     this.initializeHereMap()
