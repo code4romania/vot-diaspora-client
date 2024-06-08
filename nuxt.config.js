@@ -28,7 +28,7 @@ export default {
       { property: 'og:title', content: 'Vot Diaspora' },
       {
         property: 'og:image',
-        content: 'https://votdiaspora.ro/static/social/og_image.png',
+        content: 'https://votdiaspora.ro/og-image.png',
       },
       {
         name: 'theme-color',
