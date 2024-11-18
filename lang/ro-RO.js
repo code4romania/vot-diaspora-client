@@ -1,6 +1,7 @@
 const schedule =
   '<p><b>Programul de vot:</b> Votul se va desfășura pe parcursul a trei zile la ambele scrutinuri.</p><p><b>Turul 1:</b></p><ul><li>Vineri, 22 noiembrie, între 12.00 și 21.00 (ora locală)</li><li>Sâmbătă, 23 noiembrie, între 07.00 și 21.00 (ora locală)</li><li>Duminică, 24 noiembrie, între 07.00 și 21.00 (ora locală) </li></ul><p><b>TURUL 2:</b> <ul><li>Vineri, 6 decembrie, între 12.00 și 21.00 (ora locală)</li><li>Sâmbătă, 7 decembrie, între 07.00 și 21.00 (ora locală)</li><li>Duminică, 8 decembrie, între 07.00 și 21.00 (ora locală) </li></ul></p>'
-
+const documents =
+  '<p><b>Documente necesare:</b>  Pentru a vota ai nevoie de un act de identitate emis de statul român, valabil în ziua votului: cartea de identitate; cartea electronică de identitate; cartea de identitate provizorie; buletinul de identitate; paşaportul diplomatic; paşaportul diplomatic electronic; paşaportul de serviciu; paşaportul de serviciu electronic; paşaportul simplu; paşaportul simplu electronic; paşaportul simplu temporar; în cazul elevilor din şcolile militare, carnetul de serviciu militar.</p>'
 export default {
   donate: 'Donează',
   helpMessage: `Vot Diaspora este una dintre zecile de soluții din Infrastructura Binelui construită de Code for Romania. Ajută-ne să le ținem în viață și să le creștem. <b>Trimite „PUTEM” prin SMS la <a href="sms://8864?body=PUTEM">8864</a></b> pentru a dona 4 euro lunar și ne poți ajuta să digitalizăm România construind sute de alte soluții la fel de utile.`,
@@ -17,18 +18,25 @@ export default {
     label_a1b1c1_details: '',
     label_a1b1c3: 'Nu m-am înregistrat în registrul electoral',
     label_a1b1c1r:
-      '<p>Poți să votezi la secția de votare la care ești înregistrat pe liste permanente sau la orice secție de votare din străinătate pe liste suplimentare. Trebuie să ai la tine un document de identitate valabil.</p> <p><b>Documente necesare: </b> a vota ai nevoie de un act de identitate emis de statul român, valabil în ziua votului: cartea de identitate; cartea electronică de identitate; cartea de identitate provizorie; buletinul de identitate; paşaportul diplomatic; paşaportul diplomatic electronic; paşaportul de serviciu; paşaportul de serviciu electronic; paşaportul simplu; paşaportul simplu electronic; paşaportul simplu temporar; în cazul elevilor din şcolile militare, carnetul de serviciu militar.</p>' +
+      '<p>Poți să votezi la secția de votare la care ești înregistrat pe liste permanente sau la orice secție de votare din străinătate pe liste suplimentare. Trebuie să ai la tine un document de identitate valabil.</p>' +
+      documents +
       schedule,
     label_a1b1c2:
       'M-am înregistrat în registrul electoral pe www.votstrăinătate.ro pentru vot prin corespondență',
     label_a1b1c2r:
-      '<p>Dacă ai ales să votezi prin corespondență pentru Turul 1 la alegerile prezidențiale atunci trebuie să te asiguri că plicul cu votul tău a ajuns <b>până pe 21 noiembrie</b> la Autoritatea Electorală Permanentă. Dacă ai fost informat de AEP că plicul tău nu a ajuns până la această dată, poți să votezi la orice secție de votare din străinătate pe listele suplimentare. Trebuie să ai la tine un document de identitate valabil precum buletinul sau pașaportul. Dacă ai votat deja prin corespondență nu poți vota din nou la secție. </p><p>Dacă ai ales să votezi prin corespondență pentru Turul 2 la alegerile prezidențiale atunci trebuie să te asiguri că plicul cu votul tău a ajuns <b>până pe 5 decembrie</b> la Autoritatea Electorală Permanentă. Dacă ai fost informat de AEP că plicul tău nu a ajuns până la această dată, poți să votezi la orice secție de votare din străinătate pe listele suplimentare. Trebuie să ai la tine un document de identitate valabil precum buletinul sau pașaportul. Dacă ai votat deja prin corespondență nu poți vota din nou la secție. </p><p><b>Documente necesare:</b>  Pentru a vota ai nevoie de un act de identitate emis de statul român, valabil în ziua votului: cartea de identitate; cartea electronică de identitate; cartea de identitate provizorie; buletinul de identitate; paşaportul diplomatic; paşaportul diplomatic electronic; paşaportul de serviciu; paşaportul de serviciu electronic; paşaportul simplu; paşaportul simplu electronic; paşaportul simplu temporar; în cazul elevilor din şcolile militare, carnetul de serviciu militar.</p>' +
+      '<p>Dacă ai ales să votezi prin corespondență pentru Turul 1 la alegerile prezidențiale atunci trebuie să te asiguri că plicul cu votul tău a ajuns <b>până pe 21 noiembrie</b> la Autoritatea Electorală Permanentă. Dacă ai fost informat de AEP că plicul tău nu a ajuns până la această dată, poți să votezi la orice secție de votare din străinătate pe listele suplimentare. Trebuie să ai la tine un document de identitate valabil precum buletinul sau pașaportul. Dacă ai votat deja prin corespondență nu poți vota din nou la secție. </p><p>Dacă ai ales să votezi prin corespondență pentru Turul 2 la alegerile prezidențiale atunci trebuie să te asiguri că plicul cu votul tău a ajuns <b>până pe 5 decembrie</b> la Autoritatea Electorală Permanentă. Dacă ai fost informat de AEP că plicul tău nu a ajuns până la această dată, poți să votezi la orice secție de votare din străinătate pe listele suplimentare. Trebuie să ai la tine un document de identitate valabil precum buletinul sau pașaportul. Dacă ai votat deja prin corespondență nu poți vota din nou la secție. </p>' +
+      documents +
       schedule,
     label_a1b1c3r:
-      '<p>Dacă nu te-ai înscris pentru vot la secție sau prin corespondență, poți vota la orice secție de votare din străinătate pe liste suplimentare. Iată documentele de care ai nevoie și programul de vot: </p><p><b>Documente necesare:</b>  Pentru a vota ai nevoie de un act de identitate emis de statul român, valabil în ziua votului: cartea de identitate; cartea electronică de identitate; cartea de identitate provizorie; buletinul de identitate; paşaportul diplomatic; paşaportul diplomatic electronic; paşaportul de serviciu; paşaportul de serviciu electronic; paşaportul simplu; paşaportul simplu electronic; paşaportul simplu temporar; în cazul elevilor din şcolile militare, carnetul de serviciu militar.</p>' +
+      '<p>Dacă nu te-ai înscris pentru vot la secție sau prin corespondență, poți vota la orice secție de votare din străinătate pe liste suplimentare. Iată documentele de care ai nevoie și programul de vot: </p>' +
+      documents +
       schedule,
     label_a1b2: 'Nu am domiciliu sau reședința în străinătate',
-    label_a1b2_details: 'Unde te vei afla în ziua alegerilor?',
+    label_a1b2_details: '',
+    label_a1b2r:
+      '<p>Poți să votezi la orice secție de votare din străinătate pe listele suplimentare. Trebuie să ai la tine un document de identitate valabil în ziua votului emis de statul român:</p>' +
+      documents +
+      schedule,
     label_a2: ' Vreau să votez la alegerile parlamentare',
     label_a2_details:
       'Dacă ești cetățean al unui stat al Uniunii Europene si locuiești în România sau altă țară față de cea al cărui cetățean ești vei putea vota fie pentru listele de candidați ai tării al cărui cetățean ești, fie pentru listele de candidați ai statului în care ai domiciliu sau reședință legală. Alege în care dintre situațiile următoare te regăsești:',

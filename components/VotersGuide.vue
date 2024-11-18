@@ -93,7 +93,11 @@ export default {
         id: 'A1B2',
         text: 'votersGuide.label_a1b2',
         details: 'votersGuide.label_a1b2_details',
-        options: ['A1B1C1', 'A1B1C2'],
+        options: ['A1B2R'],
+      },
+      A1B2R: {
+        id: 'A1B2R',
+        text: 'votersGuide.label_a1b2r',
       },
       A2: {
         id: 'A2',
