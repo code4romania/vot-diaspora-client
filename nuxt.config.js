@@ -116,11 +116,11 @@ export default {
   i18n: {
     detectBrowserLanguage: false,
     locales: [
-      {
-        code: 'en',
-        name: 'EN',
-        file: 'en-US.js',
-      },
+      // {
+      //   code: 'en',
+      //   name: 'EN',
+      //   file: 'en-US.js',
+      // },
       // {
       //   code: 'hu',
       //   name: 'HU',

@@ -2,7 +2,8 @@ const schedule =
   '<p><b>Programul de vot:</b> Votul se va desfășura pe parcursul a trei zile la ambele scrutinuri.</p><p><b>Turul 1:</b></p><ul><li>Vineri, 22 noiembrie, între 12.00 și 21.00 (ora locală)</li><li>Sâmbătă, 23 noiembrie, între 07.00 și 21.00 (ora locală)</li><li>Duminică, 24 noiembrie, între 07.00 și 21.00 (ora locală) </li></ul><p><b>TURUL 2:</b> <ul><li>Vineri, 6 decembrie, între 12.00 și 21.00 (ora locală)</li><li>Sâmbătă, 7 decembrie, între 07.00 și 21.00 (ora locală)</li><li>Duminică, 8 decembrie, între 07.00 și 21.00 (ora locală) </li></ul></p>'
 const documents =
   '<p><b>Documente necesare:</b>  Pentru a vota ai nevoie de un act de identitate emis de statul român, valabil în ziua votului: cartea de identitate; cartea electronică de identitate; cartea de identitate provizorie; buletinul de identitate; paşaportul diplomatic; paşaportul diplomatic electronic; paşaportul de serviciu; paşaportul de serviciu electronic; paşaportul simplu; paşaportul simplu electronic; paşaportul simplu temporar; în cazul elevilor din şcolile militare, carnetul de serviciu militar.</p>'
-const documentsParliament = '<ul>' +
+const documentsParliament =
+  '<ul>' +
   '<li>paşaportul diplomatic electronic;</li>' +
   '<li>paşaportul de serviciu;</li>' +
   '<li>paşaportul de serviciu electronic;</li>' +
@@ -72,7 +73,7 @@ export default {
       documentsParliament +
       scheduleParliament,
     label_a2b1c2r:
-      '<p>Dacă te-ai înregistrat în registrul electoral pentru votul prin corespondență trebui să verifici că votul tău a ajuns la Autoritatea Electorală Permanentă până la data de 28 noiembrie. Dacă AEP nu te-a informat că votul tău a ajuns la ei, atunci poți vota la orice secție de votare.</p><p>În cazul în care votul tău nu a ajuns la AEP și te duci la secție, iată documentele de care ai nevoie și programul de vot: </p><p>Cetăţenii români <b>cu domiciliul în România, dar care au adresa de reşedinţă în străinătate</b>, îşi pot exercita dreptul de vot la secţiile de votare organizate în străinătate în baza unuia dintre următoarele acte de identitate, valabile în ziua votării, însoţite de un document oficial emis de statul străin privind stabilirea reşedinţei:</p>'+
+      '<p>Dacă te-ai înregistrat în registrul electoral pentru votul prin corespondență trebui să verifici că votul tău a ajuns la Autoritatea Electorală Permanentă până la data de 28 noiembrie. Dacă AEP nu te-a informat că votul tău a ajuns la ei, atunci poți vota la orice secție de votare.</p><p>În cazul în care votul tău nu a ajuns la AEP și te duci la secție, iată documentele de care ai nevoie și programul de vot: </p><p>Cetăţenii români <b>cu domiciliul în România, dar care au adresa de reşedinţă în străinătate</b>, îşi pot exercita dreptul de vot la secţiile de votare organizate în străinătate în baza unuia dintre următoarele acte de identitate, valabile în ziua votării, însoţite de un document oficial emis de statul străin privind stabilirea reşedinţei:</p>' +
       documentsParliament +
       scheduleParliament,
     label_a2b1c3r:
