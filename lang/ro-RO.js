@@ -2,6 +2,26 @@ const schedule =
   '<p><b>Programul de vot:</b> Votul se va desfășura pe parcursul a trei zile la ambele scrutinuri.</p><p><b>Turul 1:</b></p><ul><li>Vineri, 22 noiembrie, între 12.00 și 21.00 (ora locală)</li><li>Sâmbătă, 23 noiembrie, între 07.00 și 21.00 (ora locală)</li><li>Duminică, 24 noiembrie, între 07.00 și 21.00 (ora locală) </li></ul><p><b>TURUL 2:</b> <ul><li>Vineri, 6 decembrie, între 12.00 și 21.00 (ora locală)</li><li>Sâmbătă, 7 decembrie, între 07.00 și 21.00 (ora locală)</li><li>Duminică, 8 decembrie, între 07.00 și 21.00 (ora locală) </li></ul></p>'
 const documents =
   '<p><b>Documente necesare:</b>  Pentru a vota ai nevoie de un act de identitate emis de statul român, valabil în ziua votului: cartea de identitate; cartea electronică de identitate; cartea de identitate provizorie; buletinul de identitate; paşaportul diplomatic; paşaportul diplomatic electronic; paşaportul de serviciu; paşaportul de serviciu electronic; paşaportul simplu; paşaportul simplu electronic; paşaportul simplu temporar; în cazul elevilor din şcolile militare, carnetul de serviciu militar.</p>'
+const documentsParliament = '<ul>' +
+  '<li>paşaportul diplomatic electronic;</li>' +
+  '<li>paşaportul de serviciu;</li>' +
+  '<li>paşaportul de serviciu electronic;</li>' +
+  '<li>paşaportul simplu;</li>' +
+  '<li>paşaportul simplu electronic;</li>' +
+  '<li>paşaportul simplu temporar.</li>' +
+  '</ul>' +
+  '<p>Cetăţenii români <strong>cu domiciliul în străinătate </strong>îşi pot exercita dreptul de vot la secţiile de votare organizate în străinătate, conform prezentei legi, în baza unuia dintre următoarele acte de identitate, valabile în ziua votării:</p>' +
+  '<ul>' +
+  '<li>paşaportul simplu, cu menţionarea ţării de domiciliu;</li>' +
+  '<li>paşaportul simplu temporar, cu menţionarea ţării de domiciliu;</li>' +
+  '<li>paşaportul simplu electronic, cu menţionarea ţării de domiciliu.</li>' +
+  '</ul>'
+const scheduleParliament =
+  '<p><strong>Programul de vot:</strong> Votul se va desfășura pe parcursul a două zile</p>' +
+  '<ul>' +
+  '<li>Sâmbătă, 30 noiembrie, între 07.00 și 21.00 (ora locală)</li>' +
+  '<li>Duminică, 1 decembrie, între 07.00 și 21.00 (ora locală)</li>' +
+  '</ul>'
 export default {
   donate: 'Donează',
   helpMessage: `Vot Diaspora este una dintre zecile de soluții din Infrastructura Binelui construită de Code for Romania. Ajută-ne să le ținem în viață și să le creștem. <b>Trimite „PUTEM” prin SMS la <a href="sms://8864?body=PUTEM">8864</a></b> pentru a dona 4 euro lunar și ne poți ajuta să digitalizăm România construind sute de alte soluții la fel de utile.`,
@@ -37,24 +57,32 @@ export default {
       '<p>Poți să votezi la orice secție de votare din străinătate pe listele suplimentare. Trebuie să ai la tine un document de identitate valabil în ziua votului emis de statul român:</p>' +
       documents +
       schedule,
+    /// A1 END
     label_a2: ' Vreau să votez la alegerile parlamentare',
-    label_a2_details:
-      'Dacă ești cetățean al unui stat al Uniunii Europene si locuiești în România sau altă țară față de cea al cărui cetățean ești vei putea vota fie pentru listele de candidați ai tării al cărui cetățean ești, fie pentru listele de candidați ai statului în care ai domiciliu sau reședință legală. Alege în care dintre situațiile următoare te regăsești:',
-    label_a2b1: 'Locuiesc în România și vreau să votez pentru România',
-    label_a2b1_details:
-      'Dacă ești un cetățean UE care locuiește în România dar nu ai cetățenie română, atunci ai statut de alegător comunitar. Alegătorii comunitari pot vota pe liste speciale dacă sunt înscriși pe acestea.',
-    label_a2b1c1: 'Da, m-am înscris pe listele speciale',
-    label_a2b1c2: 'Nu, nu m-am înscris pe listele speciale',
+    label_a2_details: '',
+    label_a2b1: 'Am domiciliu sau reședința în străinătate',
+    label_a2b1_details: '',
+    label_a2b1c1:
+      'M-am înregistrat în registrul electoral, pe www.votstrăinătate.ro pentru vot la secție',
+    label_a2b1c2:
+      'M-am înregistrat în registrul electoral pe www.votstrăinătate.ro pentru vot prin corespondență',
+    label_a2b1c3: 'Nu m-am înregistrat în registrul electoral',
     label_a2b1c1r:
-      '<p>Dacă te afli în România în ziua alegerilor europarlamentare atunci vei putea vota în țară la orice secție de votare pe listele speciale. </p><p><b>Documente necesare:</b> Pentru a vota ai nevoie de un act de identitate: cartea de identitate, cartea electronică de identitate, cartea de identitate provizorie, buletinul de identitate, pașaportul diplomatic, pașaportul diplomatic electronic, pașaportul de serviciu, pașaportul de serviciu electronic, pașaportul simplu, pașaportul simplu electronic sau pașaportul simplu temporar. </p><p><b>Programul de vot:</b> Votul se va desfășura pe parcursul unei singure zile, duminică, 9 iunie 2024, între ora 07.00 (ora locală) și ora 22.00 (ora locală)</p>',
+      '<p>Dacă te-ai înregistrat în registrul electoral ca să votezi la secție, poți să votezi pe lista permanentă la secția la care ești înregistrat sau la orice secție de votare din străinătate pe liste suplimentare dacă ai cu tine un act de identitate valabil și dovada că ai domiciliul sau reședința în străinătate.</p><p>Așadar, <b>cetăţenii români cu domiciliul în România, dar care au adresa de reşedinţă în străinătate</b>, îşi pot exercita dreptul de vot la secţiile de votare organizate în străinătate în baza unuia dintre următoarele acte de identitate, valabile în ziua votării, însoţite de un document oficial emis de statul străin privind stabilirea reşedinţei:\n</b>' +
+      documentsParliament +
+      scheduleParliament,
     label_a2b1c2r:
-      '<p>Dacă te afli în România în ziua alegerilor europarlamentare dar nu te-ai înscris pe listele speciale, din pacate nu vei putea vota pentru alegerile europarlamentare pentru listele de candidați ai României. </p><p>Dacă vrei să votezi pentru listele țării al cărui cetățean ești, toate informațiile pentru toți cetățenii UE, regulile de vot și modul în care își pot exprima opțiunea electorală se află documentate pe platforma dezvoltată de Commit Global/Code for Romania <a href="https://wevote4.eu" target="_blank" rel="noopener">wevote4.eu</a>. Vei descoperi acolo toate informațiile de care ai nevoie pentru ați exprima votul pentru țara ta sau pentru o altă țară din Uniunea Europeană.</p>',
-    label_a2b2: 'Locuiesc în România și vreau să votez pentru alt stat',
+      '<p>Dacă te-ai înregistrat în registrul electoral pentru votul prin corespondență trebui să verifici că votul tău a ajuns la Autoritatea Electorală Permanentă până la data de 28 noiembrie. Dacă AEP nu te-a informat că votul tău a ajuns la ei, atunci poți vota la orice secție de votare.</p><p>În cazul în care votul tău nu a ajuns la AEP și te duci la secție, iată documentele de care ai nevoie și programul de vot: </p><p>Cetăţenii români <b>cu domiciliul în România, dar care au adresa de reşedinţă în străinătate</b>, îşi pot exercita dreptul de vot la secţiile de votare organizate în străinătate în baza unuia dintre următoarele acte de identitate, valabile în ziua votării, însoţite de un document oficial emis de statul străin privind stabilirea reşedinţei:</p>'+
+      documentsParliament +
+      scheduleParliament,
+    label_a2b1c3r:
+      '<p>Dacă nu te-ai înregistrat în registrul electoral, dar ai domiciliul sau reședința în străinătate poți să votezi la orice secție de votare din străinătate dacă ai cu tine un act de identitate valabil și dovada că ai domiciliul sau reședința în străinătate. </p><p>Așadar, cetăţenii români <b>cu domiciliul în România, dar care au adresa de reşedinţă în străinătate</b>, îşi pot exercita dreptul de vot la secţiile de votare organizate în străinătate în baza unuia dintre următoarele acte de identitate, valabile în ziua votării, însoţite de un document oficial emis de statul străin privind stabilirea reşedinţei:</p>' +
+      documentsParliament +
+      scheduleParliament,
+    label_a2b2: 'Nu am domiciliu sau reședința în străinătate',
     label_a2b2r:
-      '<p>Dacă te afli în România în ziua alegerilor europarlamentare dar nu te-ai înscris pe listele speciale, din pacate nu vei putea vota pentru alegerile europarlamentare pentru listele de candidați ai României. </p><p>Dacă vrei să votezi pentru listele țării al cărui cetățean ești, toate informațiile pentru toți cetățenii UE, regulile de vot și modul în care își pot exprima opțiunea electorală se află documentate pe platforma dezvoltată de Commit Global/Code for Romania <a href="https://wevote4.eu" target="_blank" rel="noopener">wevote4.eu</a>. Vei descoperi acolo toate informațiile de care ai nevoie pentru ați exprima votul pentru țara ta sau pentru o altă țară din Uniunea Europeană.</p>',
-    label_a3: 'Sunt cetățean non-UE',
-    label_a3r:
-      'Dacă ești cetățean non UE indiferent de unde te afli pe teritoriul Uniunii Europene nu vei putea vota la alegerile europarlamentare. Doar cetățenii UE pot să își exprime dreptul la vot în această rundă electorală.',
+      '<p>Din păcate la alegerile parlamentare, dacă nu ești domiciliat sau nu ai reședință în străinătate nu vei putea vota la alegerile parlamentare. Poți face acest lucru doar dacă revii în România în județul în care ai domiciliul.</p>',
+
     callToAction: 'Alege una dintre opțiunile de mai jos',
   },
   pollingStationSearch: {
@@ -77,7 +105,8 @@ export default {
   },
   back_button: 'Înapoi',
   back_to_start_button: 'Înapoi la început',
-  introduction: `<p>Pe 9 iunie 2024, românii de pretutindeni au dreptul de a-și alege reprezentanții în Parlamentul European. Dacă locuiești peste hotare, ai două opțiuni: fie te înscrii pe listele electorale ale statului de rezidență și alegi dintre candidații statului respectiv (info complete pe <a href="https://wevote4.eu" target="_blank" rel="noopener">wevote4.eu</a>), fie votezi candidații României. Pentru cea de-a doua opțiune, ai nevoie de un pașaport valid (chiar și cel temporar), carte de identitate (chiar și provizorie) sau buletin.</p><p>Folosește harta de mai jos pentru a vedea care este cea mai apropiată secție de votare din orașul sau țara în care locuiești.</p>`,
+  introduction: `<p>În anul 2024 alegerile prezidențiale și cele parlamentare se vor desfășura pe parcursul a trei săptămâni, iar cetățenii din diaspora vor avea mai multe zile la dispoziție pentru a putea vota. Astfel că primul tur al alegerilor prezidențiale se va desfășura între 22 și 24 noiembrie, alegerile parlamentare pe 30 noiembrie și 1 decembrie, iar al doilea tur al alegerilor prezidențiale între 6 și 8 decembrie. Dacă aveți domiciliul sau reședința în străinătate puteți vota la secțiile de votare organizate în diaspora dacă prezentați un act de identitate valid. </p><p>Folosiți harta de mai jos pentru a vedea care este cea mai apropiată secție de votare de locul în care vă veți afla în zilele de vot.
+</p>`,
   about: {
     title: 'Despre proiect',
     text: `<p>Vot Diaspora este o platformă care simplifică pe înțelesul cetățenilor ghidul electoral al alegerilor la fiecare rundă electorală. Vot Diaspora este primul proiect pe care <a target="_blank" rel="noopener" href="https://code4.ro/">Code for Romania </a> l-a construit, începând cu anul 2016,  pentru a facilita accesul cetățenilor români de peste hotare la informație și a ajuta la o mai mare transparență a procesului electoral. La alegerile europarlamentare din 2019, aplicația a fost utilizată de 25% din totalul alegătorilor din diaspora, iar la ultima rundă a alegerilor prezidențiale, 185.000 alegători s-au informat prin votdiaspora.ro </p><p>Accesând votdiaspora.ro, toți cetățenii vor putea să verifice, alături de documentele și procedurile necesare pentru a vota la secție sau prin corespondență dacă se află în afara țării și care este secția la care sunt arondați în funcție de statutul fiecăruia. Website-ul va fi disponibil cu informații actualizate la fiecare nouă rundă electorală. Conținutul prezent pe platforma Vot Diaspora este realizat în parteneriat cu experții electorali ai Observatorului Electoral.</p><p>Vot Diaspora face parte din ecosistemul electoral dezvoltat de voluntarii Code for Romania, fiind cea de-a patra aplicație dedicată procesului electoral din țara noastră. Monitorizare Vot este aplicația web și mobilă dedicată observatorilor electorali independenți - prima aplicație de monitorizare electorală din România, fiind și cea mai utilizată de acest tip la nivel global. Lansată în 2016 aceasta a fost folosită la toate rundele electorale din ultimii patru ani și a fost preluată inclusiv în Polonia, încă din 2018, în cadrul primelor alegeri monitorizate independent în statul polonez. Am dezvoltat de asemenea și <a target="_blank" rel="noopener" href="https://rezultatevot.ro/">Rezultate Vot</a>, website lansat în 2019 cu ocazia alegerilor europarlamentare - o platformă care arată în timp real prezența la vot și rezultatele alegerilor. Din anul 2020 platforma va cuprinde și întregul istoric electoral post-decembrist și alte funcționalități în premieră pentru România, fiind nu doar locul unde vor putea fi aflate cel mai rapid și ușor rezultatele alegerilor, ci și un bun instrument de analiză comparativă a datelor.</p><p> Toate aplicațiile din ecosistemul dedicat alegerilor sunt dezvoltate pro bono de către voluntarii Code for Romania și menținute de echipa noastră permanentă. </p><p > Code for Romania este o organizație non-profit care dezvoltă pro bono soluții digitale pentru a rezolva probleme sociale. Înființată în anul 2016, Code for Romania a ajuns în prezent la o comunitate de peste 3000 de voluntari din sectorul IT care au dezvoltat zeci de aplicații web și mobile pentru România, precum cele din ecosistemul Covid-19, soluțiile de sprijin pentru refugiații din Ucraina, redirectioneaza.ro și altele. Din 2023 soluțiile Code for Romania sprijină persoanele vulnerabile din întreaga lume și este primul ONG românesc care scalează la nivel internațional</p>`,
@@ -96,7 +125,7 @@ export default {
   social_share: {
     title: 'Informează-ți prietenii',
     text:
-      'Distribuie aceste informații în social media pentru a ajuta cât mai mulți români să afle unde pot vota la alegerile parlamentare din 2024, de ce documente au nevoie și alte sfaturi utile.',
+      'Distribuie aceste informații în social media pentru a ajuta cât mai mulți români să afle unde pot vota la alegerile parlamentare și prezidențiale din 2024, de ce documente au nevoie și alte sfaturi utile.',
   },
   donate_card: {
     title: 'Susține-ne',

@@ -109,7 +109,7 @@ export default {
         id: 'A2B1',
         text: 'votersGuide.label_a2b1',
         details: 'votersGuide.label_a2b1_details',
-        options: ['A2B1C1', 'A2B1C2'],
+        options: ['A2B1C1', 'A2B1C2', 'A2B1C3'],
       },
       A2B1C1: {
         id: 'A2B1C1',
@@ -121,6 +121,11 @@ export default {
         text: 'votersGuide.label_a2b1c2',
         options: ['A2B1C2R'],
       },
+      A2B1C3: {
+        id: 'A2B1C3',
+        text: 'votersGuide.label_a2b1c3',
+        options: ['A2B1C3R'],
+      },
 
       A2B1C1R: {
         id: 'A2B1C1R',
@@ -131,6 +136,10 @@ export default {
         id: 'A2B1C2R',
         text: 'votersGuide.label_a2b1c2r',
       },
+      A2B1C3R: {
+        id: 'A2B1C3R',
+        text: 'votersGuide.label_a2b1c3r',
+      },
 
       A2B2: {
         id: 'A2B2',
@@ -140,15 +149,6 @@ export default {
       A2B2R: {
         id: 'A2B2R',
         text: 'votersGuide.label_a2b2r',
-      },
-      A3: {
-        id: 'A3',
-        text: 'votersGuide.label_a3',
-        options: ['A3R'],
-      },
-      A3R: {
-        id: 'A3R',
-        text: 'votersGuide.label_a3r',
       },
     },
   }),
