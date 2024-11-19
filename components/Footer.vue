@@ -104,20 +104,20 @@
                 <a
                   target="_blank"
                   rel="noopener noreferrer"
-                  href="https://code4.ro/ro/"
+                  href="https://atentlavot.ro/ro"
                 >
-                  Code for Romania
+                  Atent la Vot
                 </a>
               </li>
-              <!-- <li>
+              <li>
                 <a
                   target="_blank"
                   rel="noopener noreferrer"
-                  href="https://civiclabs.ro/"
+                  href="https://www.code4.ro/ro/raport-alegeri-monitorizare-vot"
                 >
-                  Civic Labs
+                  Monitorizare Vot
                 </a>
-              </li> -->
+              </li>
             </ul>
           </nav>
         </div>
@@ -168,3 +168,4 @@ footer a {
   }
 }
 </style>
+<script setup lang="ts"></script>

@@ -1,9 +1,28 @@
 const schedule =
   '<p><b>Programul de vot:</b> Votul se va desfășura pe parcursul a trei zile la ambele scrutinuri.</p><p><b>TURUL 1:</b></p><ul><li>Vineri, 22 noiembrie, între 12.00 și 21.00 (ora locală)</li><li>Sâmbătă, 23 noiembrie, între 07.00 și 21.00 (ora locală)</li><li>Duminică, 24 noiembrie, între 07.00 și 21.00 (ora locală) </li></ul><p><b>TURUL 2:</b> <ul><li>Vineri, 6 decembrie, între 12.00 și 21.00 (ora locală)</li><li>Sâmbătă, 7 decembrie, între 07.00 și 21.00 (ora locală)</li><li>Duminică, 8 decembrie, între 07.00 și 21.00 (ora locală) </li></ul></p>'
 const documents =
-  '<p><b>Documente necesare:</b>  Pentru a vota ai nevoie de un act de identitate emis de statul român, valabil în ziua votului: cartea de identitate; cartea electronică de identitate; cartea de identitate provizorie; buletinul de identitate; paşaportul diplomatic; paşaportul diplomatic electronic; paşaportul de serviciu; paşaportul de serviciu electronic; paşaportul simplu; paşaportul simplu electronic; paşaportul simplu temporar; în cazul elevilor din şcolile militare, carnetul de serviciu militar.</p>'
+  '<p><b>Documente necesare:</b>  Pentru a vota ai nevoie de un act de identitate emis de statul român, valabil în ziua votului: ' +
+  '<ul>' +
+  '<li>cartea de identitate;</li>' +
+  '<li>cartea electronică de identitate;</li>' +
+  '<li>cartea de identitate provizorie;</li>' +
+  '<li>buletinul de identitate;</li>' +
+  '<li>paşaportul diplomatic;</li>\n' +
+  '<li>paşaportul diplomatic electronic;</li>' +
+  '<li>paşaportul de serviciu;</li>' +
+  '<li>paşaportul de serviciu electronic;</li>' +
+  '<li>paşaportul simplu;</li>' +
+  '<li>paşaportul simplu electronic;</li>' +
+  '<li>paşaportul simplu temporar.</li>' +
+  '<li>în cazul elevilor din şcolile militare, carnetul de serviciu militar.</li>' +
+  '</ul>'
 const documentsParliament =
   '<ul>' +
+  '<li>cartea de identitate;</li>' +
+  '<li>cartea electronică de identitate;</li>' +
+  '<li>cartea de identitate provizorie;</li>' +
+  '<li>buletinul de identitate;</li>' +
+  '<li>paşaportul diplomatic;</li>\n' +
   '<li>paşaportul diplomatic electronic;</li>' +
   '<li>paşaportul de serviciu;</li>' +
   '<li>paşaportul de serviciu electronic;</li>' +
@@ -134,6 +153,7 @@ export default {
     text:
       'Vot Diaspora este una dintre zecile de soluții din Infrastructura Binelui construită de Code for Romania.',
   },
+  with_mae_support: 'Realizat cu sprijinul',
   cookie: {
     title: 'Politica de cookies',
     text: `<p>Acest website foloseste cookie-uri pentru a furniza vizitatorilor o experienta mult mai buna de navigare si servicii adaptate nevoilor si interesului fiecaruia</p>

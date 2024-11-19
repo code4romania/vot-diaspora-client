@@ -57,10 +57,13 @@
       </nuxt-link>
       <nuxt-link
         :to="localePath('index')"
-        class="text-dark d-flex flex-column flex-sm-row align-items-center"
+        class="text-dark d-flex flex-column flex-sm-row align-items-center ml-5"
       >
+        <span class="" style="font-size: 13px">{{
+          $t('with_mae_support')
+        }}</span>
         <img
-          class="navbar-brand mr-2 ml-5"
+          class="navbar-brand mr-2 ml-2"
           src="../assets/logo_mae.svg"
           height="60"
           alt="Ministerul Afacerilor Externe"
@@ -96,7 +99,7 @@
         </a>
       </div>
     </nav>
-    <div class="bg-warning text-center py-3 mt-2">
+    <div class="bg-warning text-center py-3 mt-2" v-show="showDonationButton">
       <div class="container">
         <p class="mb-0" v-html="$t('helpMessage')" />
       </div>
