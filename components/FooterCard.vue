@@ -54,17 +54,35 @@
             {{ $t('donate_card.text') }}
           </p>
           <a
+            v-show="showDonationButton"
             class="btn btn-lg btn-success text-white"
             href="https://code4.ro/ro/doneaza/"
             target="_blank"
             rel="noopener noreferrer"
             >{{ $t('donate') }}</a
           >
+          <a
+            v-show="!showDonationButton"
+            class="btn btn-lg btn-success text-white"
+            href="https://code4.ro/ro/doneaza/"
+            target="_blank"
+            rel="noopener noreferrer"
+            >{{ $t('how_to_contribute') }}</a
+          >
         </div>
       </div>
     </div>
   </div>
 </template>
+<script>
+export default {
+  computed: {
+    showDonationButton() {
+      return process.env.SHOW_DONATION_BUTTON
+    },
+  },
+}
+</script>
 
 <style lang="scss" scoped>
 .share-actions {

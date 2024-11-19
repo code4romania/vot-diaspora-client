@@ -4,6 +4,7 @@ export default {
       process.env.NUXT_ENV_API_URL || 'https://api.votdiaspora.ro/api',
 
     HERE_MAPS_API_KEY: process.env.HERE_MAPS_API_KEY,
+    SHOW_DONATION_BUTTON: process.env.SHOW_DONATION_BUTTON === 'true',
   },
   /*
    ** Nuxt target
@@ -14,6 +15,8 @@ export default {
    ** Headers of the page
    ** See https://nuxtjs.org/api/configuration-head
    */
+
+
   head: {
     title: 'VotDiaspora',
     meta: [
@@ -116,11 +119,11 @@ export default {
   i18n: {
     detectBrowserLanguage: false,
     locales: [
-      {
-        code: 'en',
-        name: 'EN',
-        file: 'en-US.js',
-      },
+      // {
+      //   code: 'en',
+      //   name: 'EN',
+      //   file: 'en-US.js',
+      // },
       // {
       //   code: 'hu',
       //   name: 'HU',

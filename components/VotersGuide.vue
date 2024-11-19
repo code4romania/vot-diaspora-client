@@ -47,7 +47,7 @@ export default {
       START: {
         id: 'START',
         text: '',
-        options: ['A1', 'A2', 'A3'],
+        options: ['A1', 'A2'],
       },
       A1: {
         id: 'A1',
@@ -59,31 +59,17 @@ export default {
         id: 'A1B1',
         text: 'votersGuide.label_a1b1',
         details: 'votersGuide.label_a1b1_details',
-        options: ['A1B1C1', 'A1B1C2'],
+        options: ['A1B1C1', 'A1B1C2', 'A1B1C3'],
       },
       A1B1C1: {
         id: 'A1B1C1',
         text: 'votersGuide.label_a1b1c1',
         details: 'votersGuide.label_a1b1c1_details',
-        options: ['A1B1C1D1', 'A1B1C1D2'],
+        options: ['A1B1C1R'],
       },
-      A1B1C1D1: {
-        id: 'A1B1C1D1',
-        text: 'votersGuide.label_a1b1c1d1',
-        options: ['A1B1C1D1R'],
-      },
-      A1B1C1D1R: {
-        id: 'A1B1C1D1R',
-        text: 'votersGuide.label_a1b1c1d1r',
-      },
-      A1B1C1D2: {
-        id: 'A1B1C1D2',
-        text: 'votersGuide.label_a1b1c1d2',
-        options: ['A1B1C1D2R'],
-      },
-      A1B1C1D2R: {
-        id: 'A1B1C1D2R',
-        text: 'votersGuide.label_a1b1c1d2r',
+      A1B1C1R: {
+        id: 'A1B1C1R',
+        text: 'votersGuide.label_a1b1c1r',
       },
       A1B1C2: {
         id: 'A1B1C2',
@@ -94,11 +80,24 @@ export default {
         id: 'A1B1C2R',
         text: 'votersGuide.label_a1b1c2r',
       },
+      A1B1C3: {
+        id: 'A1B1C3',
+        text: 'votersGuide.label_a1b1c3',
+        options: ['A1B1C3R'],
+      },
+      A1B1C3R: {
+        id: 'A1B1C3R',
+        text: 'votersGuide.label_a1b1c3r',
+      },
       A1B2: {
         id: 'A1B2',
         text: 'votersGuide.label_a1b2',
         details: 'votersGuide.label_a1b2_details',
-        options: ['A1B1C1', 'A1B1C2'],
+        options: ['A1B2R'],
+      },
+      A1B2R: {
+        id: 'A1B2R',
+        text: 'votersGuide.label_a1b2r',
       },
       A2: {
         id: 'A2',
@@ -110,7 +109,7 @@ export default {
         id: 'A2B1',
         text: 'votersGuide.label_a2b1',
         details: 'votersGuide.label_a2b1_details',
-        options: ['A2B1C1', 'A2B1C2'],
+        options: ['A2B1C1', 'A2B1C2', 'A2B1C3'],
       },
       A2B1C1: {
         id: 'A2B1C1',
@@ -122,6 +121,11 @@ export default {
         text: 'votersGuide.label_a2b1c2',
         options: ['A2B1C2R'],
       },
+      A2B1C3: {
+        id: 'A2B1C3',
+        text: 'votersGuide.label_a2b1c3',
+        options: ['A2B1C3R'],
+      },
 
       A2B1C1R: {
         id: 'A2B1C1R',
@@ -132,6 +136,10 @@ export default {
         id: 'A2B1C2R',
         text: 'votersGuide.label_a2b1c2r',
       },
+      A2B1C3R: {
+        id: 'A2B1C3R',
+        text: 'votersGuide.label_a2b1c3r',
+      },
 
       A2B2: {
         id: 'A2B2',
@@ -141,15 +149,6 @@ export default {
       A2B2R: {
         id: 'A2B2R',
         text: 'votersGuide.label_a2b2r',
-      },
-      A3: {
-        id: 'A3',
-        text: 'votersGuide.label_a3',
-        options: ['A3R'],
-      },
-      A3R: {
-        id: 'A3R',
-        text: 'votersGuide.label_a3r',
       },
     },
   }),
