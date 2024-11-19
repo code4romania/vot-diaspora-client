@@ -131,7 +131,7 @@ export default {
   donate_card: {
     title: 'Susține-ne',
     text:
-      'Vot Diaspora este una dintre zecile de soluții din Infrastructura Binelui construită de Code for Romania. Ajută-ne să le ținem în viață și să le creștem.',
+      'Vot Diaspora este una dintre zecile de soluții din Infrastructura Binelui construită de Code for Romania.',
   },
   cookie: {
     title: 'Politica de cookies',

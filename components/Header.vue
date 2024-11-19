@@ -55,6 +55,17 @@
           alt="Vot Diaspora"
         />
       </nuxt-link>
+      <nuxt-link
+        :to="localePath('index')"
+        class="text-dark d-flex flex-column flex-sm-row align-items-center"
+      >
+        <img
+          class="navbar-brand mr-2 ml-5"
+          src="../assets/logo_mae.svg"
+          height="60"
+          alt="Ministerul Afacerilor Externe"
+        />
+      </nuxt-link>
       <div class="d-flex align-items-center mx-auto mr-sm-0 mt-5 mt-sm-0">
         <nuxt-link
           :to="localePath('despre')"
@@ -77,6 +88,7 @@
           </option>
         </select>
         <a
+          v-show="showDonationButton"
           href="https://code4.ro/ro/doneaza"
           class="btn btn-success text-white font-weight-bold ml-2 ml-sm-4"
         >
@@ -103,7 +115,11 @@ export default {
     availableLocales() {
       return this.$i18n.locales.filter((i) => i.code !== this.$i18n.locale)
     },
+    showDonationButton() {
+      return process.env.SHOW_DONATION_BUTTON
+    },
   },
+
   methods: {
     onChange(event) {
       this.$router.replace(this.switchLocalePath(event))

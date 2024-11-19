@@ -54,6 +54,7 @@
             {{ $t('donate_card.text') }}
           </p>
           <a
+            v-show="showDonationButton"
             class="btn btn-lg btn-success text-white"
             href="https://code4.ro/ro/doneaza/"
             target="_blank"
@@ -65,6 +66,15 @@
     </div>
   </div>
 </template>
+<script>
+export default {
+  computed: {
+    showDonationButton() {
+      return process.env.SHOW_DONATION_BUTTON
+    },
+  },
+}
+</script>
 
 <style lang="scss" scoped>
 .share-actions {
