@@ -109,7 +109,7 @@ export default {
   pollingStationSearch: {
     question: 'Unde stai?',
     callToAction:
-      '<p>Caută orașul în care locuiești pentru a afla care sunt cele mai apropiate secții de votare. Orice căutare pe harta din această platformă pentru noi înseamnă un cost suplimentar. Dacă te ajută Vot Diaspora, fă o <a target="_blank" rel="noopener" href="https://code4.ro/ro/doneaza/">donație</a> oricât de mică pentru Code for Romania care a dezvoltat acest site complet pro bono.</p>',
+      '<p>Caută orașul în care locuiești pentru a afla care sunt cele mai apropiate secții de votare. Orice căutare pe harta din această platformă pentru noi înseamnă un cost suplimentar. Dacă te ajută Vot Diaspora, <a href="https://code4.ro/ro/doneaza/" target="_blank"> descoperă cum poți contribui </a> la proiectele Code for Romania, organizație care a dezvoltat acest site complet pro bono.</p>',
     searchPlaceholder:
       'Caută adresa ta pentru a afla la ce secție ești arondat',
     addressNotFound:
