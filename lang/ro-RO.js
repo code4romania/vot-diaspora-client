@@ -154,6 +154,8 @@ export default {
       'Vot Diaspora este una dintre zecile de soluții din Infrastructura Binelui construită de Code for Romania.',
   },
   with_mae_support: 'Realizat cu sprijinul',
+  text_day_we_go_home:
+    '<p>Alegerile prezidențiale 2024 au fost anulate prin <a href="https://www.ccr.ro/wp-content/uploads/2024/12/Comunicat-de-presa-6-decembrie-2024.pdf" target="_blank">decizia</a> Curții Constituționale din 6 decembrie 2024.</p><p>Biroul Electoral Central a suspendat votul în diaspora pe 6 decembrie 2024.</p>',
   cookie: {
     title: 'Politica de cookies',
     text: `<p>Acest website foloseste cookie-uri pentru a furniza vizitatorilor o experienta mult mai buna de navigare si servicii adaptate nevoilor si interesului fiecaruia</p>
