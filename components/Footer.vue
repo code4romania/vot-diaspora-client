@@ -143,7 +143,7 @@
               src="../assets/code4RoGrey.svg"
               class="mt-3 mb-2" /></nuxt-link
           ><br />
-          <span>&copy; 2024 Code for Romania.</span>
+          <span>&copy; {{ currentYear }} Code for Romania.</span>
           <p>
             Organizație neguvernamentală independentă, neafiliată politic și
             apolitică.
@@ -168,4 +168,12 @@ footer a {
   }
 }
 </style>
-<script setup lang="ts"></script>
+<script>
+export default {
+  data() {
+    return {
+      currentYear: new Date().getFullYear(),
+    }
+  },
+}
+</script>

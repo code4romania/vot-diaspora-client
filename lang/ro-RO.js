@@ -1,108 +1,45 @@
 const schedule =
-  '<p><b>Programul de vot:</b> Votul se va desfășura pe parcursul a trei zile la ambele scrutinuri.</p><p><b>TURUL 1:</b></p><ul><li>Vineri, 22 noiembrie, între 12.00 și 21.00 (ora locală)</li><li>Sâmbătă, 23 noiembrie, între 07.00 și 21.00 (ora locală)</li><li>Duminică, 24 noiembrie, între 07.00 și 21.00 (ora locală) </li></ul><p><b>TURUL 2:</b> <ul><li>Vineri, 6 decembrie, între 12.00 și 21.00 (ora locală)</li><li>Sâmbătă, 7 decembrie, între 07.00 și 21.00 (ora locală)</li><li>Duminică, 8 decembrie, între 07.00 și 21.00 (ora locală) </li></ul></p>'
+  '<strong>Programul de vot:</strong> Votul se va desfășura pe parcursul a trei zile la ambele scrutinuri, după programul de mai jos. Pentru alegătorii care se află la sediul secţiei de votare la închiderea acesteia, există posibilitatea prelungirii votării cu încă trei ore.</p><p><strong>TURUL 1:</strong></p><ul><li>Vineri, 2 mai, între 07:00 și 21:00 (ora locală)</li><li>Sâmbătă, 3 mai, între 07:00 și 21:00 (ora locală)</li><li>Duminică, 4 mai, între 07:00 (ora locală) și 21:00, ora locală, pentru tările din estul României, respectiv ora 21:00, ora României, pentru țările din vestul României. De exemplu, în următoarele țări, ora de închidere a votării este ora 21:00, ora României:<ul><li>Algeria, Austria, Belarus, Belgia, Bosnia şi Herţegovina, Cehia, Croaţia, Danemarca, Elveţia, Franţa, Germania, Italia, Luxemburg, Macedonia de Nord, Marea Britanie, Maroc, Muntenegru, Nigeria, Norvegia, Olanda, Polonia, Serbia, Slovacia, Slovenia, Spania, Suedia, Tunisia, Ungaria - secțiile de votare se închid la ora 20:00 (ora locală);</li><li>Islanda, Irlanda, Portugalia, Senegal - urnele se închid la ora 19:00 (ora locală);</li><li>Brazilia, Chile, Argentina, Uruguay - secțiile de votare se închid la ora 16:00 (ora locală);</li><li>Canada (Dieppe) - secțiile de votare se închid la ora 15:00 (ora locală);</li><li>Canada (Ottawa, Toronto, Montreal, Quebec), Columbia, Cuba, Peru, SUA (Washington, Miami, New York) - secțiile de votare se închid la ora 14:00 (ora locală);</li><li>Canada (Winnipeg), SUA (Chicago, Houston, Dallas) - secțiile de votare se închid la ora 13:00 (ora locală);</li><li>Canada (Calgary, Edmonton) - secțiile de votare se închid la ora 12:00 (ora locală);</li><li>SUA (San Francisco, Los Angeles), Canada (Vancouver) - secțiile de votare se închid la ora 11:00 (ora locală);</li></ul></li></ul><p><strong>TURUL 2:</strong></p><ul><li>Vineri, 16 mai, între 07:00 și 21:00 (ora locală)</li><li>Sâmbătă, 17 mai, între 07:00 și 21:00 (ora locală)</li><li>Duminică, 18 mai, între 07:00 (ora locală) și 21:00, ora locală, pentru tările din estul României, respectiv ora 21:00, ora României, pentru țările din vestul României. De exemplu, în următoarele țări, ora de închidere a votării este ora 21:00, ora României:<ul><li>Algeria, Austria, Belarus, Belgia, Bosnia şi Herţegovina, Cehia, Croaţia, Danemarca, Elveţia, Franţa, Germania, Italia, Luxemburg, Macedonia de Nord, Marea Britanie, Maroc, Muntenegru, Nigeria, Norvegia, Olanda, Polonia, Serbia, Slovacia, Slovenia, Spania, Suedia, Tunisia, Ungaria - secțiile de votare se închid la ora 20:00 (ora locală);</li><li>Islanda, Irlanda, Portugalia, Senegal - urnele se închid la ora 19:00 (ora locală);</li><li>Brazilia, Chile, Argentina, Uruguay - secțiile de votare se închid la ora 16:00 (ora locală);</li><li>Canada (Dieppe) - secțiile de votare se închid la ora 15:00 (ora locală);</li><li>Canada (Ottawa, Toronto, Montreal, Quebec), Columbia, Cuba, Peru, SUA (Washington, Miami, New York) - secțiile de votare se închid la ora 14:00 (ora locală);</li><li>Canada (Winnipeg), SUA (Chicago, Houston, Dallas) - secțiile de votare se închid la ora 13:00 (ora locală);</li><li>Canada (Calgary, Edmonton) - secțiile de votare se închid la ora 12:00 (ora locală);</li><li>SUA (San Francisco, Los Angeles), Canada (Vancouver) - secțiile de votare se închid la ora 11:00 (ora locală);</li></ul></li></ul>'
 const documents =
-  '<p><b>Documente necesare:</b>  Pentru a vota ai nevoie de un act de identitate emis de statul român, valabil în ziua votului: ' +
-  '<ul>' +
-  '<li>cartea de identitate;</li>' +
-  '<li>cartea electronică de identitate;</li>' +
-  '<li>cartea de identitate provizorie;</li>' +
-  '<li>buletinul de identitate;</li>' +
-  '<li>paşaportul diplomatic;</li>\n' +
-  '<li>paşaportul diplomatic electronic;</li>' +
-  '<li>paşaportul de serviciu;</li>' +
-  '<li>paşaportul de serviciu electronic;</li>' +
-  '<li>paşaportul simplu;</li>' +
-  '<li>paşaportul simplu electronic;</li>' +
-  '<li>paşaportul simplu temporar.</li>' +
-  '<li>în cazul elevilor din şcolile militare, carnetul de serviciu militar.</li>' +
-  '</ul>'
-const documentsParliament =
-  '<ul>' +
-  '<li>cartea de identitate;</li>' +
-  '<li>cartea electronică de identitate;</li>' +
-  '<li>cartea de identitate provizorie;</li>' +
-  '<li>buletinul de identitate;</li>' +
-  '<li>paşaportul diplomatic;</li>\n' +
-  '<li>paşaportul diplomatic electronic;</li>' +
-  '<li>paşaportul de serviciu;</li>' +
-  '<li>paşaportul de serviciu electronic;</li>' +
-  '<li>paşaportul simplu;</li>' +
-  '<li>paşaportul simplu electronic;</li>' +
-  '<li>paşaportul simplu temporar.</li>' +
-  '</ul>' +
-  '<p>Cetăţenii români <strong>cu domiciliul în străinătate </strong>îşi pot exercita dreptul de vot la secţiile de votare organizate în străinătate, conform prezentei legi, în baza unuia dintre următoarele acte de identitate, valabile în ziua votării:</p>' +
-  '<ul>' +
-  '<li>paşaportul simplu, cu menţionarea ţării de domiciliu;</li>' +
-  '<li>paşaportul simplu temporar, cu menţionarea ţării de domiciliu;</li>' +
-  '<li>paşaportul simplu electronic, cu menţionarea ţării de domiciliu.</li>' +
-  '</ul>'
-const scheduleParliament =
-  '<p><strong>Programul de vot:</strong> Votul se va desfășura pe parcursul a două zile</p>' +
-  '<ul>' +
-  '<li>Sâmbătă, 30 noiembrie, între 07.00 și 21.00 (ora locală)</li>' +
-  '<li>Duminică, 1 decembrie, între 07.00 și 21.00 (ora locală)</li>' +
-  '</ul>'
+  '<strong>Documente necesare:</strong> Pentru a vota ai nevoie de un act de identitate emis de statul român, valabil în ziua votului: cartea de identitate; cartea electronică de identitate; cartea de identitate provizorie; buletinul de identitate; paşaportul diplomatic; paşaportul diplomatic electronic; paşaportul de serviciu; paşaportul de serviciu electronic; paşaportul simplu; paşaportul simplu electronic; paşaportul simplu temporar; în cazul elevilor din şcolile militare, carnetul de serviciu militar.</p><p>'
+
 export default {
   donate: 'Donează',
   how_to_contribute: 'Află cum poți contribui',
   helpMessage: `Vot Diaspora este una dintre zecile de soluții din Infrastructura Binelui construită de Code for Romania. Ajută-ne să le ținem în viață și să le creștem. <b>Trimite „PUTEM” prin SMS la <a href="sms://8864?body=PUTEM">8864</a></b> pentru a dona 4 euro lunar și ne poți ajuta să digitalizăm România construind sute de alte soluții la fel de utile.`,
   banner: 'O soluție Commit Global.',
   nav_about: 'Despre',
-  guide_title: 'Selectează din opțiunile de mai jos ce ți se potrivește',
+  guide_title:
+    'Selectează din opțiunile de mai jos ce ți se potrivește pentru a afla informații despre cum să votezi la Alegerile Prezidențiale 2025:',
   votersGuide: {
-    label_a1: 'Vreau să votez la alegerile prezidențiale',
-    label_a1_details: '',
-    label_a1b1: 'Am domiciliu sau reședința în străinătate',
-    label_a1b1_details: '',
-    label_a1b1c1:
+    option_a_text: 'Am domiciliu sau reședința în străinătate',
+    option_aa_text:
       'M-am înregistrat în registrul electoral, pe www.votstrăinătate.ro pentru vot la secție',
-    label_a1b1c1_details: '',
-    label_a1b1c3: 'Nu m-am înregistrat în registrul electoral',
-    label_a1b1c1r:
-      '<p>Poți să votezi la secția de votare la care ești înregistrat pe liste permanente sau la orice secție de votare din străinătate pe liste suplimentare. Trebuie să ai la tine un document de identitate valabil.</p>' +
+    text_aar:
+      '<p>Termenul limită de înscriere în Registrul electoral ca alegător în străinătate la o secție de votare este de <strong>04.03.2025, ora 23:59:59</strong>. Înscrierea se face urmând instrucțiunile de aici <a href="https://www.votstrainatate.ro/presedinte" target="_blank">https://www.votstrainatate.ro/presedinte</a><p><p>Dacă te-ai înregistrat în Registrul electoral, poți să votezi la secția de votare la care ești înregistrat pe liste permanente sau la orice secție de votare din străinătate pe liste suplimentare.</p>' +
       documents +
       schedule,
-    label_a1b1c2:
+
+    option_ab_text:
       'M-am înregistrat în registrul electoral pe www.votstrăinătate.ro pentru vot prin corespondență',
-    label_a1b1c2r:
-      '<p>Dacă ai ales să votezi prin corespondență pentru Turul 1 la alegerile prezidențiale atunci trebuie să te asiguri că plicul cu votul tău a ajuns <b>până pe 21 noiembrie</b> la biroul electoral pentru votul prin corespondență cu sediul în România sau la sediul reprezentanței diplomatice. Dacă ai fost informat că plicul tău nu a ajuns până la această dată, poți să votezi la orice secție de votare din străinătate pe listele suplimentare. Trebuie să ai la tine un document de identitate valabil precum buletinul sau pașaportul. Dacă ai votat deja prin corespondență nu poți vota din nou la secție. </p><p>Dacă ai ales să votezi prin corespondență pentru Turul 2 la alegerile prezidențiale atunci trebuie să te asiguri că plicul cu votul tău a ajuns <b>până pe 5 decembrie</b> la biroul electoral pentru votul prin corespondență cu sediul în România sau la sediul reprezentanței diplomatice. Dacă ai fost informat că plicul tău nu a ajuns până la această dată, poți să votezi la orice secție de votare din străinătate pe listele suplimentare. Trebuie să ai la tine un document de identitate valabil precum buletinul sau pașaportul. Dacă ai votat deja prin corespondență nu poți vota din nou la secție. </p>' +
+
+    text_abr:
+      '<p>Termenul limită de înscriere în Registrul electoral ca alegător în străinătate la o secție de votare este de <strong>04.03.2025, ora 23:59:59</strong>. Înscrierea se face urmând instrucțiunile de aici <a href="https://www.votstrainatate.ro/presedinte" target="_blank">https://www.votstrainatate.ro/presedinte</a></p><p>Dacă ai ales să votezi prin corespondență la alegerile prezidențiale trebuie să te asiguri că expediezi plicul cu suficient timp înaintea datei votării, pentru ca acesta să ajungă cu cep puțin 3 zile înaintea datei votării, a sediul biroului electoral pentru votul prin corespondență. Plicurile ajunse după această dată nu vor mai fi luate în calcul.<p><p>Dacă ai fost informat de AEP că plicul tău nu a ajuns până la această dată, poți să votezi la orice secție de votare din străinătate pe listele suplimentare. Trebuie să ai la tine un document de identitate valabil precum buletinul sau pașaportul. Dacă ai votat deja prin corespondență nu poți vota din nou la secție. </p><p>În cazul în care votul tău nu a ajuns și te duci la secție.</p><p>Iată documentele de care ai nevoie și programul de vot: </p>' +
       documents +
       schedule,
-    label_a1b1c3r:
-      '<p>Dacă nu te-ai înscris pentru vot la secție sau prin corespondență, poți vota la orice secție de votare din străinătate pe liste suplimentare. Iată documentele de care ai nevoie și programul de vot: </p>' +
+
+    option_ac_text: 'Nu m-am înregistrat în registrul electoral',
+    text_acr:
+      '<p>Dacă nu te-ai înscris pentru vot la secție sau prin corespondență, poți vota la orice secție de votare din străinătate pe liste suplimentare.</p><p>Iată documentele de care ai nevoie și programul de vot:</p>' +
       documents +
       schedule,
-    label_a1b2: 'Nu am domiciliu sau reședința în străinătate',
-    label_a1b2_details: '',
-    label_a1b2r:
-      '<p>Poți să votezi la orice secție de votare din străinătate pe listele suplimentare. Trebuie să ai la tine un document de identitate valabil în ziua votului emis de statul român:</p>' +
-      documents +
-      schedule,
+
     /// A1 END
-    label_a2: ' Vreau să votez la alegerile parlamentare',
-    label_a2_details: '',
-    label_a2b1: 'Am domiciliu sau reședința în străinătate',
-    label_a2b1_details: '',
-    label_a2b1c1:
-      'M-am înregistrat în registrul electoral, pe www.votstrăinătate.ro pentru vot la secție',
-    label_a2b1c2:
-      'M-am înregistrat în registrul electoral pe www.votstrăinătate.ro pentru vot prin corespondență',
-    label_a2b1c3: 'Nu m-am înregistrat în registrul electoral',
-    label_a2b1c1r:
-      '<p>Dacă te-ai înregistrat în registrul electoral ca să votezi la secție, poți să votezi pe lista permanentă la secția la care ești înregistrat sau la orice secție de votare din străinătate pe liste suplimentare dacă ai cu tine un act de identitate valabil și dovada că ai domiciliul sau reședința în străinătate.</p><p>Așadar, <b>cetăţenii români cu domiciliul în România, dar care au adresa de reşedinţă în străinătate</b>, îşi pot exercita dreptul de vot la secţiile de votare organizate în străinătate în baza unuia dintre următoarele acte de identitate, valabile în ziua votării, însoţite de un document oficial emis de statul străin privind stabilirea reşedinţei:\n</b>' +
-      documentsParliament +
-      scheduleParliament,
-    label_a2b1c2r:
-      '<p>Dacă te-ai înregistrat în registrul electoral pentru votul prin corespondență trebui să verifici că votul tău a ajuns la biroul electoral pentru votul prin corespondență cu sediul în România sau la sediul reprezentanței diplomatice până la data de 28 noiembrie. Dacă nu ai fost informat că votul tău a ajuns la ei, atunci poți vota la orice secție de votare.</p><p>În cazul în care votul tău nu a ajuns și te duci la secție, iată documentele de care ai nevoie și programul de vot: </p><p>Cetăţenii români <b>cu domiciliul în România, dar care au adresa de reşedinţă în străinătate</b>, îşi pot exercita dreptul de vot la secţiile de votare organizate în străinătate în baza unuia dintre următoarele acte de identitate, valabile în ziua votării, însoţite de un document oficial emis de statul străin privind stabilirea reşedinţei:</p>' +
-      documentsParliament +
-      scheduleParliament,
-    label_a2b1c3r:
-      '<p>Dacă nu te-ai înregistrat în registrul electoral, dar ai domiciliul sau reședința în străinătate poți să votezi la orice secție de votare din străinătate dacă ai cu tine un act de identitate valabil și dovada că ai domiciliul sau reședința în străinătate.</p><p>Așadar, cetăţenii români <b>cu domiciliul în România, dar care au adresa de reşedinţă în străinătate</b>, îşi pot exercita dreptul de vot la secţiile de votare organizate în străinătate în baza unuia dintre următoarele acte de identitate, valabile în ziua votării, însoţite de un document oficial emis de statul străin privind stabilirea reşedinţei:\n</p>' +
-      documentsParliament +
-      scheduleParliament,
-    label_a2b2: 'Nu am domiciliu sau reședința în străinătate',
-    label_a2b2r:
-      '<p>Din păcate la alegerile parlamentare, dacă nu ești domiciliat sau nu ai reședință în străinătate nu vei putea vota la alegerile parlamentare. Poți face acest lucru doar dacă revii în România în județul în care ai domiciliul.</p>',
+    option_b_text: 'Nu am domiciliu sau reședința în străinătate',
+    text_br:
+      '<p>Dacă nu ai domiciliu sau reședință în străinătate, dar te afli în străinătate în zilele alegerilor, poți vota la orice secție de votare din străinătate pe liste suplimentare.</p><p>Iată documentele de care ai nevoie și programul de vot:</p><p>' +
+      documents +
+      schedule,
 
     callToAction: 'Alege una dintre opțiunile de mai jos',
   },

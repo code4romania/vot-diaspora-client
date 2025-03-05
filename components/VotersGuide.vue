@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div ref="decisionTree">
     <h2 class="text-center h4">
       {{ $t('guide_title') }}
     </h2>
@@ -47,116 +47,67 @@ export default {
       START: {
         id: 'START',
         text: '',
-        options: ['A1', 'A2'],
+        options: ['A', 'B'],
       },
-      A1: {
-        id: 'A1',
-        text: 'votersGuide.label_a1',
-        details: 'votersGuide.label_a1_details',
-        options: ['A1B1', 'A1B2'],
+      A: {
+        id: 'A',
+        text: 'votersGuide.option_a_text',
+        options: ['AA', 'AB', 'AC'],
       },
-      A1B1: {
-        id: 'A1B1',
-        text: 'votersGuide.label_a1b1',
-        details: 'votersGuide.label_a1b1_details',
-        options: ['A1B1C1', 'A1B1C2', 'A1B1C3'],
+      AA: {
+        id: 'AA',
+        text: 'votersGuide.option_aa_text',
+        options: ['AAR'],
       },
-      A1B1C1: {
-        id: 'A1B1C1',
-        text: 'votersGuide.label_a1b1c1',
-        details: 'votersGuide.label_a1b1c1_details',
-        options: ['A1B1C1R'],
+      AAR: {
+        id: 'AAR',
+        text: 'votersGuide.text_aar',
       },
-      A1B1C1R: {
-        id: 'A1B1C1R',
-        text: 'votersGuide.label_a1b1c1r',
+      AB: {
+        id: 'AB',
+        text: 'votersGuide.option_ab_text',
+        options: ['ABR'],
       },
-      A1B1C2: {
-        id: 'A1B1C2',
-        text: 'votersGuide.label_a1b1c2',
-        options: ['A1B1C2R'],
+      ABR: {
+        id: 'ABR',
+        text: 'votersGuide.text_abr',
       },
-      A1B1C2R: {
-        id: 'A1B1C2R',
-        text: 'votersGuide.label_a1b1c2r',
+      AC: {
+        id: 'AC',
+        text: 'votersGuide.option_ac_text',
+        options: ['ACR'],
       },
-      A1B1C3: {
-        id: 'A1B1C3',
-        text: 'votersGuide.label_a1b1c3',
-        options: ['A1B1C3R'],
-      },
-      A1B1C3R: {
-        id: 'A1B1C3R',
-        text: 'votersGuide.label_a1b1c3r',
-      },
-      A1B2: {
-        id: 'A1B2',
-        text: 'votersGuide.label_a1b2',
-        details: 'votersGuide.label_a1b2_details',
-        options: ['A1B2R'],
-      },
-      A1B2R: {
-        id: 'A1B2R',
-        text: 'votersGuide.label_a1b2r',
-      },
-      A2: {
-        id: 'A2',
-        text: 'votersGuide.label_a2',
-        details: 'votersGuide.label_a2_details',
-        options: ['A2B1', 'A2B2'],
-      },
-      A2B1: {
-        id: 'A2B1',
-        text: 'votersGuide.label_a2b1',
-        details: 'votersGuide.label_a2b1_details',
-        options: ['A2B1C1', 'A2B1C2', 'A2B1C3'],
-      },
-      A2B1C1: {
-        id: 'A2B1C1',
-        text: 'votersGuide.label_a2b1c1',
-        options: ['A2B1C1R'],
-      },
-      A2B1C2: {
-        id: 'A2B1C2',
-        text: 'votersGuide.label_a2b1c2',
-        options: ['A2B1C2R'],
-      },
-      A2B1C3: {
-        id: 'A2B1C3',
-        text: 'votersGuide.label_a2b1c3',
-        options: ['A2B1C3R'],
+      ACR: {
+        id: 'ACR',
+        text: 'votersGuide.text_acr',
       },
 
-      A2B1C1R: {
-        id: 'A2B1C1R',
-        text: 'votersGuide.label_a2b1c1r',
+      B: {
+        id: 'B',
+        text: 'votersGuide.option_b_text',
+        options: ['BR'],
       },
 
-      A2B1C2R: {
-        id: 'A2B1C2R',
-        text: 'votersGuide.label_a2b1c2r',
-      },
-      A2B1C3R: {
-        id: 'A2B1C3R',
-        text: 'votersGuide.label_a2b1c3r',
-      },
-
-      A2B2: {
-        id: 'A2B2',
-        text: 'votersGuide.label_a2b2',
-        options: ['A2B2R'],
-      },
-      A2B2R: {
-        id: 'A2B2R',
-        text: 'votersGuide.label_a2b2r',
+      BR: {
+        id: 'BR',
+        text: 'votersGuide.text_br',
       },
     },
   }),
   methods: {
+    scrollToDecisionTree() {
+      this.$nextTick(() =>
+        this.$refs.decisionTree.scrollIntoView({
+          behavior: 'smooth',
+          block: 'start',
+        })
+      )
+    },
     goToPreviousChoice() {
       // remove current option
       this.previousChoices.pop()
       this.currentNode = this.previousChoices[this.previousChoices.length - 1]
+      this.scrollToDecisionTree()
     },
     goToNextChoice(option) {
       if (!this.decisionTree[option].options) {
@@ -169,6 +120,7 @@ export default {
     resetTest() {
       this.previousChoices = ['START']
       this.currentNode = 'START'
+      this.scrollToDecisionTree()
     },
   },
 }
