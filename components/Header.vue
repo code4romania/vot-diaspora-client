@@ -77,6 +77,7 @@
           {{ $t('nav_about') }}
         </nuxt-link>
         <select
+          v-if="$i18n.locales.length > 1"
           v-model="selectedValue"
           class="custom-select"
           @change="onChange(selectedValue)"
