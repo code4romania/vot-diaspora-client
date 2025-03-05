@@ -3,6 +3,15 @@
     <h2 class="text-center h4">
       {{ $t('guide_title') }}
     </h2>
+    <div class="breadcrumbs-container">
+      <div class="breadcrumbs" v-for="option in previousChoices" :key="option">
+        <span
+          v-html="$t(decisionTree[option].text)"
+          @click="goToParrentOf(option)"
+        ></span>
+      </div>
+    </div>
+
     <div v-if="decisionTree[currentNode].details">
       <p v-html="$t(decisionTree[currentNode].details)"></p>
     </div>
@@ -117,6 +126,16 @@ export default {
       this.currentNode = option
       this.previousChoices.push(option)
     },
+    goToParrentOf(option) {
+      const desiredIndex = this.previousChoices.indexOf(option)
+      if (desiredIndex === -1) {
+        this.resetTest()
+      } else {
+        this.previousChoices = this.previousChoices.slice(0, desiredIndex)
+        this.currentNode = this.previousChoices[this.previousChoices.length - 1]
+        this.scrollToDecisionTree()
+      }
+    },
     resetTest() {
       this.previousChoices = ['START']
       this.currentNode = 'START'
@@ -166,5 +185,38 @@ export default {
 .choice-card:hover {
   cursor: pointer;
   border: 2px solid #fc0;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.breadcrumbs-container {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  color: #4a5568;
+}
+
+.breadcrumbs {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.breadcrumbs span {
+  text-decoration: none;
+  color: #007bff;
+  transition: color 0.3s ease;
+}
+
+.breadcrumbs span:hover {
+  color: #ffdb4d;
+}
+
+.breadcrumbs:not(:last-child)::after {
+  content: '/';
+  margin: 0 6px;
+  color: #352245;
 }
 </style>
