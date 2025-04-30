@@ -1,6 +1,7 @@
 <template>
   <div>
     <Header />
+    <GeneralInfo />
     <main>
       <Nuxt />
     </main>
@@ -8,7 +9,6 @@
     <Footer />
   </div>
 </template>
-
 <script>
 export default {
   head() {

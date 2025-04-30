@@ -23,4 +23,8 @@
     </div>
   </div>
 </template>
-<script setup lang="ts"></script>
+<script>
+export default {
+  layout: 'main',
+}
+</script>
