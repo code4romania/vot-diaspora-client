@@ -8366,8 +8366,8 @@
     "city": "New York 1",
     "address": "200 East, 38th Street, New York, NY 10016 (cu intrarea pe 3rd Avenue)",
     "location": "Consulat General",
-    "latitude": 40.74805987,
-    "longitude": -73.9761703
+    "latitude": 40.748111494580115,
+    "longitude": -73.97617232199867
   },
   {
     "number": 931,
@@ -8375,8 +8375,8 @@
     "city": "New York 2",
     "address": "200 East, 38th Street, New York, NY 10016 (cu intrarea pe 38th Street)",
     "location": "ICR",
-    "latitude": 40.74805987,
-    "longitude": -73.9761703
+    "latitude": 40.748111494580115,
+    "longitude": -73.97617232199867
   },
   {
     "number": 932,
@@ -8384,8 +8384,8 @@
     "city": "Long Valley",
     "address": "132 Califon Road, Long Valley, NJ 07853",
     "location": "Altele",
-    "latitude": 40.77833914,
-    "longitude": -74.85070495
+    "latitude": 40.778291,
+    "longitude": -74.850755
   },
   {
     "number": 933,
@@ -8402,8 +8402,8 @@
     "city": "Queens",
     "address": "90-34 139 Street, Jamaica, NY 11435",
     "location": "Altele",
-    "latitude": 40.70056753,
-    "longitude": -73.812321
+    "latitude": 40.700381,
+    "longitude": -73.812156
   },
   {
     "number": 935,
@@ -8429,8 +8429,8 @@
     "city": "Wakefield",
     "address": "1 Audubon Road, Wakefield, MA 01880",
     "location": "Altele",
-    "latitude": 42.51408024,
-    "longitude": -71.03977206
+    "latitude": 42.514118,
+    "longitude": -71.039726
   },
   {
     "number": 938,
@@ -8438,8 +8438,8 @@
     "city": "West Lawn",
     "address": "51 West Lawn Avenue, West Lawn, PA 19609",
     "location": "Altele",
-    "latitude": 40.32674707,
-    "longitude": -75.99025668
+    "latitude": 40.326709,
+    "longitude": -75.990255
   },
   {
     "number": 939,
