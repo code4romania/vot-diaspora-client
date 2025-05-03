@@ -12,27 +12,21 @@
     </div>
     <div class="card-body">
       <div class="d-flex justify-content-between align-items-center">
-        <p class="m-0">
+        <div class="m-0">
           <span class="bg-dark text-white px-1 mr-1">{{
             $t('pollingStationCard.address')
           }}</span>
-          {{ address }}
-        </p>
-      </div>
-      <div v-show="showStreet">
-        <p class="font-weight-bold mt-4 mb-0">
-          {{ $t('pollingStationCard.assignedStreetsLabel') }}
-        </p>
+          <a
+            :href="mapUrl"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="m-0"
+          >
+            {{ address }}
+          </a>
+        </div>
       </div>
     </div>
-    <ul v-if="showStreet">
-      <li
-        v-for="assignedAddress of assignedAddresses"
-        :key="assignedAddress.id"
-      >
-        {{ assignedAddress.street }} {{ assignedAddress.houseNumbers }}
-      </li>
-    </ul>
   </div>
 </template>
 
@@ -43,7 +37,8 @@ export default {
     county: { type: String, default: '' },
     address: { type: String, default: '' },
     distance: { type: Number, default: 0 },
-    assignedAddresses: { type: Array, default: () => [] },
+    latitude: { type: Number, default: 0 },
+    longitude: { type: Number, default: 0 },
   },
   data() {
     return {
@@ -58,6 +53,18 @@ export default {
       // If distance is lower than 100 meters show 0 km instead of 0.0 km
       if (distanceInKm < 0.1) return 0
       return distanceInKm.toFixed(1)
+    },
+    mapUrl() {
+      const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent)
+
+      if (isMobile) {
+        // Opens default navigation app (Apple Maps or Google Maps)
+        const mobileUrl = `geo:${this.latitude},${this.longitude}`
+        return mobileUrl
+      } else {
+        const url = `https://www.google.com/maps?q=${this.latitude},${this.longitude}`
+        return url
+      }
     },
   },
 }
