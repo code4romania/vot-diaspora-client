@@ -31,6 +31,8 @@
             :county="pollingStation.country"
             :address="pollingStation.address"
             :distance="pollingStation.distance"
+            :latitude="pollingStation.latitude"
+            :longitude="pollingStation.longitude"
           />
         </div>
       </div>
