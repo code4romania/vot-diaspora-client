@@ -55,16 +55,8 @@ export default {
       return distanceInKm.toFixed(1)
     },
     mapUrl() {
-      const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent)
-
-      if (isMobile) {
-        // Opens default navigation app (Apple Maps or Google Maps)
-        const mobileUrl = `geo:${this.latitude},${this.longitude}`
-        return mobileUrl
-      } else {
-        const url = `https://www.google.com/maps?q=${this.latitude},${this.longitude}`
-        return url
-      }
+      const url = `https://www.google.com/maps?q=${this.latitude},${this.longitude}`
+      return url
     },
   },
 }
