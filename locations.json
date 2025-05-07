@@ -1281,10 +1281,10 @@
     "number": 143,
     "country": "Franța",
     "city": "Rueil-Malmaison",
-    "address": "Atrium Salle des Fêtes, 81 Rue des Bons Raisins, 92500 Rueil-Malmaison",
+    "address": "Salle La Passerelle, 13-15 rue Becquerel, 92500 Rueil-Malmaison",
     "location": "Altele",
-    "latitude": 48.8719038850101,
-    "longitude": 2.20107472362417
+    "latitude": 48.89022416346617,
+    "longitude": 2.1717611197083375
   },
   {
     "number": 144,
@@ -1416,10 +1416,10 @@
     "number": 158,
     "country": "Franța",
     "city": "Bordeaux",
-    "address": "Salle Nicole Vanrast, 250 Rue Malbec, 33800 Bordeaux",
+    "address": "Chartreuse Saint-André, 194 Avenue du Maréchal-De-Lattre de Tassigny, 33200 Bordeaux",
     "location": "Altele",
-    "latitude": 44.8206270103445,
-    "longitude": -0.571666583518914
+    "latitude": 44.855479693638536,
+    "longitude": -0.6151503007455366
   },
   {
     "number": 159,
@@ -1434,10 +1434,10 @@
     "number": 160,
     "country": "Franța",
     "city": "Caen",
-    "address": "Maison de Quartier Centre, 9 Rue Neuve Bourg l'Abbé, 14000 Caen",
+    "address": "Maison de Quartier de la Grâce de Dieu, Place du Commerce, 14000 Caen",
     "location": "Altele",
-    "latitude": 49.1814368945911,
-    "longitude": -0.378848726742628
+    "latitude": 49.160844123419764,
+    "longitude": -0.3611054312377677
   },
   {
     "number": 161,
@@ -4908,10 +4908,10 @@
     "number": 546,
     "country": "Regatul Unit al Marii Britanii şi Irlandei de Nord",
     "city": "Canterbury",
-    "address": "University of Kent, Sports Centre, (Entrance to car park off Park Wood Rd), CT2 7NL",
+    "address": "University of Kent, Darwin Conference Suite, Darwin College, Darwin Road, Canterbury, Kent CT2 7NY",
     "location": "Altele",
-    "latitude": 51.3000018022984,
-    "longitude": 1.06520107889652
+    "latitude": 51.298909570897045,
+    "longitude": 1.0731407565133773
   },
   {
     "number": 547,
@@ -7140,10 +7140,10 @@
     "number": 794,
     "country": "Spania",
     "city": "Sabadell",
-    "address": "Centre Cívic de Can Llong-Castellarnau, Av. d'Estrasburg, 82, 08206 Sabadell",
+    "address": "Centro Cívico de la Creu Alta-Cal Balsach, Carretera de Prats de Lluçanès, 2, 08208 Sabadell",
     "location": "Altele",
-    "latitude": 41.561662199052,
-    "longitude": 2.08328278458874
+    "latitude": 41.5630738,
+    "longitude": 2.0908896
   },
   {
     "number": 795,
