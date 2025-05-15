@@ -1058,8 +1058,8 @@
     "city": "Geneva",
     "address": "Rue Vermont 37 - 39, 1202 Geneva",
     "location": "Misiune Permanentă",
-    "latitude": 46.21884886,
-    "longitude": 6.137177788
+    "latitude": 46.2188573,
+    "longitude": 6.137191
   },
   {
     "number": 119,
@@ -1067,8 +1067,8 @@
     "city": "Cologny",
     "address": "Chemin de la Perriere 6, 1223 Cologny",
     "location": "Misiune Permanentă",
-    "latitude": 46.22705424,
-    "longitude": 6.186390967
+    "latitude": 46.227064,
+    "longitude": 6.1863842
   },
   {
     "number": 120,
@@ -1076,8 +1076,8 @@
     "city": "Berna",
     "address": "Parohia ortodoxă română Sf. M. Mc. Gheorghe, Kastellweg 7, 3004 Bern",
     "location": "Altele",
-    "latitude": 46.9738857,
-    "longitude": 7.450976072
+    "latitude": 46.9740449,
+    "longitude": 7.4509229
   },
   {
     "number": 121,
@@ -1085,8 +1085,8 @@
     "city": "Basel",
     "address": "Stellwerk, Vogesenplatz 1, 4056 Basel",
     "location": "Altele",
-    "latitude": 47.5703862499078,
-    "longitude": 7.57276566772639
+    "latitude": 47.5702777,
+    "longitude": 7.5727764
   },
   {
     "number": 122,
@@ -1094,8 +1094,8 @@
     "city": "Bellinzona",
     "address": "Spazio Aperto, Via Gerretta 9a, 6500 Bellinzona",
     "location": "Altele",
-    "latitude": 47.55294432,
-    "longitude": 7.591781452
+    "latitude": 46.201122,
+    "longitude": 9.030257
   },
   {
     "number": 123,
@@ -1103,8 +1103,8 @@
     "city": "Lausanne",
     "address": "IBIS Lausanne Crissier, Chem. de l'Esparcette 4, 1023 Lausanne",
     "location": "Altele",
-    "latitude": 46.20109617,
-    "longitude": 9.030292689
+    "latitude": 46.5526493,
+    "longitude": 6.5722928
   },
   {
     "number": 124,
@@ -1112,8 +1112,8 @@
     "city": "Zürich 1",
     "address": "Radisson Blu Hotel, Rondellstrasse, 8058 Zürich Airport",
     "location": "Altele",
-    "latitude": 47.4529454249524,
-    "longitude": 8.56408790688276
+    "latitude": 47.4528253,
+    "longitude": 8.5640906
   },
   {
     "number": 125,
@@ -1121,8 +1121,8 @@
     "city": "Zürich 2",
     "address": "Hilton Garden Inn Zürich Limmattal, Kreuzäckerstrasse 5, 8957 Spreitenbach",
     "location": "Altele",
-    "latitude": 47.41784786,
-    "longitude": 8.377819565
+    "latitude": 47.4177264,
+    "longitude": 8.3776192
   },
   {
     "number": 126,
@@ -2750,8 +2750,8 @@
     "city": "Jakarta",
     "address": "Jl. Teuku Cik Ditiro No.42-A 10, RT.10/RW.5, Menteng, Kec. Menteng, Jakarta 10310",
     "location": "Ambasadă",
-    "latitude": 60.1155,
-    "longitude": 10.65013
+    "latitude": -6.1981,
+    "longitude": 106.83664
   },
   {
     "number": 307,
